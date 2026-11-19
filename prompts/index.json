@@ -1,0 +1,226 @@
+{
+  "artrackv2_vlm_recovery_840ce1d1a4": {
+    "module": "research/vlm/artrackv2_vlm_recovery.py",
+    "line": 49
+  },
+  "artrackv2_vlm_recovery_e28c301016": {
+    "module": "research/vlm/artrackv2_vlm_recovery.py",
+    "line": 56
+  },
+  "conflict_fused_controller_v3_5dd73f60dc": {
+    "module": "research/vlm/conflict_fused_controller_v3.py",
+    "line": 11
+  },
+  "fused_identity_history_v2_cf4813bfdc": {
+    "module": "research/vlm/fused_identity_history_v2.py",
+    "line": 19
+  },
+  "fused_identity_history_v2_5b4773e9fe": {
+    "module": "research/vlm/fused_identity_history_v2.py",
+    "line": 25
+  },
+  "fused_identity_history_v2_3da00bac41": {
+    "module": "research/vlm/fused_identity_history_v2.py",
+    "line": 35
+  },
+  "fused_identity_history_v2_bf27d52f40": {
+    "module": "research/vlm/fused_identity_history_v2.py",
+    "line": 53
+  },
+  "fused_identity_history_v2_d1128dfee8": {
+    "module": "research/vlm/fused_identity_history_v2.py",
+    "line": 97
+  },
+  "identity_verifier_logprobs_176584980d": {
+    "module": "research/vlm/identity_verifier_logprobs.py",
+    "line": 25
+  },
+  "identity_verifier_logprobs_53f8e02d20": {
+    "module": "research/vlm/identity_verifier_logprobs.py",
+    "line": 41
+  },
+  "identity_verifier_logprobs_39c6fd13c0": {
+    "module": "research/vlm/identity_verifier_logprobs.py",
+    "line": 49
+  },
+  "identity_verifier_logprobs_f4aac23348": {
+    "module": "research/vlm/identity_verifier_logprobs.py",
+    "line": 56
+  },
+  "identity_verifier_logprobs_9af69ef895": {
+    "module": "research/vlm/identity_verifier_logprobs.py",
+    "line": 77
+  },
+  "mllm_backend_c9a9490d5d": {
+    "module": "research/vlm/mllm_backend.py",
+    "line": 27
+  },
+  "mllm_backend_d21f1e1d39": {
+    "module": "research/vlm/mllm_backend.py",
+    "line": 144
+  },
+  "mllm_backend_f50f69c0fa": {
+    "module": "research/vlm/mllm_backend.py",
+    "line": 144
+  },
+  "mllm_full_controller_ae4aaa98c7": {
+    "module": "research/vlm/mllm_full_controller.py",
+    "line": 167
+  },
+  "mllm_full_controller_b9c1475a04": {
+    "module": "research/vlm/mllm_full_controller.py",
+    "line": 212
+  },
+  "mllm_full_controller_51e81d2a4e": {
+    "module": "research/vlm/mllm_full_controller.py",
+    "line": 290
+  },
+  "mllm_full_controller_8463e51906": {
+    "module": "research/vlm/mllm_full_controller.py",
+    "line": 309
+  },
+  "mllm_full_controller_f675d39ca9": {
+    "module": "research/vlm/mllm_full_controller.py",
+    "line": 312
+  },
+  "mllm_full_controller_e4284c4bb3": {
+    "module": "research/vlm/mllm_full_controller.py",
+    "line": 347
+  },
+  "mllm_full_controller_4ce68fa199": {
+    "module": "research/vlm/mllm_full_controller.py",
+    "line": 430
+  },
+  "mllm_i1_evidence_e21770bf36": {
+    "module": "research/vlm/mllm_i1_evidence.py",
+    "line": 28
+  },
+  "mllm_i1_evidence_f0ba621d0d": {
+    "module": "research/vlm/mllm_i1_evidence.py",
+    "line": 87
+  },
+  "mllm_i1_evidence_3caef481a8": {
+    "module": "research/vlm/mllm_i1_evidence.py",
+    "line": 100
+  },
+  "mllm_i1_evidence_8b2a8444ee": {
+    "module": "research/vlm/mllm_i1_evidence.py",
+    "line": 219
+  },
+  "mllm_i1_evidence_8565c48ab6": {
+    "module": "research/vlm/mllm_i1_evidence.py",
+    "line": 238
+  },
+  "mllm_i1_evidence_847e8d91fd": {
+    "module": "research/vlm/mllm_i1_evidence.py",
+    "line": 273
+  },
+  "mllm_i1_evidence_962797eb50": {
+    "module": "research/vlm/mllm_i1_evidence.py",
+    "line": 275
+  },
+  "mllm_i1_global_hint_77100bfdbd": {
+    "module": "research/vlm/mllm_i1_global_hint.py",
+    "line": 45
+  },
+  "mllm_i1_global_hint_4a8dbfad70": {
+    "module": "research/vlm/mllm_i1_global_hint.py",
+    "line": 47
+  },
+  "mllm_i1_global_hint_bbdc7f6b3e": {
+    "module": "research/vlm/mllm_i1_global_hint.py",
+    "line": 67
+  },
+  "mllm_i1_global_hint_a2801a1c8f": {
+    "module": "research/vlm/mllm_i1_global_hint.py",
+    "line": 82
+  },
+  "mllm_i1_visual_40e2e6fe50": {
+    "module": "research/vlm/mllm_i1_visual.py",
+    "line": 33
+  },
+  "mllm_i1_visual_06dcc18700": {
+    "module": "research/vlm/mllm_i1_visual.py",
+    "line": 40
+  },
+  "mllm_i1_visual_7e0d756273": {
+    "module": "research/vlm/mllm_i1_visual.py",
+    "line": 54
+  },
+  "mllm_i1_visual_72bb2a45e2": {
+    "module": "research/vlm/mllm_i1_visual.py",
+    "line": 62
+  },
+  "mllm_i1_visual_79462d23d9": {
+    "module": "research/vlm/mllm_i1_visual.py",
+    "line": 103
+  },
+  "mllm_i1_visual_9405558c25": {
+    "module": "research/vlm/mllm_i1_visual.py",
+    "line": 113
+  },
+  "mllm_i1_visual_59e0624b7f": {
+    "module": "research/vlm/mllm_i1_visual.py",
+    "line": 133
+  },
+  "mllm_i1_visual_e41b3d5d92": {
+    "module": "research/vlm/mllm_i1_visual.py",
+    "line": 143
+  },
+  "mllm_input_contract_fe8ef27c71": {
+    "module": "research/vlm/mllm_input_contract.py",
+    "line": 78
+  },
+  "mllm_input_contract_45efa27041": {
+    "module": "research/vlm/mllm_input_contract.py",
+    "line": 93
+  },
+  "mllm_input_contract_cf1f649a79": {
+    "module": "research/vlm/mllm_input_contract.py",
+    "line": 126
+  },
+  "mllm_input_contract_f122e06d78": {
+    "module": "research/vlm/mllm_input_contract.py",
+    "line": 150
+  },
+  "online_semantic_codebook_v1_bd6bc24c26": {
+    "module": "research/vlm/online_semantic_codebook_v1.py",
+    "line": 160
+  },
+  "safe_identity_history_v1_c024c83ff2": {
+    "module": "research/vlm/safe_identity_history_v1.py",
+    "line": 92
+  },
+  "safe_identity_history_v2_3e6d2193b8": {
+    "module": "research/vlm/safe_identity_history_v2.py",
+    "line": 21
+  },
+  "safe_identity_history_v2_b66d8e10a5": {
+    "module": "research/vlm/safe_identity_history_v2.py",
+    "line": 37
+  },
+  "semantic_codebook_controller_v1_9dd88cae36": {
+    "module": "research/vlm/semantic_codebook_controller_v1.py",
+    "line": 105
+  },
+  "semantic_codebook_controller_v1_a5d24ebe3a": {
+    "module": "research/vlm/semantic_codebook_controller_v1.py",
+    "line": 114
+  },
+  "semantic_codebook_controller_v1_f211379610": {
+    "module": "research/vlm/semantic_codebook_controller_v1.py",
+    "line": 136
+  },
+  "semantic_codebook_controller_v1_321420c155": {
+    "module": "research/vlm/semantic_codebook_controller_v1.py",
+    "line": 183
+  },
+  "unified_identity_memory_v1_9b20ae3e06": {
+    "module": "research/vlm/unified_identity_memory_v1.py",
+    "line": 45
+  },
+  "unified_identity_memory_v1_38b004c13a": {
+    "module": "research/vlm/unified_identity_memory_v1.py",
+    "line": 106
+  }
+}

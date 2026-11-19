@@ -1,0 +1,11 @@
+# Release scope and repository organisation
+
+1. The research repositories on both servers remain separate rebuttal archives. They are not overwritten by this source distribution. Raw data, outputs, request caches and historical versions are not imported here.
+2. Shared BQP/QIC/PIC implementations are under `lib/models/qirtrack/`. Source submodule names are retained inside `core/` to preserve traceability; avoid treating them as independent proposed methods.
+3. Tracker-specific code is separate: `lib/trackers/artrackv2/`, `lib/trackers/ostrack/`, `lib/trackers/sutrack/`. Each has a controller and its own native namespace. OSTrack/SUTrack include observation adapters, and native-response training/model contracts are under `lib/models/qirtrack/native/`. Native training/evaluation support stays in each tracker's native tree.
+4. Only the legacy Base256-seq-GOT S9 64k checkpoint is locally retained. It is inference-only, is ignored by Git, and is NOT the final evaluation weight. Do not pair it with a different tracker or describe its LaSOT test-trained results as held-out generalisation. No final predictor, native tracker or MLLM weights are bundled.
+5. All 56 MLLM prompt text files are empty. Empty/missing prompts fail before an online request. No prompt responses or research request caches are distributed.
+6. Original-code licensing remains pending; LICENSE is a status notice, not a grant. Third-party licences remain intact. Citation author/venue metadata is not fabricated.
+7. No result directory, generated example image, fictitious benchmark table, credentials, private server addresses, Git remote or upload script is included. No commit or push is made. Checkpoint publication can use a release asset later; its SHA256 is already documented.
+
+The suggested directory layout was used as guidance rather than populated with nonfunctional stubs. This is the actual core-source release preparation, not a newly reimplemented training stack. Portable paired-predictor and complete ordered-frame entry points are documented in QUICKSTART.md and ONLINE_TRACKING.md. Prompt withholding and absent final weights intentionally prevent exact turnkey reproduction; Short runtime qualification is documented in INTEGRATION_STATUS.md; full benchmark equality is not claimed.

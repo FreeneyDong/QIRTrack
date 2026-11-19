@@ -1,0 +1,26 @@
+{
+  "checks": {
+    "unit_tests": {
+      "exit_code": 0
+    },
+    "preflight": {
+      "exit_code": 0
+    },
+    "online_help": {
+      "exit_code": 0
+    },
+    "configure_help": {
+      "exit_code": 0
+    }
+  },
+  "syntax_files": 500,
+  "prompt_slots_empty": 56,
+  "trackers_with_12frame_runs": 3,
+  "trackers_with_live_4b_checks": 3,
+  "total_live_http_requests": 15,
+  "isolated_trials_passed": 3,
+  "synthetic_bbox_only_feedback_passed": 3,
+  "full_benchmark_reproduced": false,
+  "original_license_pending": true,
+  "unit_tests_passed": 14
+}

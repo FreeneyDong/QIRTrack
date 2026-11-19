@@ -1,0 +1,14 @@
+{
+  "tracker": "sutrack",
+  "q_trigger": 0.85,
+  "p_high": 0.7,
+  "q_trusted": 0.8,
+  "shadow_every": 90,
+  "ATOM": false,
+  "history": "recent4_union_representative4",
+  "trusted_images": 6,
+  "route_enabled": false,
+  "rank_enabled": false,
+  "checkpoint": null,
+  "scope": "Explicit development preset, not a universal best threshold or final benchmark recipe"
+}

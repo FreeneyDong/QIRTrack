@@ -1,0 +1,2282 @@
+[
+  {
+    "destination": "lib/models/qirtrack/core/localisation/ar_coordinate_proposals.py",
+    "source_sha256": "a4d7182b84c145e78c46116ab6d54c7cdd54d9d1ccf8d3bf3ca41ffccbe0f683",
+    "release_sha256": "86388df89a95ae91e166b6c667cd3307079b7083e16e167e4e6548f6726bfc85"
+  },
+  {
+    "destination": "lib/models/qirtrack/core/localisation/candidate_data.py",
+    "source_sha256": "b314bce6217a0391a3b8e6c3e58bd774b994417ddc2a98073d0b945b6a993239",
+    "release_sha256": "e63e626df55ea224ae206807c1709992c319b2d642efc7e14240e7ebb050be77"
+  },
+  {
+    "destination": "lib/models/qirtrack/core/localisation/context_candidate.py",
+    "source_sha256": "774a56dce0dfa989650fc06509254d6f7bc341e1d8796eddda747b5621c894ab",
+    "release_sha256": "e85784f4f20ffa2abaab6bd629729af7207bf56f4f947873c48cbf3636548a7a"
+  },
+  {
+    "destination": "lib/models/qirtrack/core/localisation/searchmap_candidate.py",
+    "source_sha256": "38d0da695cde343ee16b2cc95c6e88bc28d9eb5575de975b405ac456e115face",
+    "release_sha256": "871922c60777fe001a7316a46e5585d8319131eb77028774700a52abb7c73386"
+  },
+  {
+    "destination": "lib/models/qirtrack/core/localisation/spatial_provenance.py",
+    "source_sha256": "cd52ed13c94b9932e54fc0ead4de833bb883683c69b63084e7710962f010a738",
+    "release_sha256": "8d5cf5fb469ddb37692e88669416bb1df88bf7989ebe47ee90695a4131835580"
+  },
+  {
+    "destination": "lib/models/qirtrack/core/trigger_e2e/data.py",
+    "source_sha256": "85aafb9afa1e9f183f56c95041bf79c7c8be9258a97976f20e3cd0afe7d8ddcc",
+    "release_sha256": "1d5af742d39fcbbebb1d251f63e447778966f25e63d96a2d02c7f9871c47bde6"
+  },
+  {
+    "destination": "lib/models/qirtrack/core/trigger_e2e/distribution.py",
+    "source_sha256": "1417154b05554def63721a15135ea0bde5124dbb810279057cd4578e2cbcef21",
+    "release_sha256": "2ee23207bac30a6cabb7c5db434b6360deb69d4f0323ba7a18bc45d33a3a72db"
+  },
+  {
+    "destination": "lib/models/qirtrack/core/trigger_e2e/losses.py",
+    "source_sha256": "0ba518c9940c58fab9afd13dcbd6ccfca23b439fd46f94d147ef980d1cd43a90",
+    "release_sha256": "4b8ff30576262c76b4d954925891bdad357bd672bd12ac6978c2757207e63907"
+  },
+  {
+    "destination": "lib/models/qirtrack/core/trigger_e2e/model.py",
+    "source_sha256": "cd15432ab6fad7378c4562a521a412772b74cde14c971dfa840f128636710003",
+    "release_sha256": "50dfe1e37526c93f48d5188b63e7621f5241a3bfb5174a6e6ac9689e29c328c9"
+  },
+  {
+    "destination": "lib/models/qirtrack/core/vlm/artrackv2_vlm_recovery.py",
+    "source_sha256": "0151b1f88f70e8e587e6de06688f28881b3023f284a0a2d5bff3e3f026e634e9",
+    "release_sha256": "9889c997ae6abdbecf0f2fb1c50c3df2846e54eb4b73854390b7c022672a28dc"
+  },
+  {
+    "destination": "lib/models/qirtrack/core/vlm/atom_mainline_controller_v1.py",
+    "source_sha256": "9cf248500046576ee16796f33630ff251ff5a96477841f2845ccfd2163deb9ca",
+    "release_sha256": "556bf2a32986de5b9cd719a8187ce6b903aa94126d9a28af77195fb1cb98e565"
+  },
+  {
+    "destination": "lib/models/qirtrack/core/vlm/codebook_history_controller_v1.py",
+    "source_sha256": "437b4da3447f8996ba3dfe33c4268fbb763133861b828616994eb91d52bfe0ed",
+    "release_sha256": "1c751511657463ddafa9e30bb943146dc38a79e70c5779543a5fa6ba29b22b0d"
+  },
+  {
+    "destination": "lib/models/qirtrack/core/vlm/conflict_fused_controller_v3.py",
+    "source_sha256": "8eb58519eece9874affa4c342a8a0fb3015ce05e5c3edd691721766d6945ba8b",
+    "release_sha256": "c61451748b4cdc98744a15cc2a775867c5c00708cd14a6bfb8a6c890fda0531b"
+  },
+  {
+    "destination": "lib/models/qirtrack/core/vlm/fused_history_controller_v2.py",
+    "source_sha256": "b1a2741fa15c65d26edd6fd5fed0d084a948e8cc2551e6af8af8207ef0d61240",
+    "release_sha256": "44a2a5b535d46aa23d04832d43df88d6fd4aaab59dd3e45d19827b7a3a96993d"
+  },
+  {
+    "destination": "lib/models/qirtrack/core/vlm/fused_identity_history_v2.py",
+    "source_sha256": "37fd7576dded136bcb2dcc2dd949fddf1328af122d8bd64f35d78c51e7a9464a",
+    "release_sha256": "c5a4e2e40239bfc80c4e8b98ae17cbf7c152e327403d2b08ad2c60998ed8c905"
+  },
+  {
+    "destination": "lib/models/qirtrack/core/vlm/identity_verifier_logprobs.py",
+    "source_sha256": "555d65a6895a338a2930f9c2f34d864397d5cd3c5a0a1d2dc09456f2f75964e9",
+    "release_sha256": "e4e95788f014526756113b99e364b0c43d99856a8cc6df52d5d502ba181bdbbd"
+  },
+  {
+    "destination": "lib/models/qirtrack/core/vlm/mllm_backend.py",
+    "source_sha256": "9de12597f517a709e30eef0080f1842296343c40f72d7a4354644ac4237762cc",
+    "release_sha256": "086b2b4c5cb20933d5aba001878eca570ce81d336dac2817a38511297023df39"
+  },
+  {
+    "destination": "lib/models/qirtrack/core/vlm/mllm_full_controller.py",
+    "source_sha256": "d13b55d7b4967effc0d33832c3fb93d46a385fa22734c9361cdbfc767f161502",
+    "release_sha256": "85197c7518386f681423600974cc92947b2dadeb7c33b59622b3716b98b44811"
+  },
+  {
+    "destination": "lib/models/qirtrack/core/vlm/mllm_history_evidence.py",
+    "source_sha256": "d7b8f7239777d2489aecdffa8231b9520750a6d60148d25851e74d03d4ae7aa8",
+    "release_sha256": "b314ed4f5f0681680e0417d61625efc9b3ec37f2bc98d74a7050f56cdabc9a46"
+  },
+  {
+    "destination": "lib/models/qirtrack/core/vlm/mllm_i1_evidence.py",
+    "source_sha256": "e22661b054bbf8c538e5d15563e60208a4f39b55b1b25296a8e12dd600cc1137",
+    "release_sha256": "8cf333792b034730c5908492ba98ffce5d6f3b8d738b7f46910c4366d224a02c"
+  },
+  {
+    "destination": "lib/models/qirtrack/core/vlm/mllm_i1_global_hint.py",
+    "source_sha256": "d06b138f235debfc580e7c3c059bbeb281582d1e8913a32261eaba06db0e604e",
+    "release_sha256": "3ec955339feb2c2e1ae99e86881884222f30313a9910596b866e4ac0792a48de"
+  },
+  {
+    "destination": "lib/models/qirtrack/core/vlm/mllm_i1_visual.py",
+    "source_sha256": "b2feb35684984ee4b682b19d90c04023d77e81227fb87fc82a4b4002d2eeb24c",
+    "release_sha256": "98fb7c46fee3585feb9cdfce6c34474ff6a331a549c701340254d9c09a45df00"
+  },
+  {
+    "destination": "lib/models/qirtrack/core/vlm/mllm_input_contract.py",
+    "source_sha256": "376d83d0d1166e15a24373487b702ace61889e66f00d264d48293817d5346411",
+    "release_sha256": "4caa435b8bf200be3494faff8bdfca657351e987fb816955f64e09e709183de6"
+  },
+  {
+    "destination": "lib/models/qirtrack/core/vlm/mllm_recovery_search_r1.py",
+    "source_sha256": "7b706e88e96f4e6fedc909ecf95c3139815423eb78f14eabfb33ae4d16e837da",
+    "release_sha256": "5231dc050d6209e975d70e36f3de13b02c762c5c1a216a4d8dbcb3b529e472c9"
+  },
+  {
+    "destination": "lib/models/qirtrack/core/vlm/online_semantic_codebook_v1.py",
+    "source_sha256": "33761cdc596cb47f431da31a65fe23945f9c77df1ce02607598213fe45aac95d",
+    "release_sha256": "5c76e65bdfddb7867692b9a93d4ef35769b5102b1874bd84d79f93b4ff3cf53b"
+  },
+  {
+    "destination": "lib/models/qirtrack/core/vlm/representative_history_v1.py",
+    "source_sha256": "af79560bdcb3ece69d517f0c683d4928bc69db13afbc2bdd4d52429b5c1f1727",
+    "release_sha256": "13b07bf4d2c59678927cc00cd60ce75163af7392f9ffbe523ab995563b1e9a4e"
+  },
+  {
+    "destination": "lib/models/qirtrack/core/vlm/safe_identity_history_v1.py",
+    "source_sha256": "1e10030ed9beeb9b0a4f491a9d21ad358b8e73ed70050be4db25627ab18d392c",
+    "release_sha256": "ae5a1549263dc1bf6623d83e18963099b74dff3e1cf904b20427fac6890527f4"
+  },
+  {
+    "destination": "lib/models/qirtrack/core/vlm/safe_identity_history_v2.py",
+    "source_sha256": "d92effd3a3bc314b2b39230d3ba42504f296666e86e0e67cd4e89f5d13100aa6",
+    "release_sha256": "fb5787d4627eaf20a49c59f72592ce976584e10e36cf36ca65da4edec3385085"
+  },
+  {
+    "destination": "lib/models/qirtrack/core/vlm/semantic_codebook_controller_v1.py",
+    "source_sha256": "2345e5f45f845e252d0becedc44eeb9c4b4e7c9d23f5cb2dc20d005f8bb1c3e0",
+    "release_sha256": "52d147e7dbdcd6599d056a4357072d3f63f164b3ccdcb4a2ae189c6e48502b86"
+  },
+  {
+    "destination": "lib/models/qirtrack/core/vlm/unified_identity_memory_v1.py",
+    "source_sha256": "87375f6559d7dc6e865f9ed2cf3752a044f3649c25af4f83de4fcc928b85586f",
+    "release_sha256": "047858178d65cc87e97ed3e11474afcfee7175df07a9c785430a3ea3ea452e88"
+  },
+  {
+    "destination": "lib/trackers/artrackv2/native/__init__.py",
+    "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "release_sha256": "e0718c42f46630a38a53639dee024424d1603aa3aedbd73ddf0da70b56de90da"
+  },
+  {
+    "destination": "lib/trackers/artrackv2/native/config/__init__.py",
+    "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "release_sha256": "e0718c42f46630a38a53639dee024424d1603aa3aedbd73ddf0da70b56de90da"
+  },
+  {
+    "destination": "lib/trackers/artrackv2/native/config/artrack/config.py",
+    "source_sha256": "3bff78fa771d6418204b1da927ea28d0ee5239b3826ff77514d2628d8cb86a27",
+    "release_sha256": "21127aee432f8f6be68362c1d4b7893b1e27fc4e0168e041257908f574bb5f25"
+  },
+  {
+    "destination": "lib/trackers/artrackv2/native/config/artrack_seq/config.py",
+    "source_sha256": "c5d24cff724fdd9f10f1f50aab6190aab21c0b5091b84d73583bbf65cb9de940",
+    "release_sha256": "371e76d83acb31c8e2f5e49ff2dacf2895c68d65371ae2fff25c8cf5e1f7359f"
+  },
+  {
+    "destination": "lib/trackers/artrackv2/native/config/artrackv2/config.py",
+    "source_sha256": "714e9eb5ad5a4263aa1e16365d0c10f5fb28a00c72e7b2d31e77b7c778a6136e",
+    "release_sha256": "b7e59d9fbabcad42d93c36a3d53bae33a11d502349a0bd984d9cebd0ab366160"
+  },
+  {
+    "destination": "lib/trackers/artrackv2/native/config/artrackv2_seq/config.py",
+    "source_sha256": "a7601dd88d9bdd4371c7f6c6d725fb7e16732365853b5b35dbb3cb44da161ffd",
+    "release_sha256": "198e6deec58c21b4a659db3f87e82dd0d0b75987d13015d5d5c6a511dbcc2622"
+  },
+  {
+    "destination": "lib/trackers/artrackv2/native/models/__init__.py",
+    "source_sha256": "731de110712a0a296c45c1a1c6ed361baf9f5e2af0df273de63ca1ffefbe5993",
+    "release_sha256": "2ad9761faee93b4ba4453610d033bff78f94fc567d794999f6cd2dac3b1bd4e4"
+  },
+  {
+    "destination": "lib/trackers/artrackv2/native/models/artrack/__init__.py",
+    "source_sha256": "52e678bbed3aeb306514f13f227f836221debdb2a31f5634dcd5b78e1709ccbf",
+    "release_sha256": "9142097c98cffc98b66b05d72df6a2fdbeae4998b335a4304d8f90f19ffde863"
+  },
+  {
+    "destination": "lib/trackers/artrackv2/native/models/artrack/artrack.py",
+    "source_sha256": "d437a6b81aa3838b35b72b6360dc665ed35f4e5b8f930b5aae9a1219c8888ba4",
+    "release_sha256": "bce7c43088a8864dc6a8128e1cb45315deee0d58c502f502b0a0e3f0150db43a"
+  },
+  {
+    "destination": "lib/trackers/artrackv2/native/models/artrack/base_backbone.py",
+    "source_sha256": "7bf3c70bfeac89597972f1576732f97c7a72a0fb054f18cf65db2f8a590faf0b",
+    "release_sha256": "136ece3a9f4bffc4455597eae0f7e550dbfde8c07ddbe2b32129641258f88898"
+  },
+  {
+    "destination": "lib/trackers/artrackv2/native/models/artrack/utils.py",
+    "source_sha256": "32d6810111256558980c7a371f2cf4aebcf554a7f92f6e0d12723302fde6e20a",
+    "release_sha256": "1e016505a33fb74c3daf15d6d5420c7f32632766bf83fdb36add969549043a66"
+  },
+  {
+    "destination": "lib/trackers/artrackv2/native/models/artrack/vit.py",
+    "source_sha256": "e9435429691f8cc3ff68306664160477e35966afec867c7d473135f4124fd7e5",
+    "release_sha256": "2aa6d10ddafefe89fb057ed19080f9981c2bda5ad2442b15d42849636c1caf44"
+  },
+  {
+    "destination": "lib/trackers/artrackv2/native/models/artrack/vit_ce.py",
+    "source_sha256": "6c5d9d5324bf2b10efce6e9518d4e15016034189238c986a8bc20d320a7693d9",
+    "release_sha256": "4c8ee54d3fcfe863b7505b97c00d72e8cc1736a3d7246fdc2b03a5464a0bba58"
+  },
+  {
+    "destination": "lib/trackers/artrackv2/native/models/artrack_seq/__init__.py",
+    "source_sha256": "dafbc881cd25cb09dfc45f5607e6b97642767327cf281820a1e3d068b108279f",
+    "release_sha256": "bd5bfa3d649b73e7d135d8656cdc568496437805316fd2229a88c89419e2ccd5"
+  },
+  {
+    "destination": "lib/trackers/artrackv2/native/models/artrack_seq/artrack_seq.py",
+    "source_sha256": "e3399360b8ee8e66ac3a86d53da1e7e0905bf4b5371ffe601d2779837c6a1d2b",
+    "release_sha256": "d784e208e8b46c3f0db302e640f0da42ac06bd9b3b77b8e399d128e8ac68a036"
+  },
+  {
+    "destination": "lib/trackers/artrackv2/native/models/artrack_seq/base_backbone.py",
+    "source_sha256": "2864982b9a98fd3f89090a06960192d3494626c9f6009f222b17f2f4bf11c454",
+    "release_sha256": "66a473f4158fa4c9817da5d13693097ea5d57a662c68e9a5421f962f020dce86"
+  },
+  {
+    "destination": "lib/trackers/artrackv2/native/models/artrack_seq/utils.py",
+    "source_sha256": "32d6810111256558980c7a371f2cf4aebcf554a7f92f6e0d12723302fde6e20a",
+    "release_sha256": "1e016505a33fb74c3daf15d6d5420c7f32632766bf83fdb36add969549043a66"
+  },
+  {
+    "destination": "lib/trackers/artrackv2/native/models/artrack_seq/vit.py",
+    "source_sha256": "ca8668a55fd2a0cd5484ac4018568a27f61b1b5b69016b47dcb4c07b8a2ff299",
+    "release_sha256": "31eefe3765f17f71709579078cce2454830a1640710d340d712c0c2d4ae69878"
+  },
+  {
+    "destination": "lib/trackers/artrackv2/native/models/artrack_seq/vit_ce.py",
+    "source_sha256": "6c5d9d5324bf2b10efce6e9518d4e15016034189238c986a8bc20d320a7693d9",
+    "release_sha256": "4c8ee54d3fcfe863b7505b97c00d72e8cc1736a3d7246fdc2b03a5464a0bba58"
+  },
+  {
+    "destination": "lib/trackers/artrackv2/native/models/artrackv2/__init__.py",
+    "source_sha256": "63feae9e0cd0ff937043318597b37adeec30eb0d03cef5161b8299d1c87760de",
+    "release_sha256": "3284722d85c3374495a9d3b7c528c0056b42bd96964e0c98f0557366fa07e8ce"
+  },
+  {
+    "destination": "lib/trackers/artrackv2/native/models/artrackv2/artrackv2.py",
+    "source_sha256": "1d94dd01d03ddf1fb679f72d559573cf38836b5f353f3553f804528fd94e6ec8",
+    "release_sha256": "b23d27ac4ced7ea157475d333164b6bf47ffa2d8fa43a12f0e89c0a88efc7fee"
+  },
+  {
+    "destination": "lib/trackers/artrackv2/native/models/artrackv2/base_backbone.py",
+    "source_sha256": "d29f058ce83ff6096b873e5fabbc9034c01a64af52f0cac89bc0057d2cf0cd22",
+    "release_sha256": "5a0bb95d67816703c514c38de7d46633045b1666f38b2384c158ff7bc57fb3a3"
+  },
+  {
+    "destination": "lib/trackers/artrackv2/native/models/artrackv2/utils.py",
+    "source_sha256": "8f45f52e642ce3f836a3cba496fe33a061c6af4c987d266b0e1ebcdcd3228d90",
+    "release_sha256": "1e016505a33fb74c3daf15d6d5420c7f32632766bf83fdb36add969549043a66"
+  },
+  {
+    "destination": "lib/trackers/artrackv2/native/models/artrackv2/vit.py",
+    "source_sha256": "98f2fdd605d027ff20b22876fc4ef4b42483cf055600f09bb50e58c57d061788",
+    "release_sha256": "05d2095b78732986c48fa967d1df8aab85234cfc4bf9abe3472f84d28fa5425a"
+  },
+  {
+    "destination": "lib/trackers/artrackv2/native/models/artrackv2_seq/__init__.py",
+    "source_sha256": "17f526529f6a59c787adbb257b9b7a2c7210da50a14a83bcff9cc5015876cbf3",
+    "release_sha256": "a19c9b27e10cc1831f14b985991852d6358cb2d7b2095f7e7f997c2c95604aef"
+  },
+  {
+    "destination": "lib/trackers/artrackv2/native/models/artrackv2_seq/artrackv2_seq.py",
+    "source_sha256": "1a05db25235f637297a764bbed879fba798a760867d46fa7510f485dd2ed6847",
+    "release_sha256": "d19df45880098ae8ed410472d53bafbbb7c7a15eb6202a546e6bb38d11c40467"
+  },
+  {
+    "destination": "lib/trackers/artrackv2/native/models/artrackv2_seq/base_backbone.py",
+    "source_sha256": "b5671b8d6958250a0849a07c0a1110f004c8cff1bb322fbaae44e58f296aef0d",
+    "release_sha256": "54179f6c91a6e6d6fd145aa92de2fea9ce14fa13c1fda0657be3fdde1fe1830a"
+  },
+  {
+    "destination": "lib/trackers/artrackv2/native/models/artrackv2_seq/utils.py",
+    "source_sha256": "8f45f52e642ce3f836a3cba496fe33a061c6af4c987d266b0e1ebcdcd3228d90",
+    "release_sha256": "1e016505a33fb74c3daf15d6d5420c7f32632766bf83fdb36add969549043a66"
+  },
+  {
+    "destination": "lib/trackers/artrackv2/native/models/artrackv2_seq/vit.py",
+    "source_sha256": "65101111b619f3dacf383a8740f52207e135a6bc8c69b7c1ad9f2cc8d48a6aab",
+    "release_sha256": "e45876787097c3f3d0638c02ff8f912f804c36525590a4df8425d79da801987f"
+  },
+  {
+    "destination": "lib/trackers/artrackv2/native/models/layers/__init__.py",
+    "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "release_sha256": "e0718c42f46630a38a53639dee024424d1603aa3aedbd73ddf0da70b56de90da"
+  },
+  {
+    "destination": "lib/trackers/artrackv2/native/models/layers/attn.py",
+    "source_sha256": "81d3aab22fda2c52625d7e1a178a27db817a14389a40625efe5d1cb1a5be859f",
+    "release_sha256": "ebbb84b8ea1442ae307e40d8f3b90ae9435b3fcace7b2fa3058db47177109969"
+  },
+  {
+    "destination": "lib/trackers/artrackv2/native/models/layers/attn_blocks.py",
+    "source_sha256": "3b5c243f552172cd34e71f75eebd73c8a6d2e0e6683d04062faf5b7737432646",
+    "release_sha256": "4318d5ce378ecfd06ff53bc36affa6f821a03994342244e5ef0f304275620ed4"
+  },
+  {
+    "destination": "lib/trackers/artrackv2/native/models/layers/frozen_bn.py",
+    "source_sha256": "58d610bfd226b3530c0b33d89c5aa1ef9ce1ac7bb2ec87a1462e0697a4fc814f",
+    "release_sha256": "66f600d5d5baf46abef8c81527929c4c5cea3f3451848e565e7c76629d1274a4"
+  },
+  {
+    "destination": "lib/trackers/artrackv2/native/models/layers/head.py",
+    "source_sha256": "96fcaa8e1692ed402ff3304175bcfcb894eda3f9fa69dd09a6128d576180bf70",
+    "release_sha256": "6acf2cb158e70a6aa22ca3c6a16df42071e848debddf01ed5e335c161b796ec3"
+  },
+  {
+    "destination": "lib/trackers/artrackv2/native/models/layers/head_seq.py",
+    "source_sha256": "4da1158a3d1cadfeec0c4c341534df963991ca91255d8040af1e15d6242744e2",
+    "release_sha256": "c8c002b2b1339f74e5011105f4ee508b4be3ca15b6d882cf6a911078c7af2ee2"
+  },
+  {
+    "destination": "lib/trackers/artrackv2/native/models/layers/mask_decoder.py",
+    "source_sha256": "c167b6c96ba70baa75b2a58e12b05959703f0b19941f006f128df9013f68829e",
+    "release_sha256": "1d3728f095dd9d7e76251c84b43e1090261e77c5b9035d617bf99725331cd13a"
+  },
+  {
+    "destination": "lib/trackers/artrackv2/native/models/layers/patch_embed.py",
+    "source_sha256": "e1452fdbc066599f97cf8da0a39c75d2fef3bf5ed534fc133ea3c9f7afb12753",
+    "release_sha256": "82c5da859467b06dd0095a4e076e13d020c44925c09c382af67353590f1d61e5"
+  },
+  {
+    "destination": "lib/trackers/artrackv2/native/models/layers/rpe.py",
+    "source_sha256": "bf7400fbb3bf2ec820743ce9fc029eda4de8e2f903f4ed38ce8aca69b59bdf94",
+    "release_sha256": "84b7239983f8d952f8665e1a64eb40030d7c0510687e0c752e60ffe193dc298d"
+  },
+  {
+    "destination": "lib/trackers/artrackv2/native/models/mask_decoder/__init__.py",
+    "source_sha256": "9b0a839240d4689941f780e1417688cb7279b1d5e462a9d5688d520a22a14244",
+    "release_sha256": "cbb46a42faed35dd3e0c1e6645cd2c47d9af871ee4285e54d3e32604885d62cb"
+  },
+  {
+    "destination": "lib/trackers/artrackv2/native/models/mask_decoder/attention.py",
+    "source_sha256": "85f421154f49e7f2cc7d3921ddf6d4383f5fad7fce58990511b5329ff1360021",
+    "release_sha256": "e9b182af2780ef544647cfb08c2f160f9a1ba0933da27b01b41a3c322aa0bb35"
+  },
+  {
+    "destination": "lib/trackers/artrackv2/native/models/mask_decoder/block.py",
+    "source_sha256": "8ac77c73a80c288b373649caf4f250348882318957e59ee249b26c8f51d109da",
+    "release_sha256": "4563c2119344e5ad8709e7d8ed06245141f919a4ff7757c29ac0beebe380627f"
+  },
+  {
+    "destination": "lib/trackers/artrackv2/native/models/mask_decoder/drop.py",
+    "source_sha256": "06c390ad0f04a600b6ec942800569df48fc9908a13e7e788a9d73aa655211e36",
+    "release_sha256": "3dd7d930a801b548ec2ec1e8243b0f76ae59229bd5f8e58d6dca92094992ed40"
+  },
+  {
+    "destination": "lib/trackers/artrackv2/native/models/mask_decoder/mlp.py",
+    "source_sha256": "7ca8f6cc48a60837033772c850b19cb8aeec0287c1278f647ba9b5a7e26f1473",
+    "release_sha256": "6bb9df26eeba2b9e40d76b47c868c36e7277dad6cc38429133f23826153a4c98"
+  },
+  {
+    "destination": "lib/trackers/artrackv2/native/models/mask_decoder/norm.py",
+    "source_sha256": "47cff7a95523ad3fbc02c2fcff27ec8bca47e5e5801f645453befc70b3e31761",
+    "release_sha256": "842650e7d83e41f517b024d905ecadd14ed4f968d802e63b0eb33fce239460d4"
+  },
+  {
+    "destination": "lib/trackers/artrackv2/native/models/mask_decoder/patch_embed.py",
+    "source_sha256": "50d16a9d1da9d085de5efd809c9cc232c11ab52fd9a5647b67ab0695853a7b42",
+    "release_sha256": "ca9a0e0e41b86feef0882468befdca04cf424e5095913ca081a90558bc79f6f9"
+  },
+  {
+    "destination": "lib/trackers/artrackv2/native/models/mask_decoder/pos_embed.py",
+    "source_sha256": "17aa38f86ea3033b3fe10edad1cfd2d94c477f6b6d54fe08c99d47ca6cf6f8a0",
+    "release_sha256": "0b4ac834e4c439dc0bce61381860dbe0888c446258259a290f0da28168863229"
+  },
+  {
+    "destination": "lib/trackers/artrackv2/native/models/mask_decoder/weight_init.py",
+    "source_sha256": "335e36627ed0dc8f3e17ab5a91b525478c4722c079213ad59d9854f2b9407909",
+    "release_sha256": "2596e3cc5772b45db98e37166fda3ae706bee59faf6e1123d68a6d0af33bdc89"
+  },
+  {
+    "destination": "lib/trackers/artrackv2/native/test/__init__.py",
+    "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "release_sha256": "e0718c42f46630a38a53639dee024424d1603aa3aedbd73ddf0da70b56de90da"
+  },
+  {
+    "destination": "lib/trackers/artrackv2/native/test/analysis/__init__.py",
+    "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "release_sha256": "e0718c42f46630a38a53639dee024424d1603aa3aedbd73ddf0da70b56de90da"
+  },
+  {
+    "destination": "lib/trackers/artrackv2/native/test/analysis/extract_results.py",
+    "source_sha256": "444345861cfc46a36e2577af42294544844149169f0745cfd89ad76a07178067",
+    "release_sha256": "0b4718176283141fd6aaed5064bb5f0996ea324be815a31943b9a9284ae6defe"
+  },
+  {
+    "destination": "lib/trackers/artrackv2/native/test/analysis/plot_results.py",
+    "source_sha256": "f1b648bd4927f2743532ce7f5bd7be222320508422cdd766d1c0ab0258de06a7",
+    "release_sha256": "e9ebce7421e2c9ed6c1e6b5b8c60bc95f3c4e51df36333a4706582969b4cf687"
+  },
+  {
+    "destination": "lib/trackers/artrackv2/native/test/evaluation/__init__.py",
+    "source_sha256": "48dbd571ae98e8d848223df0a3cc1e1387704d267c0ba517f887fc6d01271362",
+    "release_sha256": "87a71c753950399e7cf14aa1669753b856b211cc94948c7dc460db4358e1c5f5"
+  },
+  {
+    "destination": "lib/trackers/artrackv2/native/test/evaluation/data.py",
+    "source_sha256": "acd1bce532259371b68a4252bfa80d0fcd1bf8b2ad028d95b12e425c2210810c",
+    "release_sha256": "c10c4718c1c26d781dffd97d64986d68deaa179917ecd276e2d48f5d25dd0666"
+  },
+  {
+    "destination": "lib/trackers/artrackv2/native/test/evaluation/datasets.py",
+    "source_sha256": "58acada3e1b86430dbfedbfa816c00bf6aa307a59be5220a23b5e7da5cf35d48",
+    "release_sha256": "16196f7d4ba80e53efcb6c1969fe125282cd2bd78d479003836a60f895cd5eda"
+  },
+  {
+    "destination": "lib/trackers/artrackv2/native/test/evaluation/environment.py",
+    "source_sha256": "aa3c955ff636e535413840d39c4bcb95a6a3025f0929cb0fc546fbcdf058845b",
+    "release_sha256": "251336ee36aa5122e1e38ba2af01a5d6b536d15abb477b48dfa93547ccbab890"
+  },
+  {
+    "destination": "lib/trackers/artrackv2/native/test/evaluation/got10kdataset.py",
+    "source_sha256": "292fde6cf4ec740dbaf73d77770b917e2b695c4e50d1055a38a65c95b5b1f72a",
+    "release_sha256": "be628481d35791a12bd38f414a90340f6817713d0df86632a0c04c83d8844593"
+  },
+  {
+    "destination": "lib/trackers/artrackv2/native/test/evaluation/itbdataset.py",
+    "source_sha256": "4908a6aad4c44fa9a3c171c3cc9a6704742e910124e67a99cf4a5a93e0585143",
+    "release_sha256": "624946e41f38c89a55436c1f331123c0015673d3b7a9f9e032baea5b16dff105"
+  },
+  {
+    "destination": "lib/trackers/artrackv2/native/test/evaluation/lasot_lmdbdataset.py",
+    "source_sha256": "f97f413757181875eacf6e8cfd105f31524f60bfc94abf5f145f675280b5fdce",
+    "release_sha256": "74011478ef1793e5f973945855a3578b7eb3984017f444fbed3246f5cbde3cdb"
+  },
+  {
+    "destination": "lib/trackers/artrackv2/native/test/evaluation/lasotdataset.py",
+    "source_sha256": "e7e89e49842be3ae134702563fe405ed360ca41a417760e0174c41eeeb22b4e4",
+    "release_sha256": "e9b3e11b7ea2eba59d8b035e5e06eb596fa0ccfdd7a0b68725ebf5be5c6fc634"
+  },
+  {
+    "destination": "lib/trackers/artrackv2/native/test/evaluation/lasotextensionsubsetdataset.py",
+    "source_sha256": "015a97a79ec8ee52ce4b3671b7a6098a5ed7c264bdc0c65b154d0ad995eb098e",
+    "release_sha256": "4db25dfb9fa69c3bacabe81ce5ec1d937abf908a08ecf301993f1e86fb3be6a8"
+  },
+  {
+    "destination": "lib/trackers/artrackv2/native/test/evaluation/lasotfulldataset.py",
+    "source_sha256": "fe784ce61dd9dda788444df307e2a03d412c5697d38262ad25d6761abc6b8c96",
+    "release_sha256": "5f60ea6da5f3899ef851ca12b4a5de198c91c8b77440845cba8e0244c16e8dbd"
+  },
+  {
+    "destination": "lib/trackers/artrackv2/native/test/evaluation/nfsdataset.py",
+    "source_sha256": "c8c25c48365c9920d3c42c7b18418b35a8100849b52bf5a9c531228227d8943d",
+    "release_sha256": "004644b34e849adfaa36df1377e5ad1590b2220dcc98d64fd63765e84542cdfa"
+  },
+  {
+    "destination": "lib/trackers/artrackv2/native/test/evaluation/otbdataset.py",
+    "source_sha256": "806f517b559289961cfd685c53908bb9c41dc51adda9ca560c0bb92e17a74e2a",
+    "release_sha256": "8461cf81397379c0570ef61cf617abebc933b4bd141795ae17950a1f0b8312d4"
+  },
+  {
+    "destination": "lib/trackers/artrackv2/native/test/evaluation/running.py",
+    "source_sha256": "5d732454a59cbaa8b2d6dd92b6a3f2d958accdb8390bbdba77017cd8af9cf4a3",
+    "release_sha256": "672801aa5925c868ef3a61afa396ff85c0f3a066466ccf917a890f79f7e25266"
+  },
+  {
+    "destination": "lib/trackers/artrackv2/native/test/evaluation/tc128cedataset.py",
+    "source_sha256": "9211bd2a9f72b858e0adfe2f8b1716f46de2fbdf5cd2d2d17d0bda70ce3e9086",
+    "release_sha256": "102e6e088dd8f6a0a3f2cbfd03896c56a4ed5f08ebe83ad44313449ced673ba4"
+  },
+  {
+    "destination": "lib/trackers/artrackv2/native/test/evaluation/tc128dataset.py",
+    "source_sha256": "1c17a691b695861647d530cbc64e35da1269de418f4a5844428e08289f9e082e",
+    "release_sha256": "6a81d8d3e9a8cbd5b176ff97407c2d925cb086bd855122e196647c8ca6ab18aa"
+  },
+  {
+    "destination": "lib/trackers/artrackv2/native/test/evaluation/tnl2kdataset.py",
+    "source_sha256": "8f3c519e99ca25a210abfaa4a2d51176d278e1d38b367f765fd34eba287e75fc",
+    "release_sha256": "ddea5dddd7ac20d762f98045e1e9d17681c3f4d6aaba1b0c1cd9155448f6cb2c"
+  },
+  {
+    "destination": "lib/trackers/artrackv2/native/test/evaluation/tracker.py",
+    "source_sha256": "b75203278fd606f4aa269ed83e3d7baa980bd31db940e6f86ae16ad4204702c2",
+    "release_sha256": "e65dce94b5f189d7f56a6af35b10ec631e345e5c2a5040d71918f40e144bf09f"
+  },
+  {
+    "destination": "lib/trackers/artrackv2/native/test/evaluation/trackingnetdataset.py",
+    "source_sha256": "9744e4be842168f5a314f1089fcf0715309e239a93a8a62e7beb49cf0c1e4247",
+    "release_sha256": "8e9e50fae75fcfca8ff0de48bc78359e5592f8e775da65acc5bf2734eba88db9"
+  },
+  {
+    "destination": "lib/trackers/artrackv2/native/test/evaluation/uavdataset.py",
+    "source_sha256": "09aecb342019da77c16d5b1c849169869ffe78540cca7f61eba0ac735fb20f75",
+    "release_sha256": "e2d713a5af19abe14c4cd4fa7bdd6cc41fde789c5d7b8b100ffa76256752d23b"
+  },
+  {
+    "destination": "lib/trackers/artrackv2/native/test/evaluation/votdataset.py",
+    "source_sha256": "d4d30f8e0c04493e35b5cd19ebdc75c003515223c31132718b85bda82b2f368b",
+    "release_sha256": "2a0d848a6ce51043979ea5f7d6e7c043c3e046bf7d61cfe3842f3866a92dc0d7"
+  },
+  {
+    "destination": "lib/trackers/artrackv2/native/test/parameter/__init__.py",
+    "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "release_sha256": "e0718c42f46630a38a53639dee024424d1603aa3aedbd73ddf0da70b56de90da"
+  },
+  {
+    "destination": "lib/trackers/artrackv2/native/test/parameter/artrack.py",
+    "source_sha256": "b328bffe9c4351bec68e4fcb4f5c6958015b1ccee5b62692fef72b69b120c3a5",
+    "release_sha256": "c683f44bc716477c99fc249f44976fc780806704a852b1f7b825c804d6503254"
+  },
+  {
+    "destination": "lib/trackers/artrackv2/native/test/parameter/artrack_seq.py",
+    "source_sha256": "ef1e8d5b41b42be14a15aa17784a92825ac3eab2717e3ed4f36084adc3c97b20",
+    "release_sha256": "5ac024537a6504a025feb4cd1b543617a3ac397e256bd3ceea9bea3b2a183120"
+  },
+  {
+    "destination": "lib/trackers/artrackv2/native/test/parameter/artrackv2.py",
+    "source_sha256": "8d6f36a1704e7b0b7fdf4afed4ea3fe8274a09d465288aa4d79827c0ba3eba4e",
+    "release_sha256": "d4061f7a18141336a86892bd09c56ec2123ea9323257120795c46d3cc6f3e855"
+  },
+  {
+    "destination": "lib/trackers/artrackv2/native/test/parameter/artrackv2_seq.py",
+    "source_sha256": "0f952d315d17371d3dfb4f827f3cd99471d8392fab185270245291a2bab55c13",
+    "release_sha256": "bf2a54b469bf90cc75eb862a377371bfcfcb0f83af942b5876e90e6cca63118c"
+  },
+  {
+    "destination": "lib/trackers/artrackv2/native/test/tracker/__init__.py",
+    "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "release_sha256": "e0718c42f46630a38a53639dee024424d1603aa3aedbd73ddf0da70b56de90da"
+  },
+  {
+    "destination": "lib/trackers/artrackv2/native/test/tracker/artrack.py",
+    "source_sha256": "de2333c1ef01f2e4939f111f38181a368321481550aebcf2fa0216617455061b",
+    "release_sha256": "50e9643c28be1f55afe74194090cd8a0c799c8ea166e87d9f47339ff9862f405"
+  },
+  {
+    "destination": "lib/trackers/artrackv2/native/test/tracker/artrack_seq.py",
+    "source_sha256": "d4e75f5a7db6f25634d6f658d94c2efc48eaae5646792f2fafc78a26a259162e",
+    "release_sha256": "3267c6500356b28c726640858cabfffae5acfa6b57698158373a11f1fad0217d"
+  },
+  {
+    "destination": "lib/trackers/artrackv2/native/test/tracker/artrackv2.py",
+    "source_sha256": "8f0e8e6b95cd7cc00301725e48632f8052daec7e03a6e29c997ea06d7e9a6959",
+    "release_sha256": "813da543bd39e997584f2262b9c01af83ba87d186fff2c32a402af67173f3777"
+  },
+  {
+    "destination": "lib/trackers/artrackv2/native/test/tracker/artrackv2_seq.py",
+    "source_sha256": "97818dcbb0e279c07cb2d114a0041483dfa152c338c192e034081ab0679f973f",
+    "release_sha256": "037d01f0bc46c34bbfa4f69b96a24ab82d0754c635dbcbd3e0c5223b72f4160b"
+  },
+  {
+    "destination": "lib/trackers/artrackv2/native/test/tracker/basetracker.py",
+    "source_sha256": "c31ba2d4c18a04d56bf2ed6a3862bc0a140b88b86cf8aefc2689bc728884899c",
+    "release_sha256": "20452d0166360d2203b8c4a3e113351bbcf071e204c78b726fb513cdfec487e4"
+  },
+  {
+    "destination": "lib/trackers/artrackv2/native/test/tracker/data_utils.py",
+    "source_sha256": "718742b16123dcd8b8fb16baeb31f104e6d70fbe0ec1c383b7f61f66b3469a85",
+    "release_sha256": "a367b981ab01b3ee9fc660c8f3c4c66d8dfb6e6e89e1e54c971fefd21393f2f1"
+  },
+  {
+    "destination": "lib/trackers/artrackv2/native/test/tracker/vis_utils.py",
+    "source_sha256": "23ebd63c11114809c8a3eb7cf0d56e94ea4d239e391f9acc781839c5a8a8e97d",
+    "release_sha256": "505aac017e184302b9b5c02161fcdd7db6241959932f8c0d8483e005bb5dc54e"
+  },
+  {
+    "destination": "lib/trackers/artrackv2/native/test/utils/__init__.py",
+    "source_sha256": "b6fcf48d63dc76670c6f97ed1d7c2f9a7e46e63fe9d379b3fe9ea5794c4b6d0e",
+    "release_sha256": "9de95f1633db61a51a7523ef08e17499058b577baf4833ae415a43c78646d930"
+  },
+  {
+    "destination": "lib/trackers/artrackv2/native/test/utils/_init_paths.py",
+    "source_sha256": "22491a85b3476c7f4629d92ae50635ce9518f4cd1119aec18c67f562e68647f7",
+    "release_sha256": "64d8ec78da92be102879b223662dbfd2c758f0b970146dcc0603da060ec416cd"
+  },
+  {
+    "destination": "lib/trackers/artrackv2/native/test/utils/hann.py",
+    "source_sha256": "94de2151485d5911797afc5a2a431a4dcf99c6b293835b5b2d86bb27945bd504",
+    "release_sha256": "82f60856db370a6d840a2928a66aa5023ecd72f7f187478806bc4df724c28fe8"
+  },
+  {
+    "destination": "lib/trackers/artrackv2/native/test/utils/load_text.py",
+    "source_sha256": "e7e1890828f3d4865c26785f66a26b01f990db674de6c0d2c22ab763807fb21e",
+    "release_sha256": "f9e8cc7941bfd71276096bd7d352ac84bc40c06585da6aad1a8c2c74641be2d7"
+  },
+  {
+    "destination": "lib/trackers/artrackv2/native/test/utils/params.py",
+    "source_sha256": "2083a18a1099c4d2d9b6fe3dc44b67dacefda24af897a06b16a8b69dab57bf80",
+    "release_sha256": "fbe42a144a009cdda4842164f24ca72a81b912e42045f9ef5986fe0fad098aea"
+  },
+  {
+    "destination": "lib/trackers/artrackv2/native/test/utils/transform_got10k.py",
+    "source_sha256": "3dc79448b9500cc8cb731dc6cd7c7a3e5b6b6d77f9cd4439b1cb79de05b7725c",
+    "release_sha256": "069213b42f069ef527aa69c965d69bdbc343383b0ea2c3656da92af176cd3638"
+  },
+  {
+    "destination": "lib/trackers/artrackv2/native/test/utils/transform_trackingnet.py",
+    "source_sha256": "4158b3e9e565b4d2c763636b165ef416f35f2445c088e7205c69ec99fc571452",
+    "release_sha256": "a844068d40983d13dcec5947e1881d7455475866e47d53634128fbb1b5e7814b"
+  },
+  {
+    "destination": "lib/trackers/artrackv2/native/train/__init__.py",
+    "source_sha256": "c03599fae7c73b1f55dbf36dd7c441923a2784938bd42b8182eefd7f78cdddb4",
+    "release_sha256": "5b3a586a23b5582e12d8b2d3d47fdef6547830a6d8bf8049cde1ace59428e071"
+  },
+  {
+    "destination": "lib/trackers/artrackv2/native/train/_init_paths.py",
+    "source_sha256": "271f9581156d3a0508b0d477fb39b8d259addfc9f305fe11eefaa3df6165d6dd",
+    "release_sha256": "8c3d9174630de1e68309c12131bc4f84997fb21d589fb6541f7ed13953f11a21"
+  },
+  {
+    "destination": "lib/trackers/artrackv2/native/train/actors/__init__.py",
+    "source_sha256": "aba548c3950a731f49e3f419ad9afa7c369052927fd9d7246b6fd72fb37a0a4b",
+    "release_sha256": "92e9030c907dc72d948564350343dc05876b77f2466f40feef219964bcb0ff0d"
+  },
+  {
+    "destination": "lib/trackers/artrackv2/native/train/actors/artrack.py",
+    "source_sha256": "1be0fa5d10b40e9da8cb7eaf598f8d911e4a39ef255f64f5b3f6ac9034e616a1",
+    "release_sha256": "03da1b1b31098e75979ba0290e55e50823a8aca11c85f0fb5dc2153b5badd67b"
+  },
+  {
+    "destination": "lib/trackers/artrackv2/native/train/actors/artrack_seq.py",
+    "source_sha256": "e05819998c0c5a9d879972a0c62eededc9eb93cd916f0ac6e28b86fc8642f385",
+    "release_sha256": "b5470406186bd736a0e51cdfd8fc5e99f7cb4b359f222004bfb55d4500bcd397"
+  },
+  {
+    "destination": "lib/trackers/artrackv2/native/train/actors/artrackv2.py",
+    "source_sha256": "cc01d7a183a14b1b599de9d261f7e40e06a8e204cbe771c8699334509f43080d",
+    "release_sha256": "04106778cf434252765f4283055c3e4f7571f3ff5667c3298c98d17ff7149de6"
+  },
+  {
+    "destination": "lib/trackers/artrackv2/native/train/actors/artrackv2_seq.py",
+    "source_sha256": "f99e2e5efb582dfe102226689c3caf156c3eee7606ea1cc84454f7da8ee4728a",
+    "release_sha256": "6dfd370ed1b0d98cbbdd37d0830932f25ade618d9031bbcbece1f731dac128f2"
+  },
+  {
+    "destination": "lib/trackers/artrackv2/native/train/actors/base_actor.py",
+    "source_sha256": "b0718f6379823121c571043a2a0c20a050939bef5d8174ee067fed3993b82c18",
+    "release_sha256": "5d1086894b66c0921e0a487b6b00770a46ce8573d3a1c0bfd63cc4d90f4d93bc"
+  },
+  {
+    "destination": "lib/trackers/artrackv2/native/train/admin/__init__.py",
+    "source_sha256": "7df9707716883861b867a5b69b3c19c66d58d5a4cbf2bd5fe9bf4acd54eff033",
+    "release_sha256": "9f9aa953acd69ed95c3b2a3afcec4f071d99c0f9461484d5203c4e90c1491017"
+  },
+  {
+    "destination": "lib/trackers/artrackv2/native/train/admin/environment.py",
+    "source_sha256": "ac842ef5423387923eff2eb39ad19235b5f60f161b99e26c67fd950fc2726e27",
+    "release_sha256": "5f1c5744ae7d501bf0cd5d67bb3ccb7f73b7bed316a986b3ef5cab437c09c066"
+  },
+  {
+    "destination": "lib/trackers/artrackv2/native/train/admin/multigpu.py",
+    "source_sha256": "8cdb5ae2a3de52ca3ac7511d9d54cebcdc2ce6531fee6de53c46ef1521d344b4",
+    "release_sha256": "65c7ad4f532e698c490b00c410bf738a9a7919850aaf622b1acab8c71e633109"
+  },
+  {
+    "destination": "lib/trackers/artrackv2/native/train/admin/settings.py",
+    "source_sha256": "096ff76e7aa55fd604a69649236757bd96e5662cdbae8fd298cc0ac215fe53ce",
+    "release_sha256": "797d47757537cf63644251ff098c21c9e37ff7e9820b226d991acc7a6b01d6b8"
+  },
+  {
+    "destination": "lib/trackers/artrackv2/native/train/admin/stats.py",
+    "source_sha256": "d7ee8a685a068a581208b5ef010c5749bdfb9262b6ab73059a432ba5658a1116",
+    "release_sha256": "02a6f2339e22ae9c6c60c81ec3db0c2f95f99417ffc768b21c929a573b434381"
+  },
+  {
+    "destination": "lib/trackers/artrackv2/native/train/admin/tensorboard.py",
+    "source_sha256": "c6bca0a7383e85ad4618cf76ef37a9cb66968b0eaaa12b84191889f5fbc2cf82",
+    "release_sha256": "e0718c42f46630a38a53639dee024424d1603aa3aedbd73ddf0da70b56de90da"
+  },
+  {
+    "destination": "lib/trackers/artrackv2/native/train/base_functions.py",
+    "source_sha256": "cd8d358b08a9d46db82cdec6d9e60a941734d937a47e5d71942924a9f261f570",
+    "release_sha256": "62077f2e14c7edfc47cb95e0d6a2134270a7d2f51b480bcc5a90bcad7bfbb20a"
+  },
+  {
+    "destination": "lib/trackers/artrackv2/native/train/data/__init__.py",
+    "source_sha256": "81f130648f77240bf96ca11338c46bd0ca6b6d362297c934eaeb38e64d36d943",
+    "release_sha256": "4f3dcf21d52757237156a25cd83101dbfbcd887aebdaa5cadd98f356d79ae74e"
+  },
+  {
+    "destination": "lib/trackers/artrackv2/native/train/data/bounding_box_utils.py",
+    "source_sha256": "2a7a47e77ee3ae21cc050bf66a62ad8812a79d7673d8e3a44a7640dea066001a",
+    "release_sha256": "6741e86f74744882c98323f357fffb320a5f4bdcea6000310ad656719a72ace9"
+  },
+  {
+    "destination": "lib/trackers/artrackv2/native/train/data/image_loader.py",
+    "source_sha256": "84fcba61cc3996cf03cf76deb4a00fd031ce24bfe12cf503e73dabffd4c616a7",
+    "release_sha256": "3f4807c81405f94dccf17c6bcecbeba827b150de16693011ea7fdf0edc8ea4f2"
+  },
+  {
+    "destination": "lib/trackers/artrackv2/native/train/data/loader.py",
+    "source_sha256": "66536e0b1854fef7ed31ae910df083683cfb082c6d5699ce6c1cc358c43cb463",
+    "release_sha256": "f7af2b73fa0197c2210ef1cf3e962ecde01bda3f0dbca31daece5fd6c5a459d7"
+  },
+  {
+    "destination": "lib/trackers/artrackv2/native/train/data/processing.py",
+    "source_sha256": "66c3b0c387fc841390d41443c0376780354e8acaf7b3685152ec707b57187bf9",
+    "release_sha256": "a57dfbe159483bf1c0be326cc692d69b3dbfd9a854bb3a1a08f2b167e7cf0c40"
+  },
+  {
+    "destination": "lib/trackers/artrackv2/native/train/data/processing_utils.py",
+    "source_sha256": "a2406f133c78e8685ba197c95a5a8a8796677ff3c3f03d067cbaff737a05c2f7",
+    "release_sha256": "7051bb9678a137ca64242b1b1a44d4098266b1ea4ae669daae25142adf6d169b"
+  },
+  {
+    "destination": "lib/trackers/artrackv2/native/train/data/sampler.py",
+    "source_sha256": "45641f0dad7fa4d86aab57a39baddc7461c18f6eeff9cf934d4573e92ea05865",
+    "release_sha256": "34781d85560e682eddf186004642a2a1ec6b958ad5e2a6fb1d740ceeb0b5fe89"
+  },
+  {
+    "destination": "lib/trackers/artrackv2/native/train/data/sequence_sampler.py",
+    "source_sha256": "a44caca5185c1370c8fda35e7e2031f67e32a317856353e0ea048c94ff392130",
+    "release_sha256": "d450a8e62cfaf1b0bdd5cc5f16a11b4b0fa5bcec4f567008bcaf7ad6fea6b4d7"
+  },
+  {
+    "destination": "lib/trackers/artrackv2/native/train/data/sequence_sampler_v2.py",
+    "source_sha256": "9e7a5c613907860fbbde65e2cdcbca54dfeb9c68c3c24c38cdfc2fa3816ee030",
+    "release_sha256": "a41d5bbceaca03bbb00e69e209a8394a5bb1841c13b210440dbedfb2a2de388c"
+  },
+  {
+    "destination": "lib/trackers/artrackv2/native/train/data/transforms.py",
+    "source_sha256": "02691348490b5a1f19d0c8d184278fbcda67fb0b37a374f1722516a4f859ba57",
+    "release_sha256": "43c185a05671286cbe8079dd2974cfe13176c01d81f7cd3f337943e9fc470d28"
+  },
+  {
+    "destination": "lib/trackers/artrackv2/native/train/data/wandb_logger.py",
+    "source_sha256": "6e6180833c133e464458ff5e5837c2b01e5df63a3ee8b6c8490761f7731804cf",
+    "release_sha256": "289ce683c67aed6b47286c6c50c8b9d0ebf627ce656c2c95df537f01a5ecdafb"
+  },
+  {
+    "destination": "lib/trackers/artrackv2/native/train/dataset/COCO_tool.py",
+    "source_sha256": "e2aff3600f4e40f0f5b795b50dff851546976e38ec0953edcfddb3b02ca4b581",
+    "release_sha256": "f7237ed5b01e654e5d4605d839859da0bfb310e47abb29372eb4ff2e1931aa1a"
+  },
+  {
+    "destination": "lib/trackers/artrackv2/native/train/dataset/__init__.py",
+    "source_sha256": "4f9e15a8a7b0501680e54b39195597514a1cd079478a505bcf85af63a3a52bd1",
+    "release_sha256": "0c98b0058988f47aa37beb211a8ef47257e428431ae2ce53dc3741c67eecab48"
+  },
+  {
+    "destination": "lib/trackers/artrackv2/native/train/dataset/base_image_dataset.py",
+    "source_sha256": "1ddcbfe79578e990860218b9b241fc7b19f0ea54a7f1a4899dee5c2d4c2980ae",
+    "release_sha256": "3a250e3cc13a009a2b399fda6036debcd44374f07b206dc405963bb4676ea604"
+  },
+  {
+    "destination": "lib/trackers/artrackv2/native/train/dataset/base_video_dataset.py",
+    "source_sha256": "84084446399d659a4026ff5bd6e58dd7ea5e4b76cc1c371969641c4f1ff68496",
+    "release_sha256": "77224f09bcf8a0a3ea69942d9300192169e173cc12aacb6dcf48f8cdfba174a1"
+  },
+  {
+    "destination": "lib/trackers/artrackv2/native/train/dataset/coco.py",
+    "source_sha256": "23b6ced1ee6e4a84666afda5f7e6e1486a7617458efccd374ef54df54baa7c8e",
+    "release_sha256": "2032f14b29415b70396ef787d41640a47710e9502241a01950939e337c90d4f0"
+  },
+  {
+    "destination": "lib/trackers/artrackv2/native/train/dataset/coco_seq.py",
+    "source_sha256": "7fd1a90385343acf0d66ff9eea75f951d7902a54bd9ecbb454b17db38d95791a",
+    "release_sha256": "bc1085ceff82acfffa954b55f4d0127a124912d7b5d8c0bbb12ceb2f5a03abe1"
+  },
+  {
+    "destination": "lib/trackers/artrackv2/native/train/dataset/coco_seq_lmdb.py",
+    "source_sha256": "a54107d6448e93b51c1f5ebadd9e8e0cb7ecb4db624ec794fbb6969022b09392",
+    "release_sha256": "809fca6766ba0494ac30cfb7af8d3eeb401629d9d3418549680fcaf14fc1d5f5"
+  },
+  {
+    "destination": "lib/trackers/artrackv2/native/train/dataset/got10k.py",
+    "source_sha256": "d7334005fdc125dea4e7d0bda6f77302eb654ffb5a5ebcc4cb5abc59eb8bdd57",
+    "release_sha256": "454df3c02512e3f4780e858c65b1fa563a0cd9ef11884586df3b3ba84fad9404"
+  },
+  {
+    "destination": "lib/trackers/artrackv2/native/train/dataset/got10k_lmdb.py",
+    "source_sha256": "38bd8b7c1ea7b15abb5c61b198062f83bc0ae0dcf51d58623f6a0c728d52d77c",
+    "release_sha256": "c468ddfff76d90e92ba0af8bee6940ec0ee7807e84ea4f7ae4729ea548199bc5"
+  },
+  {
+    "destination": "lib/trackers/artrackv2/native/train/dataset/imagenetvid.py",
+    "source_sha256": "9b8c89933cbe1a5066973481e3f8730c1daaa9fdd63cd4c9d86e07a98b947d99",
+    "release_sha256": "d213007989632102670463adef465c8374e731d980031ed4a3d24bc21a0bb637"
+  },
+  {
+    "destination": "lib/trackers/artrackv2/native/train/dataset/imagenetvid_lmdb.py",
+    "source_sha256": "ffc70ced81cd40fdabe66532d5b31cdf14bd72e8d569bae0215ae1463e5b1451",
+    "release_sha256": "9f3b413b777353d24bf361eed92f588429cbb8c5b6b018daf4bbbc93e8c5c39e"
+  },
+  {
+    "destination": "lib/trackers/artrackv2/native/train/dataset/lasot.py",
+    "source_sha256": "93d9a477d187f94564513fc819d03b335b4a5c72ac06b8060295e57ea8cdffec",
+    "release_sha256": "01a3134d8278154bd87d353bb37e40796ef5709c9635d0a63ffc23ab0ffe79bc"
+  },
+  {
+    "destination": "lib/trackers/artrackv2/native/train/dataset/lasot_lmdb.py",
+    "source_sha256": "56b5c431f9f46d0e623c6fa9c679f013d3b25a0698c26587f0dc08907504992c",
+    "release_sha256": "83f61cceb1a7bca19fc0976d8b4865f996674f1972e44e9fd415a9225355abcb"
+  },
+  {
+    "destination": "lib/trackers/artrackv2/native/train/dataset/tracking_net.py",
+    "source_sha256": "db83b9dfbab52c5715b4bcb3afdba81742af1a7bce7dc425cf66c36a44d9b778",
+    "release_sha256": "a492324c708ffdb01f3b0aab051f8f6705c27096cc3f4bb6ba2415c47f49b8b4"
+  },
+  {
+    "destination": "lib/trackers/artrackv2/native/train/dataset/tracking_net_lmdb.py",
+    "source_sha256": "9ea6b324b30975272ae1fee1e86f9d002521a7edc437345ea2583700ef90c345",
+    "release_sha256": "d793ab1cf0e5fde2eba4bf29a50d7fce62117edfd356c9435e504f2cb349a081"
+  },
+  {
+    "destination": "lib/trackers/artrackv2/native/train/run_training.py",
+    "source_sha256": "e637803f81ee231ef16dc3b977277275bbb0fbf956b06d673bbfab6cd77891f2",
+    "release_sha256": "30113902cf18fe267c9059a79138fd15fbf8c89b94679b259f0e902aeef8837e"
+  },
+  {
+    "destination": "lib/trackers/artrackv2/native/train/train_script.py",
+    "source_sha256": "2be2ac2474ac85d7de0322b0f8087c0de6b604b092df1f98ae84d936f170479d",
+    "release_sha256": "cb26e7fa62474b60deef512ed7708253f179dea566a4e566d1928456d456c526"
+  },
+  {
+    "destination": "lib/trackers/artrackv2/native/train/trainers/__init__.py",
+    "source_sha256": "854a8a1c1c10024bb4a28c7df7801df67fdeda6b38a9865b99159e12585345dd",
+    "release_sha256": "e31c80ae032ad739428efd3c4059533799331bfd024404df9515bbef83d6bb93"
+  },
+  {
+    "destination": "lib/trackers/artrackv2/native/train/trainers/base_trainer.py",
+    "source_sha256": "9ac2e15d26f0e2f81dae56d679198876e817e6b40bf099d7e5c6390db72de5ab",
+    "release_sha256": "47e7e7410e2de216ed4c17b86a27e0fd4e370b1a8349183e8624f2840dc476ec"
+  },
+  {
+    "destination": "lib/trackers/artrackv2/native/train/trainers/ltr_seq_trainer.py",
+    "source_sha256": "4def0eceb9d129d8ffbd76214a7f1ee1cec37c55c63b23a179f07feb0b0f6a60",
+    "release_sha256": "2018c682fabe3d261a5c7952b4788037bb88cf718894010daad63fc470943a90"
+  },
+  {
+    "destination": "lib/trackers/artrackv2/native/train/trainers/ltr_seq_trainer_v2.py",
+    "source_sha256": "5fe2a0a6e1f13392eed1756a7f68373ce084e78bf48ddd60c2b228d451c2136b",
+    "release_sha256": "03e60fc38348b08d402514d4cf2ad4f347080bc64572356c2cfc0ce2539bd430"
+  },
+  {
+    "destination": "lib/trackers/artrackv2/native/train/trainers/ltr_trainer.py",
+    "source_sha256": "48804374e020e099fe28c31dad2a08aa94684ad62e3127cc6cf82945a6615616",
+    "release_sha256": "298020aa6c3af5a0f82336933ec47ccd39b4d0fb4055c00f8cf0e9bc80a33655"
+  },
+  {
+    "destination": "lib/trackers/artrackv2/native/utils/__init__.py",
+    "source_sha256": "8d3e5ebd1b1a92f835f17ef8c4085a530bec71f0848edd01ad1f8cb2c95c7a45",
+    "release_sha256": "7071162f908862b2d46ca7cb23f82743794deed333aea5473e7602a49baa4d39"
+  },
+  {
+    "destination": "lib/trackers/artrackv2/native/utils/box_ops.py",
+    "source_sha256": "9eba02ee2aecceff1f32d4d6798e55b08bdb7843a173c271d97c1e88107d22c1",
+    "release_sha256": "93262c591dc5d5f1fe2efd9d0522a8b6b4a5b8ab8bb6db9c8d405ea1a84654dd"
+  },
+  {
+    "destination": "lib/trackers/artrackv2/native/utils/ce_utils.py",
+    "source_sha256": "ba0c7320089d044ee4193076590ee3859577de66f865887ba659ab5922b655fd",
+    "release_sha256": "c20d5cdfc627aa86aa8a8ceca0b36eebb1a06eeaae79d3877513401caf158c67"
+  },
+  {
+    "destination": "lib/trackers/artrackv2/native/utils/focal_loss.py",
+    "source_sha256": "b393973c3288e95d99f027b23ce5b1e5a9fa4c5df8b12112fa4dce0d1f55e498",
+    "release_sha256": "60779c7149574475d346e44c09bc71b44ffa08396610d4d27bb32c4c5fdaaece"
+  },
+  {
+    "destination": "lib/trackers/artrackv2/native/utils/heapmap_utils.py",
+    "source_sha256": "09e39782e4783d43ad0b41461ca582d25766ff23e9f59248e6d894630f2dabf9",
+    "release_sha256": "f768e46e8fa8d08dcd34e598c72e31e1dfbc5764c9e758fd2b4dd6ed76033c41"
+  },
+  {
+    "destination": "lib/trackers/artrackv2/native/utils/image.py",
+    "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "release_sha256": "e0718c42f46630a38a53639dee024424d1603aa3aedbd73ddf0da70b56de90da"
+  },
+  {
+    "destination": "lib/trackers/artrackv2/native/utils/lmdb_utils.py",
+    "source_sha256": "0d311b5bc4b0a5cba018059054578e518a786c08196a582f6f3f8949cd6e3993",
+    "release_sha256": "c31ade3aee726dcbef698bd04e35ec77b2555094e2d882a876ca96dd7a8838f6"
+  },
+  {
+    "destination": "lib/trackers/artrackv2/native/utils/merge.py",
+    "source_sha256": "149ae5bd4758f85ce30c35ea6054a6daff8b594621c4d648a34c91e6adf7be08",
+    "release_sha256": "463121986ca020f63888810a1a856378c6462675453a2827b5df05e958be21b8"
+  },
+  {
+    "destination": "lib/trackers/artrackv2/native/utils/misc.py",
+    "source_sha256": "84d7a2d1d758d95a7ecb5110f652b650eddd621be35f2cad5bccd30305edf625",
+    "release_sha256": "4aac44ec954c7b6ccdc9f740f03bf3ce4d7f7c0a82eb83c978bc9209d1921444"
+  },
+  {
+    "destination": "lib/trackers/artrackv2/native/utils/tensor.py",
+    "source_sha256": "526729efede32e08be41db1827b0c15f32d5edaa590dcdf26eb4159bffbad135",
+    "release_sha256": "7c974f1ca88b176ef0d60adc5d5934a46a3b661665a041abd848b297a2244768"
+  },
+  {
+    "destination": "lib/trackers/artrackv2/native/utils/variable_hook.py",
+    "source_sha256": "7cf329946a424a02ccd0893c6678945806a197ac1243d9232a67387168209837",
+    "release_sha256": "d1633f76697ee2099db740e1c207a1b98af1e9e710e4175e2f77f292b986b728"
+  },
+  {
+    "destination": "lib/trackers/artrackv2/native/vis/__init__.py",
+    "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "release_sha256": "e0718c42f46630a38a53639dee024424d1603aa3aedbd73ddf0da70b56de90da"
+  },
+  {
+    "destination": "lib/trackers/artrackv2/native/vis/plotting.py",
+    "source_sha256": "7b36771b8d5e622bf069e43b0a1adf7290063e9c7d632a7b2220c23247d49a48",
+    "release_sha256": "c60bba1c9112bb218763f298ac4fe0894ccba0bd2eb0368aefa28e1835e8eb5b"
+  },
+  {
+    "destination": "lib/trackers/artrackv2/native/vis/utils.py",
+    "source_sha256": "132cc586b48efe6bf2296c752593133bb1e13f0ac84e15ddf7f3d02c69753c68",
+    "release_sha256": "95856acea753545425af539780588221c6c779755e9377f66dc5c5dce0edab68"
+  },
+  {
+    "destination": "lib/trackers/artrackv2/native/vis/visdom_cus.py",
+    "source_sha256": "8ad65740ac78aaddad82dc2a40fc8a292745d9b69a88116a1ca6075e963c14f1",
+    "release_sha256": "57b147bbebdbd452bf59b2c769647bb3e72ff92ec9ee57107d295830fe0b830f"
+  },
+  {
+    "destination": "experiments/artrackv2/artrackv2/artrackv2_256_full.yaml",
+    "source_sha256": "5f8a9801b8179b2d183c47c83967f6524eb65886c1dd353ef1b69216bf5c83ff",
+    "release_sha256": "5f8a9801b8179b2d183c47c83967f6524eb65886c1dd353ef1b69216bf5c83ff"
+  },
+  {
+    "destination": "experiments/artrackv2/artrackv2/artrackv2_256_got.yaml",
+    "source_sha256": "1da63dbf6e6c5908f95228a2c45b13dcdf8d85656c9e6fec05ba963f65a5b990",
+    "release_sha256": "1da63dbf6e6c5908f95228a2c45b13dcdf8d85656c9e6fec05ba963f65a5b990"
+  },
+  {
+    "destination": "experiments/artrackv2/artrackv2/artrackv2_large_384_got.yaml",
+    "source_sha256": "4cdd49945e0f86d51ed68b310142a96b5539b625f750100c5fe09f609c96b670",
+    "release_sha256": "4cdd49945e0f86d51ed68b310142a96b5539b625f750100c5fe09f609c96b670"
+  },
+  {
+    "destination": "experiments/artrackv2/artrackv2_seq/artrackv2_seq_256_full.yaml",
+    "source_sha256": "9e6b0169fbf19aa50abc32da66e7269e2d39a295c2327c78b8d32b6e2a51ba04",
+    "release_sha256": "9e6b0169fbf19aa50abc32da66e7269e2d39a295c2327c78b8d32b6e2a51ba04"
+  },
+  {
+    "destination": "experiments/artrackv2/artrackv2_seq/artrackv2_seq_256_got.yaml",
+    "source_sha256": "b9ad6fe059cbe48b78705c5fe623905e740411ab0dc0b45e17f4cc61a75d5406",
+    "release_sha256": "b9ad6fe059cbe48b78705c5fe623905e740411ab0dc0b45e17f4cc61a75d5406"
+  },
+  {
+    "destination": "experiments/artrackv2/artrackv2_seq/artrackv2_seq_large_384_got.yaml",
+    "source_sha256": "41d61ce02646c86dd7cd784b6fb20970f1c85ef09252f775a12d6de195c9c660",
+    "release_sha256": "41d61ce02646c86dd7cd784b6fb20970f1c85ef09252f775a12d6de195c9c660"
+  },
+  {
+    "destination": "lib/trackers/ostrack/native/__init__.py",
+    "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "release_sha256": "e0718c42f46630a38a53639dee024424d1603aa3aedbd73ddf0da70b56de90da"
+  },
+  {
+    "destination": "lib/trackers/ostrack/native/config/__init__.py",
+    "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "release_sha256": "e0718c42f46630a38a53639dee024424d1603aa3aedbd73ddf0da70b56de90da"
+  },
+  {
+    "destination": "lib/trackers/ostrack/native/config/ostrack/config.py",
+    "source_sha256": "e9234d2ba2bd6c359be92dcc2bfeba3e2cec53a1fe970a0b6aa7243ada71f58b",
+    "release_sha256": "b04819b157629e0c81051733f0b89c6d05d1e0c53f8a1dd8b2fcb6bb7bbe0e8a"
+  },
+  {
+    "destination": "lib/trackers/ostrack/native/models/__init__.py",
+    "source_sha256": "df95925ab16fac5bf5472084915702c5a71e0e5f0192754b82273f2ced9ac54e",
+    "release_sha256": "ce8e43f7d444ce99d22403577936c447eb50ace3aeb255d7aa9a56fe7869fc7d"
+  },
+  {
+    "destination": "lib/trackers/ostrack/native/models/layers/__init__.py",
+    "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "release_sha256": "e0718c42f46630a38a53639dee024424d1603aa3aedbd73ddf0da70b56de90da"
+  },
+  {
+    "destination": "lib/trackers/ostrack/native/models/layers/attn.py",
+    "source_sha256": "0d3d438799063fbca8f2c85e5a03f1922feb937a65903e5cccaa5bfbe6644ed8",
+    "release_sha256": "3a8ddf3992edcd3b4dc04319c2ebd73871923faf8e446001843d11235f187686"
+  },
+  {
+    "destination": "lib/trackers/ostrack/native/models/layers/attn_blocks.py",
+    "source_sha256": "3b5c243f552172cd34e71f75eebd73c8a6d2e0e6683d04062faf5b7737432646",
+    "release_sha256": "e31b7c5cb8937e0108d7437a36deab163a7db6cffb266b909e6c5727da897ddc"
+  },
+  {
+    "destination": "lib/trackers/ostrack/native/models/layers/frozen_bn.py",
+    "source_sha256": "58d610bfd226b3530c0b33d89c5aa1ef9ce1ac7bb2ec87a1462e0697a4fc814f",
+    "release_sha256": "66f600d5d5baf46abef8c81527929c4c5cea3f3451848e565e7c76629d1274a4"
+  },
+  {
+    "destination": "lib/trackers/ostrack/native/models/layers/head.py",
+    "source_sha256": "62cb2f363ea8bce491c9e6fc528076dd1e14c7d371ad69d6efd0b4062d063326",
+    "release_sha256": "d5c9acadf1ff646f3e8eaa39d6ef51f699f54f51530e38f59d6f156c345e0a22"
+  },
+  {
+    "destination": "lib/trackers/ostrack/native/models/layers/patch_embed.py",
+    "source_sha256": "e1452fdbc066599f97cf8da0a39c75d2fef3bf5ed534fc133ea3c9f7afb12753",
+    "release_sha256": "82c5da859467b06dd0095a4e076e13d020c44925c09c382af67353590f1d61e5"
+  },
+  {
+    "destination": "lib/trackers/ostrack/native/models/layers/rpe.py",
+    "source_sha256": "bf7400fbb3bf2ec820743ce9fc029eda4de8e2f903f4ed38ce8aca69b59bdf94",
+    "release_sha256": "84b7239983f8d952f8665e1a64eb40030d7c0510687e0c752e60ffe193dc298d"
+  },
+  {
+    "destination": "lib/trackers/ostrack/native/models/ostrack/__init__.py",
+    "source_sha256": "cd91075287dd952a707a5a5ab18f87e2a089f0203f7e9866bc1bd19ad92e43a8",
+    "release_sha256": "18ab0a34e064adc081d325c17dd04669c92ad0df6e615d6b7786c1e1e991eaf1"
+  },
+  {
+    "destination": "lib/trackers/ostrack/native/models/ostrack/base_backbone.py",
+    "source_sha256": "fbf7d1bc74b8595e3a0d9eeaf7ffd00259375cee1ad855195ae92660f870358c",
+    "release_sha256": "6933e119a162956af8e2f3ba38cdf6481b3c8d13400e7739c2a8b47db944219c"
+  },
+  {
+    "destination": "lib/trackers/ostrack/native/models/ostrack/ostrack.py",
+    "source_sha256": "9e58dca3839fd1a71d0e4491d51b9026aacd8f94947a1ab3ebca63b517b50a4b",
+    "release_sha256": "8119b9b3297778605ec19f799abe512c042d4375c34a11ce39da637fc1b97fdc"
+  },
+  {
+    "destination": "lib/trackers/ostrack/native/models/ostrack/utils.py",
+    "source_sha256": "32d6810111256558980c7a371f2cf4aebcf554a7f92f6e0d12723302fde6e20a",
+    "release_sha256": "1e016505a33fb74c3daf15d6d5420c7f32632766bf83fdb36add969549043a66"
+  },
+  {
+    "destination": "lib/trackers/ostrack/native/models/ostrack/vit.py",
+    "source_sha256": "a54507a18adf2a4bca26a74a73d5a114a1e3fad5ef5db53424d942cc621db882",
+    "release_sha256": "7d0101626dff66ab0395f183be27f967e0d5b7608c140c67375005ba32d7dfee"
+  },
+  {
+    "destination": "lib/trackers/ostrack/native/models/ostrack/vit_ce.py",
+    "source_sha256": "6c5d9d5324bf2b10efce6e9518d4e15016034189238c986a8bc20d320a7693d9",
+    "release_sha256": "3a8655f3da1d81ae4a2cffc0c47ac4b1118d63c88cb9b5774994e64b0eee8899"
+  },
+  {
+    "destination": "lib/trackers/ostrack/native/test/__init__.py",
+    "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "release_sha256": "e0718c42f46630a38a53639dee024424d1603aa3aedbd73ddf0da70b56de90da"
+  },
+  {
+    "destination": "lib/trackers/ostrack/native/test/analysis/__init__.py",
+    "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "release_sha256": "e0718c42f46630a38a53639dee024424d1603aa3aedbd73ddf0da70b56de90da"
+  },
+  {
+    "destination": "lib/trackers/ostrack/native/test/analysis/extract_results.py",
+    "source_sha256": "444345861cfc46a36e2577af42294544844149169f0745cfd89ad76a07178067",
+    "release_sha256": "3007cf39fb20e60918aa88d589bdf22b8194abf6c8afba90f20357acd6ca0224"
+  },
+  {
+    "destination": "lib/trackers/ostrack/native/test/analysis/plot_results.py",
+    "source_sha256": "f1b648bd4927f2743532ce7f5bd7be222320508422cdd766d1c0ab0258de06a7",
+    "release_sha256": "05505fd36c7413f55880417958e28fb1568542f3cc879d83e4f5194c3fd8a535"
+  },
+  {
+    "destination": "lib/trackers/ostrack/native/test/evaluation/__init__.py",
+    "source_sha256": "48dbd571ae98e8d848223df0a3cc1e1387704d267c0ba517f887fc6d01271362",
+    "release_sha256": "87a71c753950399e7cf14aa1669753b856b211cc94948c7dc460db4358e1c5f5"
+  },
+  {
+    "destination": "lib/trackers/ostrack/native/test/evaluation/data.py",
+    "source_sha256": "acd1bce532259371b68a4252bfa80d0fcd1bf8b2ad028d95b12e425c2210810c",
+    "release_sha256": "6b48d13d6723da8c41bf98978884a462562a94e82da50a43682f832eebfc4d4c"
+  },
+  {
+    "destination": "lib/trackers/ostrack/native/test/evaluation/datasets.py",
+    "source_sha256": "0e2e4d1402da228321e6e1b17845d865b3d8ea9c8426865d23ee10188e9622f6",
+    "release_sha256": "7773f90327e761c592154a4faf7a48a21f4755440aa9e2101cec2d9855578a22"
+  },
+  {
+    "destination": "lib/trackers/ostrack/native/test/evaluation/environment.py",
+    "source_sha256": "aa3c955ff636e535413840d39c4bcb95a6a3025f0929cb0fc546fbcdf058845b",
+    "release_sha256": "1797b1950533efa8e634ce9283f927f62b979ef04dc565602fe96b63776ff5aa"
+  },
+  {
+    "destination": "lib/trackers/ostrack/native/test/evaluation/got10kdataset.py",
+    "source_sha256": "292fde6cf4ec740dbaf73d77770b917e2b695c4e50d1055a38a65c95b5b1f72a",
+    "release_sha256": "2233cacf7b2efde1abf3a85fb6d8dfd08cba79719fa57289ae1a2783fa4fbb13"
+  },
+  {
+    "destination": "lib/trackers/ostrack/native/test/evaluation/itbdataset.py",
+    "source_sha256": "4908a6aad4c44fa9a3c171c3cc9a6704742e910124e67a99cf4a5a93e0585143",
+    "release_sha256": "f349f33793dccec07be481dd25669b0864ee544fcf75a503abd25d2c0e68e78d"
+  },
+  {
+    "destination": "lib/trackers/ostrack/native/test/evaluation/lasot_lmdbdataset.py",
+    "source_sha256": "f97f413757181875eacf6e8cfd105f31524f60bfc94abf5f145f675280b5fdce",
+    "release_sha256": "66d806f96786ce90b16d57b9c5f2fd0bd6f177c1f0fba9b4cd05d0637596f5b9"
+  },
+  {
+    "destination": "lib/trackers/ostrack/native/test/evaluation/lasotdataset.py",
+    "source_sha256": "e7e89e49842be3ae134702563fe405ed360ca41a417760e0174c41eeeb22b4e4",
+    "release_sha256": "6fc388422004e437cc8cc9011d9dc9dce6de972d5f1af079c4996559a44b86e6"
+  },
+  {
+    "destination": "lib/trackers/ostrack/native/test/evaluation/lasotextensionsubsetdataset.py",
+    "source_sha256": "015a97a79ec8ee52ce4b3671b7a6098a5ed7c264bdc0c65b154d0ad995eb098e",
+    "release_sha256": "1f8fd669977ee24e16dfb01ad82632fb6d098e9058e375b13f3e93e5d12c2551"
+  },
+  {
+    "destination": "lib/trackers/ostrack/native/test/evaluation/nfsdataset.py",
+    "source_sha256": "c8c25c48365c9920d3c42c7b18418b35a8100849b52bf5a9c531228227d8943d",
+    "release_sha256": "eb5c189c76dd1cc9d22b4e16609ae8e15745e42a3dbfb747872d0291922eaa53"
+  },
+  {
+    "destination": "lib/trackers/ostrack/native/test/evaluation/otbdataset.py",
+    "source_sha256": "806f517b559289961cfd685c53908bb9c41dc51adda9ca560c0bb92e17a74e2a",
+    "release_sha256": "d500ab0ab4941a215a165f0be78b1a12544b3781c50f2ca9884faf7f78ee3fc0"
+  },
+  {
+    "destination": "lib/trackers/ostrack/native/test/evaluation/running.py",
+    "source_sha256": "dd439407064001d48d939958b83cc920ca681c9922946181edec18db878449d8",
+    "release_sha256": "44515b0477867e144cc858de076d6ee60aa1a085c316d54e90a8ed00c54a268a"
+  },
+  {
+    "destination": "lib/trackers/ostrack/native/test/evaluation/tc128cedataset.py",
+    "source_sha256": "9211bd2a9f72b858e0adfe2f8b1716f46de2fbdf5cd2d2d17d0bda70ce3e9086",
+    "release_sha256": "023730aa855a7e2524ee3d575a003f1fc7983292c38eb74be44282b0c5057e8a"
+  },
+  {
+    "destination": "lib/trackers/ostrack/native/test/evaluation/tc128dataset.py",
+    "source_sha256": "1c17a691b695861647d530cbc64e35da1269de418f4a5844428e08289f9e082e",
+    "release_sha256": "dcf9310c768c3f670a2d513f8d8f09810665b75f422f452cc7d10d906e778708"
+  },
+  {
+    "destination": "lib/trackers/ostrack/native/test/evaluation/tnl2kdataset.py",
+    "source_sha256": "8f3c519e99ca25a210abfaa4a2d51176d278e1d38b367f765fd34eba287e75fc",
+    "release_sha256": "875e6bd148fad8b88d98ebb101302a46d6c4d058a630b571a78673491aa31fdc"
+  },
+  {
+    "destination": "lib/trackers/ostrack/native/test/evaluation/tracker.py",
+    "source_sha256": "b75203278fd606f4aa269ed83e3d7baa980bd31db940e6f86ae16ad4204702c2",
+    "release_sha256": "0016b447c3bc0dfd26969cfea0a1c809ea719af2324a10aa31a7c9ec5bfa56a0"
+  },
+  {
+    "destination": "lib/trackers/ostrack/native/test/evaluation/trackingnetdataset.py",
+    "source_sha256": "82b9a96572672c7f060bbe2bb53e870088844853b38c2db452e802f5325015bc",
+    "release_sha256": "53564219a4662296774e76b447501b7b95d943bdb55e4987ca77425d0dd99f39"
+  },
+  {
+    "destination": "lib/trackers/ostrack/native/test/evaluation/uavdataset.py",
+    "source_sha256": "09aecb342019da77c16d5b1c849169869ffe78540cca7f61eba0ac735fb20f75",
+    "release_sha256": "5fb3e4cb7837e0468df079b760280e9f36212c145c0d1d6f4ba7ea902e8e664e"
+  },
+  {
+    "destination": "lib/trackers/ostrack/native/test/evaluation/votdataset.py",
+    "source_sha256": "d4d30f8e0c04493e35b5cd19ebdc75c003515223c31132718b85bda82b2f368b",
+    "release_sha256": "3269793f134727cfc4c32afd58e3bfc19ba8c4b828163c9792bc1aebd13723f3"
+  },
+  {
+    "destination": "lib/trackers/ostrack/native/test/parameter/__init__.py",
+    "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "release_sha256": "e0718c42f46630a38a53639dee024424d1603aa3aedbd73ddf0da70b56de90da"
+  },
+  {
+    "destination": "lib/trackers/ostrack/native/test/parameter/ostrack.py",
+    "source_sha256": "b28d2d0f173e688efe9aafc1e50468e5027c8a57985a41c9d0fbbe9c127f027e",
+    "release_sha256": "8ab9076e6e6d903c00706ea78b40b88f9905b83f637e99ec4556f3d3fa577959"
+  },
+  {
+    "destination": "lib/trackers/ostrack/native/test/tracker/__init__.py",
+    "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "release_sha256": "e0718c42f46630a38a53639dee024424d1603aa3aedbd73ddf0da70b56de90da"
+  },
+  {
+    "destination": "lib/trackers/ostrack/native/test/tracker/basetracker.py",
+    "source_sha256": "c31ba2d4c18a04d56bf2ed6a3862bc0a140b88b86cf8aefc2689bc728884899c",
+    "release_sha256": "0b6c05061871253e849c815a6e821a4e44a2f724e183deb99b9d4f3a96bb4e2c"
+  },
+  {
+    "destination": "lib/trackers/ostrack/native/test/tracker/data_utils.py",
+    "source_sha256": "718742b16123dcd8b8fb16baeb31f104e6d70fbe0ec1c383b7f61f66b3469a85",
+    "release_sha256": "ce14a9ec377384bc3534d3f9d35fa2915c1b32ec55ab2c151db2028483419f20"
+  },
+  {
+    "destination": "lib/trackers/ostrack/native/test/tracker/ostrack.py",
+    "source_sha256": "b3219345547efd089bd41b48d69c00668d07d4bcd253ec5aaa039e6a75e4b939",
+    "release_sha256": "03c9723995eb3f4f84d6763e17dc5324481e917f53557ed1ed5d8d6811763cb8"
+  },
+  {
+    "destination": "lib/trackers/ostrack/native/test/tracker/vis_utils.py",
+    "source_sha256": "23ebd63c11114809c8a3eb7cf0d56e94ea4d239e391f9acc781839c5a8a8e97d",
+    "release_sha256": "505aac017e184302b9b5c02161fcdd7db6241959932f8c0d8483e005bb5dc54e"
+  },
+  {
+    "destination": "lib/trackers/ostrack/native/test/utils/__init__.py",
+    "source_sha256": "b6fcf48d63dc76670c6f97ed1d7c2f9a7e46e63fe9d379b3fe9ea5794c4b6d0e",
+    "release_sha256": "9de95f1633db61a51a7523ef08e17499058b577baf4833ae415a43c78646d930"
+  },
+  {
+    "destination": "lib/trackers/ostrack/native/test/utils/_init_paths.py",
+    "source_sha256": "22491a85b3476c7f4629d92ae50635ce9518f4cd1119aec18c67f562e68647f7",
+    "release_sha256": "64d8ec78da92be102879b223662dbfd2c758f0b970146dcc0603da060ec416cd"
+  },
+  {
+    "destination": "lib/trackers/ostrack/native/test/utils/hann.py",
+    "source_sha256": "94de2151485d5911797afc5a2a431a4dcf99c6b293835b5b2d86bb27945bd504",
+    "release_sha256": "82f60856db370a6d840a2928a66aa5023ecd72f7f187478806bc4df724c28fe8"
+  },
+  {
+    "destination": "lib/trackers/ostrack/native/test/utils/load_text.py",
+    "source_sha256": "e7e1890828f3d4865c26785f66a26b01f990db674de6c0d2c22ab763807fb21e",
+    "release_sha256": "f9e8cc7941bfd71276096bd7d352ac84bc40c06585da6aad1a8c2c74641be2d7"
+  },
+  {
+    "destination": "lib/trackers/ostrack/native/test/utils/params.py",
+    "source_sha256": "2083a18a1099c4d2d9b6fe3dc44b67dacefda24af897a06b16a8b69dab57bf80",
+    "release_sha256": "d091292a23aeee8b4d923cd707b8cf250b6c54c684e7a262f20b32544cad1982"
+  },
+  {
+    "destination": "lib/trackers/ostrack/native/test/utils/transform_got10k.py",
+    "source_sha256": "3dc79448b9500cc8cb731dc6cd7c7a3e5b6b6d77f9cd4439b1cb79de05b7725c",
+    "release_sha256": "d710ad2feae91fe21eeed7cf82677841d422430adc541596b0feb7c293bdb74e"
+  },
+  {
+    "destination": "lib/trackers/ostrack/native/test/utils/transform_trackingnet.py",
+    "source_sha256": "4158b3e9e565b4d2c763636b165ef416f35f2445c088e7205c69ec99fc571452",
+    "release_sha256": "a04111c0c087e9942286cd4b544b6d4cbb9da2c4d1bb8e9f9ddf371bde0581ad"
+  },
+  {
+    "destination": "lib/trackers/ostrack/native/train/__init__.py",
+    "source_sha256": "c03599fae7c73b1f55dbf36dd7c441923a2784938bd42b8182eefd7f78cdddb4",
+    "release_sha256": "5b3a586a23b5582e12d8b2d3d47fdef6547830a6d8bf8049cde1ace59428e071"
+  },
+  {
+    "destination": "lib/trackers/ostrack/native/train/_init_paths.py",
+    "source_sha256": "271f9581156d3a0508b0d477fb39b8d259addfc9f305fe11eefaa3df6165d6dd",
+    "release_sha256": "8c3d9174630de1e68309c12131bc4f84997fb21d589fb6541f7ed13953f11a21"
+  },
+  {
+    "destination": "lib/trackers/ostrack/native/train/actors/__init__.py",
+    "source_sha256": "5032c7723b1074cea26362e9b1c1e67318438a77b280ce8ad292578535d15687",
+    "release_sha256": "1e1d7f3535f8165603d379c9175eb3c46e13ea1039f4a7edfcaaf4cfc950bfdc"
+  },
+  {
+    "destination": "lib/trackers/ostrack/native/train/actors/base_actor.py",
+    "source_sha256": "b0718f6379823121c571043a2a0c20a050939bef5d8174ee067fed3993b82c18",
+    "release_sha256": "a8f90a7c9dc99af06ad09b41294e28a534ff1dab718d9c68499e29be70cec000"
+  },
+  {
+    "destination": "lib/trackers/ostrack/native/train/actors/ostrack.py",
+    "source_sha256": "bee9d3728c77b89644b3c7b00cc3e8fe21609499b073b294552b1a8abc183fda",
+    "release_sha256": "3ca08efe4d9c84ffb8fe6280b998aececa19b7329566b427818a8a8544dc9523"
+  },
+  {
+    "destination": "lib/trackers/ostrack/native/train/admin/__init__.py",
+    "source_sha256": "0c401b89e30208a3a76ea6edc00176c6e66c1bdc9e38d6dbd04a8eeebbe4f111",
+    "release_sha256": "662787c44c0ddb307605979bcb322441a10a7212b321d7aa800320d566384817"
+  },
+  {
+    "destination": "lib/trackers/ostrack/native/train/admin/environment.py",
+    "source_sha256": "ac842ef5423387923eff2eb39ad19235b5f60f161b99e26c67fd950fc2726e27",
+    "release_sha256": "e1684a09e76ee57860cb5fa6e9ea291f42cbe41ec87add3b0f8cb915b0ce6636"
+  },
+  {
+    "destination": "lib/trackers/ostrack/native/train/admin/multigpu.py",
+    "source_sha256": "8cdb5ae2a3de52ca3ac7511d9d54cebcdc2ce6531fee6de53c46ef1521d344b4",
+    "release_sha256": "65c7ad4f532e698c490b00c410bf738a9a7919850aaf622b1acab8c71e633109"
+  },
+  {
+    "destination": "lib/trackers/ostrack/native/train/admin/settings.py",
+    "source_sha256": "096ff76e7aa55fd604a69649236757bd96e5662cdbae8fd298cc0ac215fe53ce",
+    "release_sha256": "d6a2201e9b1afd5fac83cd898a34dd5569908df7e3859273d3bb894e00144cc4"
+  },
+  {
+    "destination": "lib/trackers/ostrack/native/train/admin/stats.py",
+    "source_sha256": "d7ee8a685a068a581208b5ef010c5749bdfb9262b6ab73059a432ba5658a1116",
+    "release_sha256": "02a6f2339e22ae9c6c60c81ec3db0c2f95f99417ffc768b21c929a573b434381"
+  },
+  {
+    "destination": "lib/trackers/ostrack/native/train/admin/tensorboard.py",
+    "source_sha256": "023080fef9e85c37360dda5dded64e79ff976baab1c8a2617b05b9e97415dbec",
+    "release_sha256": "e3acfb27d78323b66056deee9f7fadceac02e1bc6c53fdf0119c85f44babc4b6"
+  },
+  {
+    "destination": "lib/trackers/ostrack/native/train/base_functions.py",
+    "source_sha256": "3d42c5fc6929ae4cc6fdff95cf15a2877c6dee719d5975c40df31a89cc5f06ac",
+    "release_sha256": "2aaceab629c720600f0c1fbfc194474288537fa1ad00ff5c90d18e98752a9c68"
+  },
+  {
+    "destination": "lib/trackers/ostrack/native/train/data/__init__.py",
+    "source_sha256": "81f130648f77240bf96ca11338c46bd0ca6b6d362297c934eaeb38e64d36d943",
+    "release_sha256": "4f3dcf21d52757237156a25cd83101dbfbcd887aebdaa5cadd98f356d79ae74e"
+  },
+  {
+    "destination": "lib/trackers/ostrack/native/train/data/bounding_box_utils.py",
+    "source_sha256": "d32aa112a2dbfb9c7130a9c8ae06558dd47ecf9bba33e46a447f9b7507321a61",
+    "release_sha256": "179f2bfcccc206342cea05addf48aef0bb90221b3a7e82b9dcf2a9052da22047"
+  },
+  {
+    "destination": "lib/trackers/ostrack/native/train/data/image_loader.py",
+    "source_sha256": "84fcba61cc3996cf03cf76deb4a00fd031ce24bfe12cf503e73dabffd4c616a7",
+    "release_sha256": "3f4807c81405f94dccf17c6bcecbeba827b150de16693011ea7fdf0edc8ea4f2"
+  },
+  {
+    "destination": "lib/trackers/ostrack/native/train/data/loader.py",
+    "source_sha256": "6954b446c257478d7c0d19f6ecbbf6effbf30048e05aa4be629e11fd22169034",
+    "release_sha256": "e7b801c904b72eaddc7a75a4f3847d618f36999a12a40cda1d7439e8b3a78e7d"
+  },
+  {
+    "destination": "lib/trackers/ostrack/native/train/data/processing.py",
+    "source_sha256": "dbcc3f362a1eec662a30765acc1dadafddda5743e4968b13a4cd19d38cdbc304",
+    "release_sha256": "e49ea33e56006f2fe407000decd1817231046ee95a6ce82fc9c0cb81605a4ee4"
+  },
+  {
+    "destination": "lib/trackers/ostrack/native/train/data/processing_utils.py",
+    "source_sha256": "a2406f133c78e8685ba197c95a5a8a8796677ff3c3f03d067cbaff737a05c2f7",
+    "release_sha256": "7051bb9678a137ca64242b1b1a44d4098266b1ea4ae669daae25142adf6d169b"
+  },
+  {
+    "destination": "lib/trackers/ostrack/native/train/data/sampler.py",
+    "source_sha256": "45641f0dad7fa4d86aab57a39baddc7461c18f6eeff9cf934d4573e92ea05865",
+    "release_sha256": "8a578338e376eb00e296bb2503403218fc1a402d1af54e439e119cd2eb038589"
+  },
+  {
+    "destination": "lib/trackers/ostrack/native/train/data/transforms.py",
+    "source_sha256": "02691348490b5a1f19d0c8d184278fbcda67fb0b37a374f1722516a4f859ba57",
+    "release_sha256": "43c185a05671286cbe8079dd2974cfe13176c01d81f7cd3f337943e9fc470d28"
+  },
+  {
+    "destination": "lib/trackers/ostrack/native/train/data/wandb_logger.py",
+    "source_sha256": "6e6180833c133e464458ff5e5837c2b01e5df63a3ee8b6c8490761f7731804cf",
+    "release_sha256": "289ce683c67aed6b47286c6c50c8b9d0ebf627ce656c2c95df537f01a5ecdafb"
+  },
+  {
+    "destination": "lib/trackers/ostrack/native/train/dataset/COCO_tool.py",
+    "source_sha256": "e2aff3600f4e40f0f5b795b50dff851546976e38ec0953edcfddb3b02ca4b581",
+    "release_sha256": "f7237ed5b01e654e5d4605d839859da0bfb310e47abb29372eb4ff2e1931aa1a"
+  },
+  {
+    "destination": "lib/trackers/ostrack/native/train/dataset/__init__.py",
+    "source_sha256": "4f9e15a8a7b0501680e54b39195597514a1cd079478a505bcf85af63a3a52bd1",
+    "release_sha256": "0c98b0058988f47aa37beb211a8ef47257e428431ae2ce53dc3741c67eecab48"
+  },
+  {
+    "destination": "lib/trackers/ostrack/native/train/dataset/base_image_dataset.py",
+    "source_sha256": "1ddcbfe79578e990860218b9b241fc7b19f0ea54a7f1a4899dee5c2d4c2980ae",
+    "release_sha256": "c2e1ced1d569e2825643419d5b76d34d5a6ea9b7cc3e1ed103bdd15d288f2e2d"
+  },
+  {
+    "destination": "lib/trackers/ostrack/native/train/dataset/base_video_dataset.py",
+    "source_sha256": "84084446399d659a4026ff5bd6e58dd7ea5e4b76cc1c371969641c4f1ff68496",
+    "release_sha256": "671d5bb97bef5d4ed5995a7b47e31944eec10bcba36612b0515552e5540dd595"
+  },
+  {
+    "destination": "lib/trackers/ostrack/native/train/dataset/coco.py",
+    "source_sha256": "23b6ced1ee6e4a84666afda5f7e6e1486a7617458efccd374ef54df54baa7c8e",
+    "release_sha256": "e26b0e4e763fcdbc0a95fa18df360a19e4ba7eaba34c5a7efef020c8ae275508"
+  },
+  {
+    "destination": "lib/trackers/ostrack/native/train/dataset/coco_seq.py",
+    "source_sha256": "7fd1a90385343acf0d66ff9eea75f951d7902a54bd9ecbb454b17db38d95791a",
+    "release_sha256": "c17582912e9e9e144ba114a346784210954294565757e161d2bf64a1fa4f4a17"
+  },
+  {
+    "destination": "lib/trackers/ostrack/native/train/dataset/coco_seq_lmdb.py",
+    "source_sha256": "a54107d6448e93b51c1f5ebadd9e8e0cb7ecb4db624ec794fbb6969022b09392",
+    "release_sha256": "fd869ebd05514391d0135e82153f1423d8edc2887ba56aa0f2c5cbc37f100728"
+  },
+  {
+    "destination": "lib/trackers/ostrack/native/train/dataset/got10k.py",
+    "source_sha256": "d7334005fdc125dea4e7d0bda6f77302eb654ffb5a5ebcc4cb5abc59eb8bdd57",
+    "release_sha256": "cd6ec8cb6fcb5db7900b991c97bd55acc23b8843180609bf603f2e20c502ef3e"
+  },
+  {
+    "destination": "lib/trackers/ostrack/native/train/dataset/got10k_lmdb.py",
+    "source_sha256": "38bd8b7c1ea7b15abb5c61b198062f83bc0ae0dcf51d58623f6a0c728d52d77c",
+    "release_sha256": "e9eeacb80b07705e3c85720322d83fd1c2204efda1cb06281158d40c6d4cee55"
+  },
+  {
+    "destination": "lib/trackers/ostrack/native/train/dataset/imagenetvid.py",
+    "source_sha256": "9b8c89933cbe1a5066973481e3f8730c1daaa9fdd63cd4c9d86e07a98b947d99",
+    "release_sha256": "ca54f80fa226965de3875a703b3b8f08436c850a05e66ed8bed9f1620c8e0d96"
+  },
+  {
+    "destination": "lib/trackers/ostrack/native/train/dataset/imagenetvid_lmdb.py",
+    "source_sha256": "ffc70ced81cd40fdabe66532d5b31cdf14bd72e8d569bae0215ae1463e5b1451",
+    "release_sha256": "0f0f1c466f89f03704f4c098879b3462caaebf9b951477ab969b26cc411ca7f2"
+  },
+  {
+    "destination": "lib/trackers/ostrack/native/train/dataset/lasot.py",
+    "source_sha256": "93d9a477d187f94564513fc819d03b335b4a5c72ac06b8060295e57ea8cdffec",
+    "release_sha256": "641407222471d121f8599edd291bdf823b4d47c3c96ebe5015930ddf1ab509da"
+  },
+  {
+    "destination": "lib/trackers/ostrack/native/train/dataset/lasot_lmdb.py",
+    "source_sha256": "56b5c431f9f46d0e623c6fa9c679f013d3b25a0698c26587f0dc08907504992c",
+    "release_sha256": "ba34709395f4825c61051e24bf47d6581c64d1bdf50ac3158bffd170e7ae090b"
+  },
+  {
+    "destination": "lib/trackers/ostrack/native/train/dataset/tracking_net.py",
+    "source_sha256": "db83b9dfbab52c5715b4bcb3afdba81742af1a7bce7dc425cf66c36a44d9b778",
+    "release_sha256": "c3ca69c28d5bb6075b0e799b8c8f87d288718908d5b10c396b14e64e93813d8a"
+  },
+  {
+    "destination": "lib/trackers/ostrack/native/train/dataset/tracking_net_lmdb.py",
+    "source_sha256": "9ea6b324b30975272ae1fee1e86f9d002521a7edc437345ea2583700ef90c345",
+    "release_sha256": "610fdbf343b647483fc13f568dbae156ccedd1e730f2fb50a849013740f6edf9"
+  },
+  {
+    "destination": "lib/trackers/ostrack/native/train/run_training.py",
+    "source_sha256": "ccf2d74703165bf78391931f422e1a830b716b38a8e71f01347026b72ac2e6dc",
+    "release_sha256": "f33b3ac8c82bd8dc4bf653efe79c09df088de535f797c472c1286d1219d67174"
+  },
+  {
+    "destination": "lib/trackers/ostrack/native/train/train_script.py",
+    "source_sha256": "324c7104b2f712fa2484d75f57958f079ac75632e5495a835a6eb785d4382653",
+    "release_sha256": "52db40927ec16b64abed1ae2da70454978eb1a8fa35507560da7abc7f368906b"
+  },
+  {
+    "destination": "lib/trackers/ostrack/native/train/trainers/__init__.py",
+    "source_sha256": "84d98401c971a9d84a4aed4529695588c724834ed139ec8a76ed93c80fd8753e",
+    "release_sha256": "04de0120829ea0216192d80ac5e4775490fb20478afda2e6bf77586b37e4efae"
+  },
+  {
+    "destination": "lib/trackers/ostrack/native/train/trainers/base_trainer.py",
+    "source_sha256": "49567b451c04eeecdb6d029a266990d9bccf6383b03228a1276d61ca0da752ec",
+    "release_sha256": "d06a1230d68331f35159546d9750de31e0f5f9827740f3a8fc8275c7d31d60d6"
+  },
+  {
+    "destination": "lib/trackers/ostrack/native/train/trainers/ltr_trainer.py",
+    "source_sha256": "8e1ff8cb29a96357c32461b99275bf5498f273ab0b887a12acea3a19b5246d4d",
+    "release_sha256": "5f37421ed62aa4a7d7b89df64c951ac464bd8cc7b4cfac2ced3fea777b23982f"
+  },
+  {
+    "destination": "lib/trackers/ostrack/native/utils/__init__.py",
+    "source_sha256": "8d3e5ebd1b1a92f835f17ef8c4085a530bec71f0848edd01ad1f8cb2c95c7a45",
+    "release_sha256": "7071162f908862b2d46ca7cb23f82743794deed333aea5473e7602a49baa4d39"
+  },
+  {
+    "destination": "lib/trackers/ostrack/native/utils/box_ops.py",
+    "source_sha256": "cee9d309a9c4a6c5f00fab575719bc7bf8d865127c91b10d4fb233996a111fbc",
+    "release_sha256": "3a6f211def0be4d62f1f1510d59e1ea1631b5d9381e3895665e5ee333cb1cd32"
+  },
+  {
+    "destination": "lib/trackers/ostrack/native/utils/ce_utils.py",
+    "source_sha256": "ba0c7320089d044ee4193076590ee3859577de66f865887ba659ab5922b655fd",
+    "release_sha256": "c20d5cdfc627aa86aa8a8ceca0b36eebb1a06eeaae79d3877513401caf158c67"
+  },
+  {
+    "destination": "lib/trackers/ostrack/native/utils/focal_loss.py",
+    "source_sha256": "b393973c3288e95d99f027b23ce5b1e5a9fa4c5df8b12112fa4dce0d1f55e498",
+    "release_sha256": "60779c7149574475d346e44c09bc71b44ffa08396610d4d27bb32c4c5fdaaece"
+  },
+  {
+    "destination": "lib/trackers/ostrack/native/utils/heapmap_utils.py",
+    "source_sha256": "09e39782e4783d43ad0b41461ca582d25766ff23e9f59248e6d894630f2dabf9",
+    "release_sha256": "f768e46e8fa8d08dcd34e598c72e31e1dfbc5764c9e758fd2b4dd6ed76033c41"
+  },
+  {
+    "destination": "lib/trackers/ostrack/native/utils/lmdb_utils.py",
+    "source_sha256": "0d311b5bc4b0a5cba018059054578e518a786c08196a582f6f3f8949cd6e3993",
+    "release_sha256": "c31ade3aee726dcbef698bd04e35ec77b2555094e2d882a876ca96dd7a8838f6"
+  },
+  {
+    "destination": "lib/trackers/ostrack/native/utils/merge.py",
+    "source_sha256": "149ae5bd4758f85ce30c35ea6054a6daff8b594621c4d648a34c91e6adf7be08",
+    "release_sha256": "463121986ca020f63888810a1a856378c6462675453a2827b5df05e958be21b8"
+  },
+  {
+    "destination": "lib/trackers/ostrack/native/utils/misc.py",
+    "source_sha256": "84d7a2d1d758d95a7ecb5110f652b650eddd621be35f2cad5bccd30305edf625",
+    "release_sha256": "4aac44ec954c7b6ccdc9f740f03bf3ce4d7f7c0a82eb83c978bc9209d1921444"
+  },
+  {
+    "destination": "lib/trackers/ostrack/native/utils/tensor.py",
+    "source_sha256": "526729efede32e08be41db1827b0c15f32d5edaa590dcdf26eb4159bffbad135",
+    "release_sha256": "7c974f1ca88b176ef0d60adc5d5934a46a3b661665a041abd848b297a2244768"
+  },
+  {
+    "destination": "lib/trackers/ostrack/native/utils/variable_hook.py",
+    "source_sha256": "7cf329946a424a02ccd0893c6678945806a197ac1243d9232a67387168209837",
+    "release_sha256": "d1633f76697ee2099db740e1c207a1b98af1e9e710e4175e2f77f292b986b728"
+  },
+  {
+    "destination": "lib/trackers/ostrack/native/vis/__init__.py",
+    "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "release_sha256": "e0718c42f46630a38a53639dee024424d1603aa3aedbd73ddf0da70b56de90da"
+  },
+  {
+    "destination": "lib/trackers/ostrack/native/vis/plotting.py",
+    "source_sha256": "7b36771b8d5e622bf069e43b0a1adf7290063e9c7d632a7b2220c23247d49a48",
+    "release_sha256": "c60bba1c9112bb218763f298ac4fe0894ccba0bd2eb0368aefa28e1835e8eb5b"
+  },
+  {
+    "destination": "lib/trackers/ostrack/native/vis/utils.py",
+    "source_sha256": "132cc586b48efe6bf2296c752593133bb1e13f0ac84e15ddf7f3d02c69753c68",
+    "release_sha256": "95856acea753545425af539780588221c6c779755e9377f66dc5c5dce0edab68"
+  },
+  {
+    "destination": "lib/trackers/ostrack/native/vis/visdom_cus.py",
+    "source_sha256": "8ad65740ac78aaddad82dc2a40fc8a292745d9b69a88116a1ca6075e963c14f1",
+    "release_sha256": "311d7c232ddd9937b81d3f1a266f0d9b6efcc729ae924dad645f335e3790a655"
+  },
+  {
+    "destination": "experiments/ostrack/ostrack/vitb_256_mae_32x4_ep300.yaml",
+    "source_sha256": "42ee0fb61c7d66401fedfe8af5b998b175d9b3865479200adaa4b74f919689ed",
+    "release_sha256": "42ee0fb61c7d66401fedfe8af5b998b175d9b3865479200adaa4b74f919689ed"
+  },
+  {
+    "destination": "experiments/ostrack/ostrack/vitb_256_mae_ce_32x4_ep300.yaml",
+    "source_sha256": "3513e8fdc8ed3179b290e1870b979b46293fd51ac180ed55f185dc7a166fb71d",
+    "release_sha256": "3513e8fdc8ed3179b290e1870b979b46293fd51ac180ed55f185dc7a166fb71d"
+  },
+  {
+    "destination": "experiments/ostrack/ostrack/vitb_256_mae_ce_32x4_got10k_ep100.yaml",
+    "source_sha256": "e93189ef1f8051058e61a866f56fa2d1b6e3344943faf42386befb1f794cb01a",
+    "release_sha256": "e93189ef1f8051058e61a866f56fa2d1b6e3344943faf42386befb1f794cb01a"
+  },
+  {
+    "destination": "experiments/ostrack/ostrack/vitb_384_mae_32x4_ep300.yaml",
+    "source_sha256": "16371c2e9b828dc313c3eab9234a38ffd7e3583cd9b16936c3c9320fa8e264d3",
+    "release_sha256": "16371c2e9b828dc313c3eab9234a38ffd7e3583cd9b16936c3c9320fa8e264d3"
+  },
+  {
+    "destination": "experiments/ostrack/ostrack/vitb_384_mae_ce_32x4_ep300.yaml",
+    "source_sha256": "0ea1f6616b90656fb3955d90c833d0997f011b1e0b9d4d8d921266c16a1a697e",
+    "release_sha256": "0ea1f6616b90656fb3955d90c833d0997f011b1e0b9d4d8d921266c16a1a697e"
+  },
+  {
+    "destination": "experiments/ostrack/ostrack/vitb_384_mae_ce_32x4_got10k_ep100.yaml",
+    "source_sha256": "968c147cf623b5cf38559af653d192dab4007eea1ff1abcf0c127be03cd79902",
+    "release_sha256": "968c147cf623b5cf38559af653d192dab4007eea1ff1abcf0c127be03cd79902"
+  },
+  {
+    "destination": "lib/trackers/sutrack/native/__init__.py",
+    "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "release_sha256": "e0718c42f46630a38a53639dee024424d1603aa3aedbd73ddf0da70b56de90da"
+  },
+  {
+    "destination": "lib/trackers/sutrack/native/config/__init__.py",
+    "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "release_sha256": "e0718c42f46630a38a53639dee024424d1603aa3aedbd73ddf0da70b56de90da"
+  },
+  {
+    "destination": "lib/trackers/sutrack/native/config/sutrack/config.py",
+    "source_sha256": "acd889c6aba6cf0851159e872925e7653ce948346d3bd0286f77214f8fba085a",
+    "release_sha256": "82f4d7f320193fc610a44eec3afcac196012e526f0f30e80702573c7e577b6d7"
+  },
+  {
+    "destination": "lib/trackers/sutrack/native/models/__init__.py",
+    "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "release_sha256": "e0718c42f46630a38a53639dee024424d1603aa3aedbd73ddf0da70b56de90da"
+  },
+  {
+    "destination": "lib/trackers/sutrack/native/models/sutrack/__init__.py",
+    "source_sha256": "4aed7d0d97c8a7b3321ca70c668405dd6a24f199db6494fe39a12792d732e6a6",
+    "release_sha256": "b598e7951bdee2298740a17c96b1c027a418594c19c5c34dc9598c138d5a8016"
+  },
+  {
+    "destination": "lib/trackers/sutrack/native/models/sutrack/clip.py",
+    "source_sha256": "1561902dd5d3c6a319791a1e1865b2f57ea79a831625880128b8495b60505e8a",
+    "release_sha256": "76e708ff8ca1a5750de61b5483c089e8eb375c5fb40d8700f273f60cbd9a0ea5"
+  },
+  {
+    "destination": "lib/trackers/sutrack/native/models/sutrack/decoder.py",
+    "source_sha256": "a6ac29053882ecf31a3312ddd0f2f85d35a83f4f85a1271db12aab190eb6e68d",
+    "release_sha256": "ac033bb8ba04a45209ea398c485c3d8fe96ca62eb4f9c3438ea084c4a0653727"
+  },
+  {
+    "destination": "lib/trackers/sutrack/native/models/sutrack/encoder.py",
+    "source_sha256": "d89cf7c8646b2e862b6f2e758faa382f7dbcbcf3ef996e496e84a612de4ceda5",
+    "release_sha256": "0138cec334b65c6812afba9e8a46886105282ebe34ba115b4a9b6dead0240aa4"
+  },
+  {
+    "destination": "lib/trackers/sutrack/native/models/sutrack/fastitpn.py",
+    "source_sha256": "d7cc990dd91d70957deada1221fbc0257b4ad49f3f73fa9e02428df669e01ebc",
+    "release_sha256": "32d48b6742fdcd4ddf7a9404e57a53cc5c74dc07c9b47474e19075ffdfed88e1"
+  },
+  {
+    "destination": "lib/trackers/sutrack/native/models/sutrack/itpn.py",
+    "source_sha256": "7941329d18cd831c2843db2c0faa6c340b792583d459524e415e31e9c3f2b751",
+    "release_sha256": "d16b6cc0ce1ce0bc86f5b439ba873d7563033cb02d7ef074deebe208485b1c08"
+  },
+  {
+    "destination": "lib/trackers/sutrack/native/models/sutrack/sutrack.py",
+    "source_sha256": "2d88cd3473eb7f3265086f9fba36fd8f19ccee4c58b3e9694bf036c98ee19834",
+    "release_sha256": "2c715df5ffdc49b44287b5b24fde4e23dec06f7e046054a7c0cc995b54ad1567"
+  },
+  {
+    "destination": "lib/trackers/sutrack/native/models/sutrack/task_decoder.py",
+    "source_sha256": "91f5be9390577b5145bb168bb12d879d0fc26d35e404f36bf8bf25fd627869e1",
+    "release_sha256": "ece2f27bbbdd75afbe728eecad64fcf7221bd8702ed8e737e4fc91ac1bdd11ee"
+  },
+  {
+    "destination": "lib/trackers/sutrack/native/test/__init__.py",
+    "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "release_sha256": "e0718c42f46630a38a53639dee024424d1603aa3aedbd73ddf0da70b56de90da"
+  },
+  {
+    "destination": "lib/trackers/sutrack/native/test/analysis/__init__.py",
+    "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "release_sha256": "e0718c42f46630a38a53639dee024424d1603aa3aedbd73ddf0da70b56de90da"
+  },
+  {
+    "destination": "lib/trackers/sutrack/native/test/analysis/extract_results.py",
+    "source_sha256": "ae3d7f6c1c75a0aade8012feeb76b4cce101b655932b37454a68da51fa58c13c",
+    "release_sha256": "9bb33f60a6d35c8c8cace774e7e02aa93d6beae1378a07084a23cdfbb9f719f2"
+  },
+  {
+    "destination": "lib/trackers/sutrack/native/test/analysis/plot_results.py",
+    "source_sha256": "575f24422c24bef3bcf52948fe3c35bea9546c15a1b9b52be02d9b72835997d1",
+    "release_sha256": "543b5b5122c9cac873e780ea9ed80f8b380b86002c4c1898aa8879a76ead5ab5"
+  },
+  {
+    "destination": "lib/trackers/sutrack/native/test/evaluation/__init__.py",
+    "source_sha256": "48dbd571ae98e8d848223df0a3cc1e1387704d267c0ba517f887fc6d01271362",
+    "release_sha256": "87a71c753950399e7cf14aa1669753b856b211cc94948c7dc460db4358e1c5f5"
+  },
+  {
+    "destination": "lib/trackers/sutrack/native/test/evaluation/data.py",
+    "source_sha256": "4e0e484277bcb8ce8508527c984cf2485e52a14c2e3b5f8f4513c4c1ce017d18",
+    "release_sha256": "8b4f7955e3715ab97ba4a67615fc0d2b8f735dd03ea0a744d10ad62c3f7af80a"
+  },
+  {
+    "destination": "lib/trackers/sutrack/native/test/evaluation/datasets.py",
+    "source_sha256": "b9ace88c6b0fa752167deff0c273e4a030adc25462bee857ba9e26572133535e",
+    "release_sha256": "fc779f300763225e13be2fccda50f1c1617ca8f7b20a833d2838a23a5d6bcc6f"
+  },
+  {
+    "destination": "lib/trackers/sutrack/native/test/evaluation/environment.py",
+    "source_sha256": "007305ce6d95d1b779af459c6a1c4f17ace3ec94250cc6bdb3bcfa84825bec66",
+    "release_sha256": "84b0a069373cbccc26e0da878efbf2a7ca6b514a63cd6cf04f4359a2622b4147"
+  },
+  {
+    "destination": "lib/trackers/sutrack/native/test/evaluation/got10kdataset.py",
+    "source_sha256": "292fde6cf4ec740dbaf73d77770b917e2b695c4e50d1055a38a65c95b5b1f72a",
+    "release_sha256": "024a17374570be3df5d067c739f6f4bf8b2d17dee2b2b5b8e379d65446f9d8c5"
+  },
+  {
+    "destination": "lib/trackers/sutrack/native/test/evaluation/lasot_lmdbdataset.py",
+    "source_sha256": "f97f413757181875eacf6e8cfd105f31524f60bfc94abf5f145f675280b5fdce",
+    "release_sha256": "ffe10ec8a6be27827286f91cd1d16b2b96e78bf4ebfceb5136e129c8f5050e49"
+  },
+  {
+    "destination": "lib/trackers/sutrack/native/test/evaluation/lasotdataset.py",
+    "source_sha256": "c0ba1b04a21b4b663a2ae1c02310d2fe451666eaa13d4d209a57d0035a97368f",
+    "release_sha256": "849941c23c9b8a879daf04609e0d2f9810513daaa1c5eb820a9626422e5f9270"
+  },
+  {
+    "destination": "lib/trackers/sutrack/native/test/evaluation/lasotextensionsubsetdataset.py",
+    "source_sha256": "35731e5d420a9f967fd2d7d4f5db1c67f6746b000afbb4a9bc17fce6382b1a56",
+    "release_sha256": "ddbf8a9d7364d35c05781946721d64d30f9af1909e0da38487e1353496662f85"
+  },
+  {
+    "destination": "lib/trackers/sutrack/native/test/evaluation/lasotlangdataset.py",
+    "source_sha256": "58210eac4fcd9f1f6a6fc8d811cdeb33bc5cd43f86b625509f496b5b85296447",
+    "release_sha256": "c1b6e43521db4755582e9f34c577257649f0d3bdade17bb72bcdf1cf430be7c1"
+  },
+  {
+    "destination": "lib/trackers/sutrack/native/test/evaluation/nfsdataset.py",
+    "source_sha256": "ba76f20ec7499b07746eac799ef4c10067b8c19ee23e724cb188a33ca4f91083",
+    "release_sha256": "2ebb599fdd21a2721e450e541450d436499d46ff2d951f724bd501eac2ab7525"
+  },
+  {
+    "destination": "lib/trackers/sutrack/native/test/evaluation/nfsdataset_back.py",
+    "source_sha256": "c8c25c48365c9920d3c42c7b18418b35a8100849b52bf5a9c531228227d8943d",
+    "release_sha256": "7b797e3223c17987288134112eeb275eaf4ad06d1c714e4cabdee08e22f7113f"
+  },
+  {
+    "destination": "lib/trackers/sutrack/native/test/evaluation/otb99langdataset.py",
+    "source_sha256": "51bd27dcf7bb748a1685bda004ec6301d340ae08ce4942dbb72618399f537e03",
+    "release_sha256": "dde5ff9315bffe9bfa7f964a2b285283b44485b8d2de28b93e55698dbd006a6e"
+  },
+  {
+    "destination": "lib/trackers/sutrack/native/test/evaluation/otbdataset.py",
+    "source_sha256": "806f517b559289961cfd685c53908bb9c41dc51adda9ca560c0bb92e17a74e2a",
+    "release_sha256": "dd44a87f29b2fda65b786c75e69bbee3f235daef82dd301382a867558b9d5ecd"
+  },
+  {
+    "destination": "lib/trackers/sutrack/native/test/evaluation/running.py",
+    "source_sha256": "15acb13877e94b1db0fe0149b149bdb24cdfe69c1be95f4e4b54cd82937c4a47",
+    "release_sha256": "b31d8f918acc4634e5101327ed939768a895bcfdcec9a58d7f76ba24c14566a3"
+  },
+  {
+    "destination": "lib/trackers/sutrack/native/test/evaluation/tc128cedataset.py",
+    "source_sha256": "9211bd2a9f72b858e0adfe2f8b1716f46de2fbdf5cd2d2d17d0bda70ce3e9086",
+    "release_sha256": "5d9814ccb716400e1f920bccc02823e8b77192f7136c0ae9f60a9c83847a114c"
+  },
+  {
+    "destination": "lib/trackers/sutrack/native/test/evaluation/tc128dataset.py",
+    "source_sha256": "1c17a691b695861647d530cbc64e35da1269de418f4a5844428e08289f9e082e",
+    "release_sha256": "2a1f93ffa5f8cee4b39400b7138500f70ba460066e76d9154392c539ceb12dcd"
+  },
+  {
+    "destination": "lib/trackers/sutrack/native/test/evaluation/tnl2kdataset.py",
+    "source_sha256": "246e6f89632d98416794c694dd64c3b9bf25bb2a66ad3a0daba550ceb356af5b",
+    "release_sha256": "816283c6812f5f32ea26e2cd5abf67756965b55ea0b8fd51d41ccbeeede54311"
+  },
+  {
+    "destination": "lib/trackers/sutrack/native/test/evaluation/tracker.py",
+    "source_sha256": "7ebb9f02731c0be637f2e5eb2c33beb3e487e2ee479c25f8dd08826b266b671e",
+    "release_sha256": "2890d4ce123b3585cd70298634d2a7496a95543e77bfddb811c99406a927bb98"
+  },
+  {
+    "destination": "lib/trackers/sutrack/native/test/evaluation/tracker_save.py",
+    "source_sha256": "dfe3433fa58599b1c7b09461f16180e6adf58bd32950c804831233895dfd9a36",
+    "release_sha256": "675dbf9a6ffea08dd3d9dc3a4b1834c8d10fbf49491ecc03bb7b1d7e8ac39821"
+  },
+  {
+    "destination": "lib/trackers/sutrack/native/test/evaluation/tracker_upperbound.py",
+    "source_sha256": "a68f2a1dafe16aad5589cf7e60c88c136a45f8d4dc0dda4537a30459b2222675",
+    "release_sha256": "7021935258381e94e5b07d86bdb28f339f1092984bdb07a2d4cffd7580119a5c"
+  },
+  {
+    "destination": "lib/trackers/sutrack/native/test/evaluation/trackingnetdataset.py",
+    "source_sha256": "82b9a96572672c7f060bbe2bb53e870088844853b38c2db452e802f5325015bc",
+    "release_sha256": "946aa1ab0c1f9c6d5b31e1508b8ab42be080c68b02b0167a756e244d56e23bfa"
+  },
+  {
+    "destination": "lib/trackers/sutrack/native/test/evaluation/uavdataset.py",
+    "source_sha256": "09aecb342019da77c16d5b1c849169869ffe78540cca7f61eba0ac735fb20f75",
+    "release_sha256": "6abe657210ac12ab936257139365deae792568a53aba3a300b02ebaf78d5c528"
+  },
+  {
+    "destination": "lib/trackers/sutrack/native/test/parameter/__init__.py",
+    "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "release_sha256": "e0718c42f46630a38a53639dee024424d1603aa3aedbd73ddf0da70b56de90da"
+  },
+  {
+    "destination": "lib/trackers/sutrack/native/test/parameter/sutrack.py",
+    "source_sha256": "e531f23cf1e0b8aef4f3ebfee27cfa3c4434bf63f5ae043ef9a266bda7c6798d",
+    "release_sha256": "7f9d5a679623629b7d828cce20329be966165d8f4ac7e351debe4a5c73342ec1"
+  },
+  {
+    "destination": "lib/trackers/sutrack/native/test/tracker/__init__.py",
+    "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "release_sha256": "e0718c42f46630a38a53639dee024424d1603aa3aedbd73ddf0da70b56de90da"
+  },
+  {
+    "destination": "lib/trackers/sutrack/native/test/tracker/basetracker.py",
+    "source_sha256": "932a48eb1cecd0932171005e6b5880aa2422188460a09b899ad5fa3a6ecd41ab",
+    "release_sha256": "2203193557c004e4258aaf2a95905eb3b8993772ecc3a9ff42da0aaf1e4abf38"
+  },
+  {
+    "destination": "lib/trackers/sutrack/native/test/tracker/sutrack.py",
+    "source_sha256": "3a18e3b59b810558ed611fe297ea31a74ce9064d03e7c495d57616e6e23be948",
+    "release_sha256": "d13924ecab2afad48b562890ede13b5116d1ab87d18d0c322f4c492d265c305d"
+  },
+  {
+    "destination": "lib/trackers/sutrack/native/test/tracker/utils.py",
+    "source_sha256": "ad1334108c513b65b0a11df9a189ffb645a29737682158f15cc9e9ac402fa191",
+    "release_sha256": "dcc5776971a974b3b4b8f1d6e555e479a3e3ce9a6e070600b0638fbe0d22d790"
+  },
+  {
+    "destination": "lib/trackers/sutrack/native/test/utils/__init__.py",
+    "source_sha256": "b6fcf48d63dc76670c6f97ed1d7c2f9a7e46e63fe9d379b3fe9ea5794c4b6d0e",
+    "release_sha256": "9de95f1633db61a51a7523ef08e17499058b577baf4833ae415a43c78646d930"
+  },
+  {
+    "destination": "lib/trackers/sutrack/native/test/utils/_init_paths.py",
+    "source_sha256": "22491a85b3476c7f4629d92ae50635ce9518f4cd1119aec18c67f562e68647f7",
+    "release_sha256": "64d8ec78da92be102879b223662dbfd2c758f0b970146dcc0603da060ec416cd"
+  },
+  {
+    "destination": "lib/trackers/sutrack/native/test/utils/hann.py",
+    "source_sha256": "94de2151485d5911797afc5a2a431a4dcf99c6b293835b5b2d86bb27945bd504",
+    "release_sha256": "82f60856db370a6d840a2928a66aa5023ecd72f7f187478806bc4df724c28fe8"
+  },
+  {
+    "destination": "lib/trackers/sutrack/native/test/utils/load_text.py",
+    "source_sha256": "e7e1890828f3d4865c26785f66a26b01f990db674de6c0d2c22ab763807fb21e",
+    "release_sha256": "f9e8cc7941bfd71276096bd7d352ac84bc40c06585da6aad1a8c2c74641be2d7"
+  },
+  {
+    "destination": "lib/trackers/sutrack/native/test/utils/params.py",
+    "source_sha256": "2083a18a1099c4d2d9b6fe3dc44b67dacefda24af897a06b16a8b69dab57bf80",
+    "release_sha256": "e7f020b0b74eb2f4f3103613924ae73dc3e2e598839513abe8556dbb914ff61a"
+  },
+  {
+    "destination": "lib/trackers/sutrack/native/test/utils/transform_got10k.py",
+    "source_sha256": "fe668bf969758088334cb641990ed01f3383e3142ba1f17d697e3adf847e3d08",
+    "release_sha256": "727493f607ba75ce0e0032579a600c8128debe60004e5f81a72fc161ad89c677"
+  },
+  {
+    "destination": "lib/trackers/sutrack/native/test/utils/transform_trackingnet.py",
+    "source_sha256": "7930946f4d810e1f4ab7da12637c16d0d9830523eb3536c4fcce24192382cbea",
+    "release_sha256": "9854975c1cd94213cc10cc537f3820322deccaa87a78c3917959bd9fe1401060"
+  },
+  {
+    "destination": "lib/trackers/sutrack/native/test/vot/sutrack_b224.py",
+    "source_sha256": "e7717258227edc7776bb10dcc832d6d5fe087c7bffd5be5dd7b045c23ae9b8c4",
+    "release_sha256": "c0a51f99165c9095bc4c698765e01c2591de0c70af4ac0b7c023cbc61a36d913"
+  },
+  {
+    "destination": "lib/trackers/sutrack/native/test/vot/sutrack_b384.py",
+    "source_sha256": "3a75516e6fe109771f37f24e34548e625e379f102b72a7f80fa75af5c6226700",
+    "release_sha256": "97642be366b8a9028fd457c8253833b25785cb069c5a9e6d64c2e402964535aa"
+  },
+  {
+    "destination": "lib/trackers/sutrack/native/test/vot/sutrack_class.py",
+    "source_sha256": "ac8cb814e5123aac9d37ad115b3b9cabeb12050322ece9fa6d8d44f8525bb6da",
+    "release_sha256": "712a1365eb837f54b74ec60f13c573b7021138ad8c55cadf2f11d7ee1a124299"
+  },
+  {
+    "destination": "lib/trackers/sutrack/native/test/vot/sutrack_l224.py",
+    "source_sha256": "3858cbb31366a9adf6cf97a8d5189a33f0129f77dd549ba29d96e8b4fac98d0d",
+    "release_sha256": "6b3659586a4b4f28a95dd96fde10a9b616d492acb46c84429195194bfa842ee2"
+  },
+  {
+    "destination": "lib/trackers/sutrack/native/test/vot/sutrack_l384.py",
+    "source_sha256": "0ffdf19a25f571e596922bbb72477f1d79d8dd168c8cca0e2661993f818f7bc9",
+    "release_sha256": "fb98f08280b1f0c1e5d34ebcee927531ff6b594f410200aedf8679550a579545"
+  },
+  {
+    "destination": "lib/trackers/sutrack/native/test/vot/sutrack_t224.py",
+    "source_sha256": "3c27da8ba33797066f23934e8862587ca98f5360123f9d9d5e70bda84fd66ccd",
+    "release_sha256": "2a7a8f9267ae7d27e203eebd625f1e9499573fefe0a1d325f25622d05958a437"
+  },
+  {
+    "destination": "lib/trackers/sutrack/native/test/vot/vot.py",
+    "source_sha256": "559e918b09437e2f232c0190373b561a1f5efb5d4616aa76d841586ce337b8c6",
+    "release_sha256": "6b4635186bac524b5921d970d4f78821c77c9f76e290d29ec3c896a2a165acee"
+  },
+  {
+    "destination": "lib/trackers/sutrack/native/test/vot/vot_utils.py",
+    "source_sha256": "b71866d71d6be664ad376f218ebca6c148c13ea4b1f3e2dbb6ac94a04f0d447b",
+    "release_sha256": "bef2ececa396df90b612083cfdd07d8e803151f91f8bc17bc648feadebe9afc3"
+  },
+  {
+    "destination": "lib/trackers/sutrack/native/test/vot/vots.py",
+    "source_sha256": "0d7ecb7a5d2d2e6829fa346424b4f6654a43e10f704f7dcd07e6be89c1fa3962",
+    "release_sha256": "d18433bef65a66b00bef561875b012d991447de0b40267529bb327d38b7aa618"
+  },
+  {
+    "destination": "lib/trackers/sutrack/native/test/vot_rgb/sutrack_b224.py",
+    "source_sha256": "82eb334ac770e3d5c6153b37ef04ed1b036b2e0ec51df869ec51b26598eb9f00",
+    "release_sha256": "29b0646cbd5ccf379644b94e97097d5f1a07f8011f1a9e0747308de6aefdb720"
+  },
+  {
+    "destination": "lib/trackers/sutrack/native/test/vot_rgb/sutrack_b384.py",
+    "source_sha256": "cbfa81072cac5f972a2c0b6da51c362ae210a1e70230bd98add6a8873d09ca71",
+    "release_sha256": "3fb6739051126fb77c470bea7d3f3f6e6b9cec1885e693b046b37a36030dd1b8"
+  },
+  {
+    "destination": "lib/trackers/sutrack/native/test/vot_rgb/sutrack_class.py",
+    "source_sha256": "9dc8b0fa028907ab84463ae15a752a929d259dae022b125b15efc58cc8aae3b0",
+    "release_sha256": "18a3a54338ac7b34bf6d935f232f288377fcc42c6d1eae8b2bd6397600f5c0f6"
+  },
+  {
+    "destination": "lib/trackers/sutrack/native/test/vot_rgb/sutrack_l224.py",
+    "source_sha256": "a624d06ae97ff2d69a78834c32b011670a92390402ac6c3f36cca62fc3e1446e",
+    "release_sha256": "d7086f117507c4722a96d3bd84e615aebe8ade7d462006c5114676e158bc3040"
+  },
+  {
+    "destination": "lib/trackers/sutrack/native/test/vot_rgb/sutrack_l384.py",
+    "source_sha256": "3b98162b9bb493eb6740c22e34478a7e0d551dd4778efd6f5ee9d204b761fbe6",
+    "release_sha256": "5b762c100f76e3fdc1a82e4ded870d5e83b7b450f12c8d8580ee9670c3a65f32"
+  },
+  {
+    "destination": "lib/trackers/sutrack/native/test/vot_rgb/sutrack_t224.py",
+    "source_sha256": "bf30b6a343ffc49e7731c27bb2fb9750588e904c865fcc242a6aac7ea7371f26",
+    "release_sha256": "c66bb8350e4519b3cdda358b4788901929f1fca1a4b900198baa9423e0747937"
+  },
+  {
+    "destination": "lib/trackers/sutrack/native/test/vot_rgb/vot.py",
+    "source_sha256": "559e918b09437e2f232c0190373b561a1f5efb5d4616aa76d841586ce337b8c6",
+    "release_sha256": "6b4635186bac524b5921d970d4f78821c77c9f76e290d29ec3c896a2a165acee"
+  },
+  {
+    "destination": "lib/trackers/sutrack/native/test/vot_rgb/vot_utils.py",
+    "source_sha256": "b71866d71d6be664ad376f218ebca6c148c13ea4b1f3e2dbb6ac94a04f0d447b",
+    "release_sha256": "bef2ececa396df90b612083cfdd07d8e803151f91f8bc17bc648feadebe9afc3"
+  },
+  {
+    "destination": "lib/trackers/sutrack/native/train/__init__.py",
+    "source_sha256": "c03599fae7c73b1f55dbf36dd7c441923a2784938bd42b8182eefd7f78cdddb4",
+    "release_sha256": "5b3a586a23b5582e12d8b2d3d47fdef6547830a6d8bf8049cde1ace59428e071"
+  },
+  {
+    "destination": "lib/trackers/sutrack/native/train/_init_paths.py",
+    "source_sha256": "271f9581156d3a0508b0d477fb39b8d259addfc9f305fe11eefaa3df6165d6dd",
+    "release_sha256": "8c3d9174630de1e68309c12131bc4f84997fb21d589fb6541f7ed13953f11a21"
+  },
+  {
+    "destination": "lib/trackers/sutrack/native/train/actors/__init__.py",
+    "source_sha256": "74722891161f8f2fb8524788e4cad797706bffd479ace93340bb49901b2d760d",
+    "release_sha256": "f07def7fddcc4e252a63f7e72888611d0929a85a7e8fbc4f558b20cbe7dc2de1"
+  },
+  {
+    "destination": "lib/trackers/sutrack/native/train/actors/actor_utils.py",
+    "source_sha256": "b66ce6f74236e65b0b790341b9d424eb3806c9825ab2392aa4b8dfda58e966f4",
+    "release_sha256": "342074c36556530cbf9c24cb5a33ca54f4976528acfd7b856156270675862960"
+  },
+  {
+    "destination": "lib/trackers/sutrack/native/train/actors/base_actor.py",
+    "source_sha256": "b0718f6379823121c571043a2a0c20a050939bef5d8174ee067fed3993b82c18",
+    "release_sha256": "8b4567ee8df526400142e4ec95492ebb6f0eab261c4c667f27fdfd5f99bd40f5"
+  },
+  {
+    "destination": "lib/trackers/sutrack/native/train/actors/sutrack.py",
+    "source_sha256": "12b8f209a808e47c839825adb2a797bd654b7e2f9b44b98217b9361e5d969002",
+    "release_sha256": "30497e54602fcc474d9d6fa5573a9c02a8b3e1f9ae53388b47c74ffac19a7424"
+  },
+  {
+    "destination": "lib/trackers/sutrack/native/train/admin/__init__.py",
+    "source_sha256": "0c401b89e30208a3a76ea6edc00176c6e66c1bdc9e38d6dbd04a8eeebbe4f111",
+    "release_sha256": "662787c44c0ddb307605979bcb322441a10a7212b321d7aa800320d566384817"
+  },
+  {
+    "destination": "lib/trackers/sutrack/native/train/admin/environment.py",
+    "source_sha256": "61500f586f4ee9400616a68f91e1cc4d04b9b2fea635f2ef21bf7d1584e327b9",
+    "release_sha256": "4d497151d2269079dc9dc70760afec5f2682d692ad8bb79d380224bba553f99a"
+  },
+  {
+    "destination": "lib/trackers/sutrack/native/train/admin/multigpu.py",
+    "source_sha256": "8cdb5ae2a3de52ca3ac7511d9d54cebcdc2ce6531fee6de53c46ef1521d344b4",
+    "release_sha256": "65c7ad4f532e698c490b00c410bf738a9a7919850aaf622b1acab8c71e633109"
+  },
+  {
+    "destination": "lib/trackers/sutrack/native/train/admin/settings.py",
+    "source_sha256": "096ff76e7aa55fd604a69649236757bd96e5662cdbae8fd298cc0ac215fe53ce",
+    "release_sha256": "ddb6e09713840b854a34717db87891db1b88e2f2f7c5649f80487ad5ba8ab2d2"
+  },
+  {
+    "destination": "lib/trackers/sutrack/native/train/admin/stats.py",
+    "source_sha256": "d7ee8a685a068a581208b5ef010c5749bdfb9262b6ab73059a432ba5658a1116",
+    "release_sha256": "02a6f2339e22ae9c6c60c81ec3db0c2f95f99417ffc768b21c929a573b434381"
+  },
+  {
+    "destination": "lib/trackers/sutrack/native/train/admin/tensorboard.py",
+    "source_sha256": "023080fef9e85c37360dda5dded64e79ff976baab1c8a2617b05b9e97415dbec",
+    "release_sha256": "e3acfb27d78323b66056deee9f7fadceac02e1bc6c53fdf0119c85f44babc4b6"
+  },
+  {
+    "destination": "lib/trackers/sutrack/native/train/base_functions.py",
+    "source_sha256": "76b4c6cb8db892db81ec235bb3104f72f8c4bde04fcccc597edf45037ad53437",
+    "release_sha256": "89c426238914becefaefe160ce0cd83892c77845d9bda26758d41ca98c37afd5"
+  },
+  {
+    "destination": "lib/trackers/sutrack/native/train/data/__init__.py",
+    "source_sha256": "81f130648f77240bf96ca11338c46bd0ca6b6d362297c934eaeb38e64d36d943",
+    "release_sha256": "4f3dcf21d52757237156a25cd83101dbfbcd887aebdaa5cadd98f356d79ae74e"
+  },
+  {
+    "destination": "lib/trackers/sutrack/native/train/data/bounding_box_utils.py",
+    "source_sha256": "d32aa112a2dbfb9c7130a9c8ae06558dd47ecf9bba33e46a447f9b7507321a61",
+    "release_sha256": "179f2bfcccc206342cea05addf48aef0bb90221b3a7e82b9dcf2a9052da22047"
+  },
+  {
+    "destination": "lib/trackers/sutrack/native/train/data/image_loader.py",
+    "source_sha256": "84fcba61cc3996cf03cf76deb4a00fd031ce24bfe12cf503e73dabffd4c616a7",
+    "release_sha256": "3f4807c81405f94dccf17c6bcecbeba827b150de16693011ea7fdf0edc8ea4f2"
+  },
+  {
+    "destination": "lib/trackers/sutrack/native/train/data/loader.py",
+    "source_sha256": "f6a609de95932c777d314baca2c7760dc4dd800115578d2c9c9a569dbc27ebe1",
+    "release_sha256": "8b1308bb5ed3b63af218793510e1956636e187fe333cd645037c5a3de9aa11ae"
+  },
+  {
+    "destination": "lib/trackers/sutrack/native/train/data/processing.py",
+    "source_sha256": "3659bcbc46212d1287a5ad56b3745bcc9bde396520ce9e57e26f4850f65cce48",
+    "release_sha256": "1ac88064ce7b6d4298fb17af5482271b33f5d7659ba3368abaac93b1bf81165c"
+  },
+  {
+    "destination": "lib/trackers/sutrack/native/train/data/processing_utils.py",
+    "source_sha256": "3d6f8395e622dda8c92c794240f72cdee87295152aecb36025b1448918f370a1",
+    "release_sha256": "71a65376761f066c8e1501a2970091fbe53fd27167162dc429359b9815bdb965"
+  },
+  {
+    "destination": "lib/trackers/sutrack/native/train/data/sampler.py",
+    "source_sha256": "404bbd1e29130148c4088c436080aab090e7d8348d5319986291aba8a18a5be0",
+    "release_sha256": "3c85b98160b1d702402aff66db70d2d5dfdc4f19cd8a1cf7fb542b0c42711349"
+  },
+  {
+    "destination": "lib/trackers/sutrack/native/train/data/transforms.py",
+    "source_sha256": "803a716d04bd37a18981e26f3e0ff95ba4400a5190f9871b09a0b4c3d6dd8528",
+    "release_sha256": "d23d71a1b4602656e135cafd283da78e6ef0634b44daa8d52ae0ccd952df0ea0"
+  },
+  {
+    "destination": "lib/trackers/sutrack/native/train/dataset/COCO_tool.py",
+    "source_sha256": "e2aff3600f4e40f0f5b795b50dff851546976e38ec0953edcfddb3b02ca4b581",
+    "release_sha256": "f7237ed5b01e654e5d4605d839859da0bfb310e47abb29372eb4ff2e1931aa1a"
+  },
+  {
+    "destination": "lib/trackers/sutrack/native/train/dataset/__init__.py",
+    "source_sha256": "281e9850c7824eb320a66aeb8c799e8c6f6076f0ab67e30712e2ebf1c470f131",
+    "release_sha256": "b9e7b5ea0869b6da7408cea33374699a56ad94065925cf3dd287c4202e9feff2"
+  },
+  {
+    "destination": "lib/trackers/sutrack/native/train/dataset/base_image_dataset.py",
+    "source_sha256": "1ddcbfe79578e990860218b9b241fc7b19f0ea54a7f1a4899dee5c2d4c2980ae",
+    "release_sha256": "7caa99d16d9b411347beacd38895a022ff0b4188b981a9537c22d64c27579a4f"
+  },
+  {
+    "destination": "lib/trackers/sutrack/native/train/dataset/base_video_dataset.py",
+    "source_sha256": "db8f0a68c0c03609c5b5c939f71a5bf592a6364d8f4bc4cae38d0cd1f7bdc6ec",
+    "release_sha256": "c7e473ba4f670c1f579c7a0df2058e324e157a3120b5396989174b202a8ce812"
+  },
+  {
+    "destination": "lib/trackers/sutrack/native/train/dataset/coco.py",
+    "source_sha256": "23b6ced1ee6e4a84666afda5f7e6e1486a7617458efccd374ef54df54baa7c8e",
+    "release_sha256": "a3f5abfc8488e65cc6a1ca884f9f1679a23031bd0172589f02722dca3456ac42"
+  },
+  {
+    "destination": "lib/trackers/sutrack/native/train/dataset/coco_seq.py",
+    "source_sha256": "ab34aebff40b862a8d1f1b6e30b3ad97b879959a247077f6b55684884b943c30",
+    "release_sha256": "64e5326334f3eeccfe8476adf3830a2dd270a326365105c9abb6e03a016ceffc"
+  },
+  {
+    "destination": "lib/trackers/sutrack/native/train/dataset/coco_seq_lmdb.py",
+    "source_sha256": "da1032f83ff06c541e8bfbe42125475dc044e0fd3834bdcfa0d6899bed4a7ba4",
+    "release_sha256": "a93aba826da6cae1594c8b352b55a79a164439b01db3184c64a91a02242c511f"
+  },
+  {
+    "destination": "lib/trackers/sutrack/native/train/dataset/depth_utils.py",
+    "source_sha256": "f97336af94a3ec196ad239603896fc0a2387dd1d61b48a4fbe2e055d9466e92e",
+    "release_sha256": "69226edd9ad3458c004f30b780b25d52a8c3ad80a0f8143123680968011fe37c"
+  },
+  {
+    "destination": "lib/trackers/sutrack/native/train/dataset/depthtrack.py",
+    "source_sha256": "7329baa39c5c7e797a0a1e0cdae938365fdf5e7972eb557397e30030000ed566",
+    "release_sha256": "b6ca0f89424eb5add0ddce569705a526e5dd006cf51a1f617735cea1d9d94aea"
+  },
+  {
+    "destination": "lib/trackers/sutrack/native/train/dataset/got10k.py",
+    "source_sha256": "b622244132e25883df1159e2bb0e2b952f683d3bc55f7aadddf6015a9c20aee5",
+    "release_sha256": "95871f32cb05d1080c10f25a83ddfa5e714fbd868bba0d9e6538749da46d6a28"
+  },
+  {
+    "destination": "lib/trackers/sutrack/native/train/dataset/got10k_lmdb.py",
+    "source_sha256": "d8e1661c22cb4c5a3d6799810cce930586f7d2b01a6052870f38f02411637a90",
+    "release_sha256": "b11ce8320776b5bb6ecc7dde3e4747fa0c35d3790dec43cfdee8162063f921df"
+  },
+  {
+    "destination": "lib/trackers/sutrack/native/train/dataset/imagenet1k.py",
+    "source_sha256": "57b92a0e1f5368ccba459b8f0dac0911e08eeb63157193616aa3e56d5521bd90",
+    "release_sha256": "268752c71b20300308fec5e1b4e586505016a6b2563f56217da4c4b7efc4ee1e"
+  },
+  {
+    "destination": "lib/trackers/sutrack/native/train/dataset/imagenet22k.py",
+    "source_sha256": "f83721df3113e97dcc2e25375a916ac6af2648f738841172b3dee48ba1960672",
+    "release_sha256": "ae334993d6dc730338c8a45227bcc03d1aea023c480b314b26138aebaf3e0222"
+  },
+  {
+    "destination": "lib/trackers/sutrack/native/train/dataset/imagenet22k_dataset.py",
+    "source_sha256": "dd21f075664d3a30ba0170b79de7110320555eedbd9f87fbec8a3e020c2bac11",
+    "release_sha256": "c2c5421a8f0f90e12a62e1324b23443bfd60817ffcd61a36efd5eff2b46fa055"
+  },
+  {
+    "destination": "lib/trackers/sutrack/native/train/dataset/imagenetvid.py",
+    "source_sha256": "518d8f153dcb9f237f289f10f7885ccc894c397be02e34b2bc6d676f54f040ad",
+    "release_sha256": "d70ad6731cbcfc6f0828311c3e7ce8a1caf2a29466cb7230caf57b35e090246b"
+  },
+  {
+    "destination": "lib/trackers/sutrack/native/train/dataset/imagenetvid_lmdb.py",
+    "source_sha256": "dfb38e4e987326cd9f3fd547de15832cb196eeeca1802d61f66e95410b359bd7",
+    "release_sha256": "80cafd640d92f81e1dedaad35ea30adffd2fb96a57c759dd4ded6caca8937c86"
+  },
+  {
+    "destination": "lib/trackers/sutrack/native/train/dataset/lasher.py",
+    "source_sha256": "0044f8f549633b3814377719ba2161228f448bba1db2e136b0f02524f83907c5",
+    "release_sha256": "c79745a5679ed36866ca6ac374abbecf682bdef3e0353e7671fa4e0f9983b1bf"
+  },
+  {
+    "destination": "lib/trackers/sutrack/native/train/dataset/lasot.py",
+    "source_sha256": "e819c94b6b39ec421f8d6a4f087fa5d0aac079d4f0093a61ce561ae70d2238c5",
+    "release_sha256": "2aeb20d1c03423a531af6c6fd9aa54959637cbdd5e8bec7eedd007274bec520f"
+  },
+  {
+    "destination": "lib/trackers/sutrack/native/train/dataset/lasot_lmdb.py",
+    "source_sha256": "10927162fb7100f8fe08bb96665c65853e9a209448ee70469b095619d15c838d",
+    "release_sha256": "4b3efd0d588e041c2a73af97a5c84a2c7118d961519c5792301e7aec1825a1c3"
+  },
+  {
+    "destination": "lib/trackers/sutrack/native/train/dataset/otb99_lang.py",
+    "source_sha256": "05297f349ca8cbd405e542d7b224586b27ec4dc61c413ba12368feb88c98c6f4",
+    "release_sha256": "255d26671e520f48413e806b093032f7c643343d3941549e7977925b04200d6e"
+  },
+  {
+    "destination": "lib/trackers/sutrack/native/train/dataset/refcoco_seq.py",
+    "source_sha256": "668fbdb64c22ba98ddb84cc6c20fc12be812ad6de924e5a22a842e9a8d6b89e1",
+    "release_sha256": "a7e91e726ffec1c784a4da9c072b52bace19e18d7254347b90cb5090a8b06b08"
+  },
+  {
+    "destination": "lib/trackers/sutrack/native/train/dataset/refer.py",
+    "source_sha256": "0bdf01ecf09eb39e36699d910a7fd7ae80ca610a519814e7674c405a0f224f8f",
+    "release_sha256": "d6a6c239dba59fd2c984c4d9305bed0a0ae76eb946f9a1d4e564d98b07965b08"
+  },
+  {
+    "destination": "lib/trackers/sutrack/native/train/dataset/tnl2k.py",
+    "source_sha256": "7505f84ded6742fd5a1d7e034ff79c8ec2bd02efd22eea2fe90d3f5b1b10f619",
+    "release_sha256": "b0c8b764f6314fb6b60b13563b13783929addabbf41872abdd2d6f253b15793d"
+  },
+  {
+    "destination": "lib/trackers/sutrack/native/train/dataset/tracking_net.py",
+    "source_sha256": "799bd26e838ab094f68a93cb33f35f934bc6580ab3d34d11b42a585e8dba145d",
+    "release_sha256": "6ec878fd155d2a62e2c8518d17dd45422c6fc89d978fb9c50209f8e5551f0037"
+  },
+  {
+    "destination": "lib/trackers/sutrack/native/train/dataset/tracking_net_lmdb.py",
+    "source_sha256": "f70303a729c701dd5836c16b24403ee271e70d905443d441c7dc1db5a35556e4",
+    "release_sha256": "2d4bec933acbd1845d9a6fa75833ad9ac0e0a1ffcefc5b181ba4d1d818d134b1"
+  },
+  {
+    "destination": "lib/trackers/sutrack/native/train/dataset/vasttrack.py",
+    "source_sha256": "05d5e464e24d33abcd4aea8fdc1e6c0a503e008e6abf5fd28da4748cb06ee26f",
+    "release_sha256": "5904343759702d222e076efbe4276f3bf05e73ba8d7362deadb55ebcff2d2cdc"
+  },
+  {
+    "destination": "lib/trackers/sutrack/native/train/dataset/visevent.py",
+    "source_sha256": "d26f1155c5d59fc7cb4f163b578762eb8f21a76ed33741dd2d7d4b107fe53cc9",
+    "release_sha256": "841ee4a4c72ae2d734e673a8a7b262f67b3e688d605cb0f69e20ddd131a97678"
+  },
+  {
+    "destination": "lib/trackers/sutrack/native/train/run_training.py",
+    "source_sha256": "5b814b00c79274e7005439d2a28f48cece8a594f5b18af41737bada38da2db14",
+    "release_sha256": "b88f586b4450563740a95d4c3b1638f33f72499c6ad1390347f60ef72201f073"
+  },
+  {
+    "destination": "lib/trackers/sutrack/native/train/train_script.py",
+    "source_sha256": "5774a598ed322bcd0ee03c2e9976fcb2d76ccc0cae692cb9646134b7e6237ca3",
+    "release_sha256": "64a5dac8a2ee8227502ce98fd2ad9b5e86a157bf529b9c2205cf8b9f0bb3bd0b"
+  },
+  {
+    "destination": "lib/trackers/sutrack/native/train/trainers/__init__.py",
+    "source_sha256": "84d98401c971a9d84a4aed4529695588c724834ed139ec8a76ed93c80fd8753e",
+    "release_sha256": "04de0120829ea0216192d80ac5e4775490fb20478afda2e6bf77586b37e4efae"
+  },
+  {
+    "destination": "lib/trackers/sutrack/native/train/trainers/base_trainer.py",
+    "source_sha256": "65a0436e5603bdc321434e0d5bfca28934f191a003118271da746631c742d1ab",
+    "release_sha256": "382598768fd7687537f082abd84d01379e801855d3bb476c0775820de9708c30"
+  },
+  {
+    "destination": "lib/trackers/sutrack/native/train/trainers/ltr_trainer.py",
+    "source_sha256": "86771bb8ef98c7ec24614caa6a7862545dd31114660b23ae27da8b9a6762affc",
+    "release_sha256": "1792e672b8dbbb539be0f1de7e4460571ba6a31b47fae20b6e3de427776f2ae8"
+  },
+  {
+    "destination": "lib/trackers/sutrack/native/utils/__init__.py",
+    "source_sha256": "8d3e5ebd1b1a92f835f17ef8c4085a530bec71f0848edd01ad1f8cb2c95c7a45",
+    "release_sha256": "7071162f908862b2d46ca7cb23f82743794deed333aea5473e7602a49baa4d39"
+  },
+  {
+    "destination": "lib/trackers/sutrack/native/utils/box_ops.py",
+    "source_sha256": "45b4a999e982f6bba0eefff4cfc40e7f168a226f0cc252a9c8d5e58e05b89ee5",
+    "release_sha256": "094f55b3dd6193da995c2601b69cb4c4ceb5b4884f121b5ec62a42b3e4893c30"
+  },
+  {
+    "destination": "lib/trackers/sutrack/native/utils/ema_sched.py",
+    "source_sha256": "d77375c1c97a67df3a7951931e8f72e12c8402bbd91b412c362c5504f315fa16",
+    "release_sha256": "30e71b5c155a2371cf1038028efa9c120ca434a6ff1db8f68cae3bca69c7e598"
+  },
+  {
+    "destination": "lib/trackers/sutrack/native/utils/focal_loss.py",
+    "source_sha256": "b393973c3288e95d99f027b23ce5b1e5a9fa4c5df8b12112fa4dce0d1f55e498",
+    "release_sha256": "60779c7149574475d346e44c09bc71b44ffa08396610d4d27bb32c4c5fdaaece"
+  },
+  {
+    "destination": "lib/trackers/sutrack/native/utils/gen_fname_list.py",
+    "source_sha256": "c779dd162c02c40aa68c680de4177e68bb51c6b0f75b70c004b5d706d19ddd6c",
+    "release_sha256": "682c38ed43c1933c389bb7355e9075b70ae88e0f26d04819b564fd415cfa6fff"
+  },
+  {
+    "destination": "lib/trackers/sutrack/native/utils/heapmap_utils.py",
+    "source_sha256": "09e39782e4783d43ad0b41461ca582d25766ff23e9f59248e6d894630f2dabf9",
+    "release_sha256": "f768e46e8fa8d08dcd34e598c72e31e1dfbc5764c9e758fd2b4dd6ed76033c41"
+  },
+  {
+    "destination": "lib/trackers/sutrack/native/utils/lmdb_utils.py",
+    "source_sha256": "0d311b5bc4b0a5cba018059054578e518a786c08196a582f6f3f8949cd6e3993",
+    "release_sha256": "c31ade3aee726dcbef698bd04e35ec77b2555094e2d882a876ca96dd7a8838f6"
+  },
+  {
+    "destination": "lib/trackers/sutrack/native/utils/lr_sched.py",
+    "source_sha256": "e05f951ae549689d4e1e6fdfeb8a6af6510c4683d32ca52364fad6a828811821",
+    "release_sha256": "f6ad1f878a81ec156268ce64bc3b15f9d102e98cf9e43fb2d326559f2ca9e25b"
+  },
+  {
+    "destination": "lib/trackers/sutrack/native/utils/merge.py",
+    "source_sha256": "149ae5bd4758f85ce30c35ea6054a6daff8b594621c4d648a34c91e6adf7be08",
+    "release_sha256": "463121986ca020f63888810a1a856378c6462675453a2827b5df05e958be21b8"
+  },
+  {
+    "destination": "lib/trackers/sutrack/native/utils/misc.py",
+    "source_sha256": "84d7a2d1d758d95a7ecb5110f652b650eddd621be35f2cad5bccd30305edf625",
+    "release_sha256": "4aac44ec954c7b6ccdc9f740f03bf3ce4d7f7c0a82eb83c978bc9209d1921444"
+  },
+  {
+    "destination": "lib/trackers/sutrack/native/utils/pos_embed.py",
+    "source_sha256": "88f4bc6818a37c445fddb4c0710e84b3d0f743879aa20c813ec612182344edb3",
+    "release_sha256": "7d9f7efba261051979e029f8c8f59f4fce0a3c9fbd4d31b420d334d548bd8945"
+  },
+  {
+    "destination": "lib/trackers/sutrack/native/utils/tensor.py",
+    "source_sha256": "526729efede32e08be41db1827b0c15f32d5edaa590dcdf26eb4159bffbad135",
+    "release_sha256": "7c974f1ca88b176ef0d60adc5d5934a46a3b661665a041abd848b297a2244768"
+  },
+  {
+    "destination": "lib/trackers/sutrack/native/utils/write_to_lmdb.py",
+    "source_sha256": "7b143796caf9af800f6dc6cebe319c7968f08472d6e25757d35f4ab26a574293",
+    "release_sha256": "5536ca7a8adfb064e847e6fd95a0d93a889b6af4ebf45464fe1d99be693f25f4"
+  },
+  {
+    "destination": "experiments/sutrack/sutrack/sutrack_b224.yaml",
+    "source_sha256": "b0d263bcfe44f584add4876f68cb302db99b00a945d3baa02a7e349ebc8c2497",
+    "release_sha256": "b0d263bcfe44f584add4876f68cb302db99b00a945d3baa02a7e349ebc8c2497"
+  },
+  {
+    "destination": "experiments/sutrack/sutrack/sutrack_b384.yaml",
+    "source_sha256": "b8d4db8948748bed9b61d5e1c94e4b82e57c669d58a3c678b62fd3c14f9c32ae",
+    "release_sha256": "b8d4db8948748bed9b61d5e1c94e4b82e57c669d58a3c678b62fd3c14f9c32ae"
+  },
+  {
+    "destination": "experiments/sutrack/sutrack/sutrack_l224.yaml",
+    "source_sha256": "f2c8be9a697d0390f0af0a561a8defd9a211d9929cda44f72e04af9015f08eb9",
+    "release_sha256": "f2c8be9a697d0390f0af0a561a8defd9a211d9929cda44f72e04af9015f08eb9"
+  },
+  {
+    "destination": "experiments/sutrack/sutrack/sutrack_l384.yaml",
+    "source_sha256": "315c72d4eb2ce6a851c398e6cab2c44dfc8e0b1a7490a4a8aba1e31249404545",
+    "release_sha256": "315c72d4eb2ce6a851c398e6cab2c44dfc8e0b1a7490a4a8aba1e31249404545"
+  },
+  {
+    "destination": "experiments/sutrack/sutrack/sutrack_t224.yaml",
+    "source_sha256": "78519152c5ad7bd13e7f1b533f6e9fdee4a9f04b7a73de499a1856e152ffc978",
+    "release_sha256": "78519152c5ad7bd13e7f1b533f6e9fdee4a9f04b7a73de499a1856e152ffc978"
+  },
+  {
+    "destination": "external/PreciseRoIPooling/pytorch/prroi_pool/__init__.py",
+    "source_sha256": "0cdc799ee2b3392515b81998a32d81fe9dbe6d8708a529cb470bbeceed595251",
+    "release_sha256": "3e3bd1d404643e269adc1f73fc5c59925d81c2fbd9385162bdecfacba9afe3b5"
+  },
+  {
+    "destination": "external/PreciseRoIPooling/pytorch/prroi_pool/functional.py",
+    "source_sha256": "3b37275bb147799d333f82f0249d930662831bcf8337f70213d14f763ae86a25",
+    "release_sha256": "a969d1931e7db69b3203b34ade2fcaded4b25102b98c9aa4e43e6dd4a85d5366"
+  },
+  {
+    "destination": "external/PreciseRoIPooling/pytorch/prroi_pool/prroi_pool.py",
+    "source_sha256": "5273ef15f294f65aed61c8b0c62400993cfeb50b06104ab922c90622f7f283d3",
+    "release_sha256": "03fbee31b66afbcaa5d214c42cb33e90cf27cddd6db1e098af0c3279d7045452"
+  },
+  {
+    "destination": "external/PreciseRoIPooling/pytorch/tests/test_prroi_pooling2d.py",
+    "source_sha256": "ac24751680d1574d7462e98ed072e3e2a620b109b7b8993472282c73fd2d170f",
+    "release_sha256": "6c4d8ff32be23db97dfc8330718371f63679592df2fbe99db78918c852348541"
+  },
+  {
+    "destination": "lib/models/qirtrack/base_raw_model.py",
+    "source_sha256": "f0eb246ea1d5ec53c6ed820b10a3e1222c1d391626a374d3ba657f4ae4612fa6",
+    "release_sha256": "b46c26b10ec6615d8523fda78cba6bd5377d2a709de067954d4e6dddc9b7f243"
+  },
+  {
+    "destination": "lib/models/qirtrack/native/native_response_bqp_v1.py",
+    "source_sha256": "0d9c3bcdb1b08a02ecc882b3b2387f5a32077b12ca28e476c29e8d14770590c0",
+    "release_sha256": "578ca631b2b076dd07f4c806fb87ab7cbe7e36444bd9f901e9650c7ecfccef26"
+  },
+  {
+    "destination": "lib/models/qirtrack/native/native_candidate_inputs_v1.py",
+    "source_sha256": "ac366eda8753e9adc39f680bd0b4451e6ffab2c73e831342e2bec46d897711ee",
+    "release_sha256": "f283b13120645cc6f8297f691ff5a773ac964bd620679bb4d088347fd8efaba6"
+  },
+  {
+    "destination": "lib/models/qirtrack/native/native_tracker_transaction_v1.py",
+    "source_sha256": "0c1d108cc16bfdbabf111f9ad37b03619c165fc487df8d4cd3c70e2fdfe601ed",
+    "release_sha256": "3a695d6a3733cb029ad31def6c6c40be7f7bf8fe3444f83e67ac99516d024e97"
+  },
+  {
+    "destination": "lib/models/qirtrack/native/training_data.py",
+    "source_sha256": "13eea3474e838f0d5c412f64e15826bddd36e5f63de8f67303ce7a9d4130ddec",
+    "release_sha256": "b58805ff89b8ad2174cde83fa5f3add203cfa4193a238d4fc1968ce04ac8a407"
+  },
+  {
+    "destination": "lib/models/qirtrack/native/online_quality.py",
+    "source_sha256": "f55312a47015547adbc1ed03861a258f79d0e44523594f60dec1ac66d6660490",
+    "release_sha256": "8cc1ea184c7385a9970a5a4f5110d127958c94bfc3cbe07ff1d3f4b95274f97e"
+  },
+  {
+    "destination": "lib/trackers/ostrack/controller.py",
+    "source_sha256": "d0afe16b194eeaa08c3f9da456080dd8e49a0404405b6f3942eb07571f15dba5",
+    "release_sha256": "d2f8154d80810099a4190eeb77c2486895c4d2f9f019ecd03b65808eb9c2d38f"
+  },
+  {
+    "destination": "lib/trackers/sutrack/controller.py",
+    "source_sha256": "d0afe16b194eeaa08c3f9da456080dd8e49a0404405b6f3942eb07571f15dba5",
+    "release_sha256": "d2f8154d80810099a4190eeb77c2486895c4d2f9f019ecd03b65808eb9c2d38f"
+  }
+]

@@ -1,0 +1,13 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "qirtrack"
+version = "0.0.1"
+description = "QIRTrack research source preparation (prompts and final weights withheld)"
+readme = "README.md"
+requires-python = ">=3.9"
+
+[tool.setuptools.packages.find]
+include = ["lib*", "external*"]

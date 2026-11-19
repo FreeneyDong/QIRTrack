@@ -1,0 +1,26 @@
+numpy>=1.21,<1.24
+torch
+torchvision
+timm==0.5.4
+einops
+easydev
+easydict
+PyYAML
+Pillow
+opencv-python
+scipy
+transformers>=4.25,<4.31
+requests
+packaging
+ninja
+
+# SUTrack tokenizer/text encoder dependency, upstream licence retained.
+-e external/CLIP
+
+matplotlib
+
+tensorboardX
+
+visdom
+
+tqdm
