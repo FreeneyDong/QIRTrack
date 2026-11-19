@@ -107,4 +107,4 @@ See [reproducibility](docs/REPRODUCIBILITY.md) and [release scope](docs/RELEASE_
 
 ## Acknowledgements and licensing
 
-The repository builds on [ARTrackV2](https://github.com/MIV-XJTU/ARTrack), [OSTrack](https://github.com/botaoye/OSTrack) and [SUTrack](https://github.com/chenxin-dlut/SUTrack). [Third-party notices](docs/THIRD_PARTY.md) are retained. A licence for the original QIRTrack code has not yet been selected. See [CITATION.cff](CITATION.cff) for citation status.
+The repository builds on [ARTrackV2](https://github.com/MIV-XJTU/ARTrack), [OSTrack](https://github.com/botaoye/OSTrack) and [SUTrack](https://github.com/chenxin-dlut/SUTrack). Original QIRTrack source code is licensed under [Apache-2.0](LICENSE); see [NOTICE](NOTICE) for its scope. [Third-party components](docs/THIRD_PARTY.md) retain their own terms, including CC BY-NC 4.0 for identified MAE-derived portions. The code licence does not cover datasets, figures or model weights. See [CITATION.cff](CITATION.cff) for citation status.

@@ -21,6 +21,6 @@
   "isolated_trials_passed": 3,
   "synthetic_bbox_only_feedback_passed": 3,
   "full_benchmark_reproduced": false,
-  "original_license_pending": true,
+  "original_license_pending": false,
   "unit_tests_passed": 14
 }

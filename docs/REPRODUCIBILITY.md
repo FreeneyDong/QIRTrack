@@ -18,5 +18,6 @@ are not distributed in this repository. The source preview may change and does
 not represent the final implementation described in the paper.
 Thus complete online execution is possible after providing those resources,
 but exact turnkey reproduction of all paper tables is deliberately not offered.
-Original-code licensing remains pending; nested third-party restrictions are
-documented in THIRD_PARTY.md. SOURCE_PROVENANCE.json tracks source/export hashes.
+Original QIRTrack code is licensed under Apache-2.0; nested third-party
+restrictions are documented in [THIRD_PARTY.md](THIRD_PARTY.md).
+SOURCE_PROVENANCE.json tracks source/export hashes.

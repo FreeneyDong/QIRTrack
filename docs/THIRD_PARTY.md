@@ -1,8 +1,9 @@
 # Third-party attribution and licence boundaries
 
-QIRTrack-original additions have **no distribution licence yet**. The author
-has confirmed authority to select one, but no choice has been made. A root
-licence selected later will not overwrite third-party grants or restrictions.
+Original QIRTrack source code is licensed under [Apache-2.0](../LICENSE).
+See [NOTICE](../NOTICE) for the scope of that grant. Third-party materials and
+portions adapted from them retain their existing terms. Apache-2.0 does not
+override more specific third-party notices or restrictions.
 
 | Component | Upstream root licence | Local licence |
 | --- | --- | --- |
@@ -37,8 +38,8 @@ The COCO API-derived `native/train/dataset/COCO_tool.py` copies retain their
 BSD copyright notices and `external/licenses/COCO_API_BSD.txt` from
 https://github.com/cocodataset/cocoapi/blob/master/license.txt.
 
-Model weights, datasets, MLLM services and prompts have separate rights and
-terms. An implementation licence is not automatic permission to redistribute
-all checkpoints or images. No native tracker/MLLM weights or data are bundled.
+Model weights, datasets, paper figures, MLLM services and prompts have separate
+rights and terms. The code licence does not authorise redistribution of
+checkpoints or images. No native tracker/MLLM weights or dataset files are bundled.
 Academic citation and copyright permission are different requirements: cite
 the original papers, and also comply with the applicable code licences.

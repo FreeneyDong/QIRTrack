@@ -34,8 +34,8 @@ research environments. A clean-machine environment matrix was not tested.
 - Live tests used private author prompts, **not bundled** public prompts.
 - OSTrack/SUTrack used their own qualified predictors, **not bundled** weights.
 - The only locally bundled S9 is the old AR diagnostic model, not final weights.
-- Original-code licence selection remains pending; third-party restrictions,
-  including nested MAE-derived code, are recorded in THIRD_PARTY.md.
+- Apache-2.0 applies to original QIRTrack code. Third-party restrictions,
+  including those on MAE-derived code, are recorded in [THIRD_PARTY.md](THIRD_PARTY.md).
 
 The full ordered-frame command is now implemented: see ONLINE_TRACKING.md.
 It is not a video decoder, a dataset downloader, an automatic training split

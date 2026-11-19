@@ -1,0 +1,16 @@
+QIRTrack — Quality–Identity Routing for Single Object Tracking
+
+The Apache License 2.0 in LICENSE applies to original source code contributed
+by the QIRTrack project to the extent that the project rightsholders can
+license it. It does not replace licences or notices attached to third-party
+code or portions adapted from third-party code.
+
+This distribution includes or adapts software from ARTrack/ARTrackV2,
+OSTrack, SUTrack, OpenAI CLIP, PreciseRoIPooling, MAE and the COCO API.
+See docs/THIRD_PARTY.md and the corresponding source-tree licence files for
+attribution, file scope and applicable conditions. Some MAE-derived portions
+retain CC BY-NC 4.0 terms; the combined repository is not an unrestricted
+Apache-2.0 distribution.
+
+This code licence does not grant rights to datasets, dataset imagery,
+paper figures, externally hosted model weights, or third-party services.
