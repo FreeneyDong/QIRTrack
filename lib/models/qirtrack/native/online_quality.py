@@ -1,8 +1,8 @@
 """Online causal native observations -> trained S9; no labels or AR fake logits."""
 import numpy as np
 import torch
-from lib.models.qirtrack.native.native_response_bqp_v1 import NativeResponseU1
-from lib.models.qirtrack.native.native_candidate_inputs_v1 import NativeCachedPastS9, build_current
+from lib.models.qirtrack.native.response_quality import NativeResponseU1
+from lib.models.qirtrack.native.candidate_inputs import NativeCachedPastS9, build_current
 from lib.models.qirtrack.core.trigger_e2e.model import causal_box_geometry
 
 class NativeOnlineQuality:

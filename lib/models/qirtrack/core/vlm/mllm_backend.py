@@ -14,7 +14,7 @@ import urllib.error
 import urllib.request
 from dataclasses import dataclass
 from typing import Sequence
-from lib.models.qirtrack.core.vlm.identity_verifier_logprobs import LABELS, _system_prompt, parse_label_logprobs
+from lib.models.qirtrack.core.vlm.identity_verifier import LABELS, _system_prompt, parse_label_logprobs
 from lib.models.qirtrack.core.vlm.artrackv2_vlm_recovery import RECOVERY_SCHEMA, _parse_json_text, _validate_response
 TIGHT_SYSTEM = prompt_text('mllm_backend_c9a9490d5d')
 

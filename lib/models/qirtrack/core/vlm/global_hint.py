@@ -8,9 +8,9 @@ from lib.models.qirtrack.mllm.prompts import prompt_text
 import hashlib
 import math
 import cv2
-from lib.models.qirtrack.core.vlm.mllm_full_controller import jpeg, shrink
-from lib.models.qirtrack.core.vlm.mllm_i1_evidence import crop_geometry
-from lib.models.qirtrack.core.vlm.mllm_i1_visual import VisualI1Controller
+from lib.models.qirtrack.core.vlm.controller import jpeg, shrink
+from lib.models.qirtrack.core.vlm.evidence import crop_geometry
+from lib.models.qirtrack.core.vlm.visual_evidence import VisualI1Controller
 
 def global_search_views(image, previous, frame):
     """Outline the nominal native square, clipped to the visible full image.

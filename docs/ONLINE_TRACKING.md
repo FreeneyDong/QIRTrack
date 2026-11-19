@@ -15,6 +15,9 @@ the interface: extract their frames first. Run from the repository root.
 4. An OpenAI-compatible multimodal endpoint supporting the actual logprob
    scoring/image payloads. Merely serving a text chat endpoint is insufficient.
 
+No backend address, API key or credentials are supplied. The conditional
+YES/NO scores are not calibrated probabilities.
+
 Only trusted checkpoint files should be loaded: upstream files use Python
 pickle. The compatibility loader maps old module names, not model tensors.
 
@@ -88,3 +91,8 @@ resume; use a new output directory for an explicit retry. HTTP failures are
 not silently treated as successful decisions. This launcher does not package
 GOT/TrackingNet submissions or invent official metrics. Evaluate only with the
 appropriate dataset protocol and genuine authorised annotations.
+
+The paired predictor metrics in [Training](TRAINING.md) are not tracking
+metrics. For offline tracking metrics or submission files, evaluate the final
+predictions with the benchmark's official protocol. Run each sequence in a
+separate process and output directory.

@@ -12,7 +12,7 @@ from typing import Callable, Sequence
 import cv2
 import numpy as np
 from lib.trackers.artrackv2.native.train.data.processing_utils import sample_target
-from lib.models.qirtrack.core.localisation.ar_coordinate_proposals import decode_tokens_to_image_boxes, rank_coordinate_proposals
+from lib.models.qirtrack.core.localisation.proposals import decode_tokens_to_image_boxes, rank_coordinate_proposals
 from lib.models.qirtrack.core.vlm.artrackv2_vlm_recovery import _draw_bbox
 from lib.models.qirtrack.core.vlm.mllm_backend import MLLMBackend, expanded_box
 

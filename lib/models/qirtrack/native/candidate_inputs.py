@@ -10,8 +10,8 @@ import numpy as np
 import torch
 HERE = Path(__file__).resolve().parent
 from lib.models.qirtrack.native import training_data as raw_data
-from lib.models.qirtrack.native.native_response_bqp_v1 import NativeResponseU1, validate_weight_role
-from lib.models.qirtrack.core.localisation.searchmap_candidate import PrPoolSearchMapCandidateIoU
+from lib.models.qirtrack.native.response_quality import NativeResponseU1, validate_weight_role
+from lib.models.qirtrack.core.localisation.roi_quality import PrPoolSearchMapCandidateIoU
 
 class NativeCachedPastS9(PrPoolSearchMapCandidateIoU):
     """Same BQP parameter keys; actual full current template + pooled past."""

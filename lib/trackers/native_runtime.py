@@ -1,5 +1,5 @@
 from lib.models.qirtrack.native.online_quality import NativeOnlineQuality
-from lib.models.qirtrack.native.native_tracker_transaction_v1 import NativeTrackerTransaction
+from lib.models.qirtrack.native.transaction import NativeTrackerTransaction
 
 class NativeRuntime:
     def __init__(self,adapter,kind,predictor):

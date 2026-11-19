@@ -2,7 +2,7 @@
 
 **Quality–Identity Routing for Single Object Tracking**
 
-[Installation](docs/INSTALL.md) · [Quickstart](docs/QUICKSTART.md) · [Model Zoo](docs/MODEL_ZOO.md) · [Online Tracking](docs/ONLINE_TRACKING.md)
+[Installation](#installation) · [Training](#predictor-fine-tuning-and-offline-evaluation) · [Model Zoo](docs/MODEL_ZOO.md) · [Online Tracking](#track-an-image-sequence)
 
 A tracker can remain confident while persistently mislocalising its target. QIRTrack addresses this failure mode, **confident drift**, by checking localisation quality and target identity separately. It uses a multimodal large language model (MLLM) selectively and verifies proposed corrections before accepting them.
 
@@ -34,12 +34,12 @@ This case compares output-only correction with bounding-box feedback from the sa
 Tracker adapters are provided separately for [ARTrackV2](lib/trackers/artrackv2/), [OSTrack](lib/trackers/ostrack/) and [SUTrack](lib/trackers/sutrack/). The shared QIRTrack components are under [`lib/models/qirtrack/`](lib/models/qirtrack/).
 
 1. Follow the [installation instructions](docs/INSTALL.md). The [Model Zoo](docs/MODEL_ZOO.md) identifies the matching native tracker profiles and lists the available predictor checkpoint.
-2. Use the [Quickstart](docs/QUICKSTART.md) for configuration, offline predictor evaluation and legacy S9 fine-tuning. Check the installation with `python tracking/preflight.py --offline`.
+2. Use the commands below for configuration, offline predictor evaluation and legacy S9 fine-tuning. Check the installation with `python tracking/preflight.py --offline`.
 3. To run the full tracker on ordered image frames with a first-frame box, follow the [online tracking guide](docs/ONLINE_TRACKING.md) and run `python tracking/test.py` with the generated configuration. The online path requires a configured MLLM backend and user-supplied prompts.
 
 ### Installation
 
-The commands below use Bash on Linux. Install a CUDA-compatible PyTorch and torchvision build first, and have a compatible CUDA toolkit, C++ compiler and Ninja available for PreciseRoIPooling. See the [installation guide](docs/INSTALL.md) for the tested package versions.
+The commands below use Bash on Linux. The tracker was integration-tested with Python 3.9, PyTorch 1.11, torchvision 0.12 and CUDA 11.3. Install a compatible PyTorch and torchvision build first, and have a compatible CUDA toolkit, C++ compiler and Ninja available for PreciseRoIPooling. See the [installation guide](docs/INSTALL.md) for details.
 
 ```bash
 git clone https://github.com/FreeneyDong/QIRTrack.git
@@ -71,7 +71,7 @@ CUDA_VISIBLE_DEVICES=0 python tracking/predictor.py evaluate \
   --run-name legacy_s9_eval --q 0.4
 ```
 
-The training command fine-tunes the diagnostic checkpoint; it does not train the native tracker or reproduce the paper's training from scratch. The evaluation command above scores the checkpoint selected in `configs/local.json`. To evaluate the fine-tuned checkpoint, generate a separate config pointing to it. See [Quickstart](docs/QUICKSTART.md) for the pair schema.
+The training command fine-tunes the diagnostic checkpoint; it does not train the native tracker or reproduce the paper's training from scratch. The evaluation command above scores the checkpoint selected in `configs/local.json`. To evaluate the fine-tuned checkpoint, generate a separate config pointing to it. See [Training](docs/TRAINING.md) for the pair schema.
 
 ### Track an image sequence
 
@@ -103,8 +103,8 @@ Replace the example box with your target's first-frame `x y width height` box. O
 
 This is trained with ARTrackV2-Base256-seq-GOT, which is **not the final benchmark checkpoint**. Native tracker weights are provided by their upstream projects.
 
-See [reproducibility](docs/REPRODUCIBILITY.md) and [release scope](docs/RELEASE_SCOPE.md) for the qualified workflows and limitations. Please note that we made some changes to the code and retrained the model after submitting this repository, thus it is not the final version of the paper.
+See [reproducibility](docs/REPRODUCIBILITY.md) for the qualified workflows, release scope and limitations. Please note that we made some changes to the code and retrained the model after submitting this repository, thus it is not the final version of the paper.
 
 ## Acknowledgements and licensing
 
-The repository builds on [ARTrackV2](https://github.com/MIV-XJTU/ARTrack), [OSTrack](https://github.com/botaoye/OSTrack) and [SUTrack](https://github.com/chenxin-dlut/SUTrack). Original QIRTrack source code is licensed under [Apache-2.0](LICENSE); see [NOTICE](NOTICE) for its scope. [Third-party components](docs/THIRD_PARTY.md) retain their own terms, including CC BY-NC 4.0 for identified MAE-derived portions. The code licence does not cover datasets, figures or model weights. See [CITATION.cff](CITATION.cff) for citation status.
+The repository builds on [ARTrackV2](https://github.com/MIV-XJTU/ARTrack), [OSTrack](https://github.com/botaoye/OSTrack) and [SUTrack](https://github.com/chenxin-dlut/SUTrack). Original QIRTrack source code is licensed under [Apache-2.0](LICENSE); see [NOTICE](NOTICE) for its scope. [Third-party components](docs/THIRD_PARTY.md) retain their own terms, including CC BY-NC 4.0 for identified MAE-derived portions. The code licence does not cover datasets, figures or model weights.

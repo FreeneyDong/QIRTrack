@@ -2,7 +2,7 @@
 from collections import deque
 import hashlib
 import math
-from lib.models.qirtrack.core.vlm.mllm_i1_global_hint import GlobalSearchPriorityController
+from lib.models.qirtrack.core.vlm.global_hint import GlobalSearchPriorityController
 HISTORY_ARMS = ('recent_trusted', 'anchor_only', 'recent', 'recent_q06', 'trusted', 'recent_q06_trusted', 'countmatched_recent', 'countmatched_recent_trusted')
 
 def select_history(past, trusted, frame, limit, include_trusted, arm):

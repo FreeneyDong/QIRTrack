@@ -42,7 +42,7 @@ class NativeResponseU1(TriggerE2E):
         return self.frame_encoder(flat(batch['template_tokens']), flat(batch['search_tokens']), flat(batch['coord_logits']), flat(batch['tracker_score']), flat(geom)).reshape(b, k, -1)
 
 def make_existing_bqp(raw_model, template_mode='recent'):
-    from lib.models.qirtrack.core.localisation.searchmap_candidate import PrPoolSearchMapCandidateIoU
+    from lib.models.qirtrack.core.localisation.roi_quality import PrPoolSearchMapCandidateIoU
     assert isinstance(raw_model, NativeResponseU1)
     return PrPoolSearchMapCandidateIoU(raw_model, template_mode=template_mode)
 

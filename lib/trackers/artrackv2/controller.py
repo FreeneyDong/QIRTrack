@@ -1,4 +1,4 @@
-from lib.models.qirtrack.core.vlm.conflict_fused_controller_v3 import ConflictFusedControllerV3
+from lib.models.qirtrack.core.vlm.quadrant_controller import ConflictFusedControllerV3
 
 class Controller(ConflictFusedControllerV3):
     def _atom_shadow(self, *args, **kwargs):

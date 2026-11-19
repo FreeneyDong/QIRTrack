@@ -2,7 +2,7 @@
 from functools import partial as _qir_partial
 from lib.trackers.checkpoint_io import load_checkpoint as _qir_load_checkpoint
 _qir_torch_load = _qir_partial(_qir_load_checkpoint, kind='sutrack')
-from .observation_utils import *
+from .features import *
 import sys,importlib,types
 import torch,cv2
 

@@ -1,7 +1,7 @@
 import unittest
 from lib.models.qirtrack.trigger import low_quality
-from lib.models.qirtrack.core.vlm.online_semantic_codebook_v1 import SemanticCodebookPolicy,semantic_label
-from lib.models.qirtrack.core.vlm.fused_identity_history_v2 import fused_references
+from lib.models.qirtrack.core.vlm.online_codebook import SemanticCodebookPolicy,semantic_label
+from lib.models.qirtrack.core.vlm.identity_memory import fused_references
 from lib.models.qirtrack.mllm.prompts import require_prompts
 class CoreTests(unittest.TestCase):
  def test_trigger(self):

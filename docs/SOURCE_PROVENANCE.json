@@ -1,6 +1,6 @@
 [
   {
-    "destination": "lib/models/qirtrack/core/localisation/ar_coordinate_proposals.py",
+    "destination": "lib/models/qirtrack/core/localisation/proposals.py",
     "source_sha256": "a4d7182b84c145e78c46116ab6d54c7cdd54d9d1ccf8d3bf3ca41ffccbe0f683",
     "release_sha256": "86388df89a95ae91e166b6c667cd3307079b7083e16e167e4e6548f6726bfc85"
   },
@@ -15,7 +15,7 @@
     "release_sha256": "e85784f4f20ffa2abaab6bd629729af7207bf56f4f947873c48cbf3636548a7a"
   },
   {
-    "destination": "lib/models/qirtrack/core/localisation/searchmap_candidate.py",
+    "destination": "lib/models/qirtrack/core/localisation/roi_quality.py",
     "source_sha256": "38d0da695cde343ee16b2cc95c6e88bc28d9eb5575de975b405ac456e115face",
     "release_sha256": "871922c60777fe001a7316a46e5585d8319131eb77028774700a52abb7c73386"
   },
@@ -50,102 +50,102 @@
     "release_sha256": "9889c997ae6abdbecf0f2fb1c50c3df2846e54eb4b73854390b7c022672a28dc"
   },
   {
-    "destination": "lib/models/qirtrack/core/vlm/atom_mainline_controller_v1.py",
+    "destination": "lib/models/qirtrack/core/vlm/atom_controller.py",
     "source_sha256": "9cf248500046576ee16796f33630ff251ff5a96477841f2845ccfd2163deb9ca",
-    "release_sha256": "556bf2a32986de5b9cd719a8187ce6b903aa94126d9a28af77195fb1cb98e565"
+    "release_sha256": "e27ff2c522849496e4036ea34c9da58b566611717a653b62028f2283eb570258"
   },
   {
-    "destination": "lib/models/qirtrack/core/vlm/codebook_history_controller_v1.py",
+    "destination": "lib/models/qirtrack/core/vlm/codebook_controller.py",
     "source_sha256": "437b4da3447f8996ba3dfe33c4268fbb763133861b828616994eb91d52bfe0ed",
-    "release_sha256": "1c751511657463ddafa9e30bb943146dc38a79e70c5779543a5fa6ba29b22b0d"
+    "release_sha256": "e050ab122d1e074888e6941cb14acf9d85599ce93e98351e08a00bc1930bef0e"
   },
   {
-    "destination": "lib/models/qirtrack/core/vlm/conflict_fused_controller_v3.py",
+    "destination": "lib/models/qirtrack/core/vlm/quadrant_controller.py",
     "source_sha256": "8eb58519eece9874affa4c342a8a0fb3015ce05e5c3edd691721766d6945ba8b",
-    "release_sha256": "c61451748b4cdc98744a15cc2a775867c5c00708cd14a6bfb8a6c890fda0531b"
+    "release_sha256": "6aa38f43e85dd90836b9e6f8db4c60f60d78eaf27761fecc7651b4d001ae24b9"
   },
   {
-    "destination": "lib/models/qirtrack/core/vlm/fused_history_controller_v2.py",
+    "destination": "lib/models/qirtrack/core/vlm/history_controller.py",
     "source_sha256": "b1a2741fa15c65d26edd6fd5fed0d084a948e8cc2551e6af8af8207ef0d61240",
-    "release_sha256": "44a2a5b535d46aa23d04832d43df88d6fd4aaab59dd3e45d19827b7a3a96993d"
+    "release_sha256": "0a1a2c55c161f302bce5e437bdb8ab14e9a41bc3c984ab1f584315fbcb15c7ec"
   },
   {
-    "destination": "lib/models/qirtrack/core/vlm/fused_identity_history_v2.py",
+    "destination": "lib/models/qirtrack/core/vlm/identity_memory.py",
     "source_sha256": "37fd7576dded136bcb2dcc2dd949fddf1328af122d8bd64f35d78c51e7a9464a",
-    "release_sha256": "c5a4e2e40239bfc80c4e8b98ae17cbf7c152e327403d2b08ad2c60998ed8c905"
+    "release_sha256": "c039bec1c2c099943f2c7b83033e3a55d2806c1e597312f2d4eb0ccc4e0c51cf"
   },
   {
-    "destination": "lib/models/qirtrack/core/vlm/identity_verifier_logprobs.py",
+    "destination": "lib/models/qirtrack/core/vlm/identity_verifier.py",
     "source_sha256": "555d65a6895a338a2930f9c2f34d864397d5cd3c5a0a1d2dc09456f2f75964e9",
     "release_sha256": "e4e95788f014526756113b99e364b0c43d99856a8cc6df52d5d502ba181bdbbd"
   },
   {
     "destination": "lib/models/qirtrack/core/vlm/mllm_backend.py",
     "source_sha256": "9de12597f517a709e30eef0080f1842296343c40f72d7a4354644ac4237762cc",
-    "release_sha256": "086b2b4c5cb20933d5aba001878eca570ce81d336dac2817a38511297023df39"
+    "release_sha256": "02e3d7d54248b77729300ca8905ec1275e0afc7d855ce377e19e3bbd50d4022d"
   },
   {
-    "destination": "lib/models/qirtrack/core/vlm/mllm_full_controller.py",
+    "destination": "lib/models/qirtrack/core/vlm/controller.py",
     "source_sha256": "d13b55d7b4967effc0d33832c3fb93d46a385fa22734c9361cdbfc767f161502",
-    "release_sha256": "85197c7518386f681423600974cc92947b2dadeb7c33b59622b3716b98b44811"
+    "release_sha256": "b64e7835714b89fd8359aa36b494216646ee03454f64633d45b1263d0e007110"
   },
   {
-    "destination": "lib/models/qirtrack/core/vlm/mllm_history_evidence.py",
+    "destination": "lib/models/qirtrack/core/vlm/history_evidence.py",
     "source_sha256": "d7b8f7239777d2489aecdffa8231b9520750a6d60148d25851e74d03d4ae7aa8",
-    "release_sha256": "b314ed4f5f0681680e0417d61625efc9b3ec37f2bc98d74a7050f56cdabc9a46"
+    "release_sha256": "250acfecc025282e09e5a5acb99f5829b39c39e08ba14499b1c80f2dc189244c"
   },
   {
-    "destination": "lib/models/qirtrack/core/vlm/mllm_i1_evidence.py",
+    "destination": "lib/models/qirtrack/core/vlm/evidence.py",
     "source_sha256": "e22661b054bbf8c538e5d15563e60208a4f39b55b1b25296a8e12dd600cc1137",
-    "release_sha256": "8cf333792b034730c5908492ba98ffce5d6f3b8d738b7f46910c4366d224a02c"
+    "release_sha256": "42225310ea2e497e5b7d2a08721975216bc726d0213957db68d2dd01e6697482"
   },
   {
-    "destination": "lib/models/qirtrack/core/vlm/mllm_i1_global_hint.py",
+    "destination": "lib/models/qirtrack/core/vlm/global_hint.py",
     "source_sha256": "d06b138f235debfc580e7c3c059bbeb281582d1e8913a32261eaba06db0e604e",
-    "release_sha256": "3ec955339feb2c2e1ae99e86881884222f30313a9910596b866e4ac0792a48de"
+    "release_sha256": "abade4ac9b80a1407b52f85c6b9e978dcb68a0300a98c1a371869736d9bd793f"
   },
   {
-    "destination": "lib/models/qirtrack/core/vlm/mllm_i1_visual.py",
+    "destination": "lib/models/qirtrack/core/vlm/visual_evidence.py",
     "source_sha256": "b2feb35684984ee4b682b19d90c04023d77e81227fb87fc82a4b4002d2eeb24c",
-    "release_sha256": "98fb7c46fee3585feb9cdfce6c34474ff6a331a549c701340254d9c09a45df00"
+    "release_sha256": "3636e702f6b34de10b7e23550e3e7edc77d8df6796db7fb0ba66514bfc8252ad"
   },
   {
-    "destination": "lib/models/qirtrack/core/vlm/mllm_input_contract.py",
+    "destination": "lib/models/qirtrack/core/vlm/input_contract.py",
     "source_sha256": "376d83d0d1166e15a24373487b702ace61889e66f00d264d48293817d5346411",
     "release_sha256": "4caa435b8bf200be3494faff8bdfca657351e987fb816955f64e09e709183de6"
   },
   {
-    "destination": "lib/models/qirtrack/core/vlm/mllm_recovery_search_r1.py",
+    "destination": "lib/models/qirtrack/core/vlm/recovery.py",
     "source_sha256": "7b706e88e96f4e6fedc909ecf95c3139815423eb78f14eabfb33ae4d16e837da",
-    "release_sha256": "5231dc050d6209e975d70e36f3de13b02c762c5c1a216a4d8dbcb3b529e472c9"
+    "release_sha256": "06c5adcf7902f20237d61ad81427d9506cd0453a53124816aead434469a4cee4"
   },
   {
-    "destination": "lib/models/qirtrack/core/vlm/online_semantic_codebook_v1.py",
+    "destination": "lib/models/qirtrack/core/vlm/online_codebook.py",
     "source_sha256": "33761cdc596cb47f431da31a65fe23945f9c77df1ce02607598213fe45aac95d",
-    "release_sha256": "5c76e65bdfddb7867692b9a93d4ef35769b5102b1874bd84d79f93b4ff3cf53b"
+    "release_sha256": "9b8f41b6bfedad1a1294d916d67c5b0871a468b8afa913bf53951db2424af6d8"
   },
   {
-    "destination": "lib/models/qirtrack/core/vlm/representative_history_v1.py",
+    "destination": "lib/models/qirtrack/core/vlm/representatives.py",
     "source_sha256": "af79560bdcb3ece69d517f0c683d4928bc69db13afbc2bdd4d52429b5c1f1727",
     "release_sha256": "13b07bf4d2c59678927cc00cd60ce75163af7392f9ffbe523ab995563b1e9a4e"
   },
   {
-    "destination": "lib/models/qirtrack/core/vlm/safe_identity_history_v1.py",
+    "destination": "lib/models/qirtrack/core/vlm/history_gate.py",
     "source_sha256": "1e10030ed9beeb9b0a4f491a9d21ad358b8e73ed70050be4db25627ab18d392c",
-    "release_sha256": "ae5a1549263dc1bf6623d83e18963099b74dff3e1cf904b20427fac6890527f4"
+    "release_sha256": "26be8337a713088a964062953b6cd91e735d91479c7266acda4a13ce4bc437e8"
   },
   {
-    "destination": "lib/models/qirtrack/core/vlm/safe_identity_history_v2.py",
+    "destination": "lib/models/qirtrack/core/vlm/protected_history.py",
     "source_sha256": "d92effd3a3bc314b2b39230d3ba42504f296666e86e0e67cd4e89f5d13100aa6",
-    "release_sha256": "fb5787d4627eaf20a49c59f72592ce976584e10e36cf36ca65da4edec3385085"
+    "release_sha256": "409e9f05f83cf70b4c33d67b06a6337300631a061e9cbd043a135d6a587d3ad5"
   },
   {
-    "destination": "lib/models/qirtrack/core/vlm/semantic_codebook_controller_v1.py",
+    "destination": "lib/models/qirtrack/core/vlm/semantic_controller.py",
     "source_sha256": "2345e5f45f845e252d0becedc44eeb9c4b4e7c9d23f5cb2dc20d005f8bb1c3e0",
-    "release_sha256": "52d147e7dbdcd6599d056a4357072d3f63f164b3ccdcb4a2ae189c6e48502b86"
+    "release_sha256": "50bfa95c84e110dbd58184f7c5b50e9f45f745251a75b98582307f85b692dc94"
   },
   {
-    "destination": "lib/models/qirtrack/core/vlm/unified_identity_memory_v1.py",
+    "destination": "lib/models/qirtrack/core/vlm/unified_memory.py",
     "source_sha256": "87375f6559d7dc6e865f9ed2cf3752a044f3649c25af4f83de4fcc928b85586f",
     "release_sha256": "047858178d65cc87e97ed3e11474afcfee7175df07a9c785430a3ea3ea452e88"
   },
@@ -2245,38 +2245,38 @@
     "release_sha256": "b46c26b10ec6615d8523fda78cba6bd5377d2a709de067954d4e6dddc9b7f243"
   },
   {
-    "destination": "lib/models/qirtrack/native/native_response_bqp_v1.py",
+    "destination": "lib/models/qirtrack/native/response_quality.py",
     "source_sha256": "0d9c3bcdb1b08a02ecc882b3b2387f5a32077b12ca28e476c29e8d14770590c0",
-    "release_sha256": "578ca631b2b076dd07f4c806fb87ab7cbe7e36444bd9f901e9650c7ecfccef26"
+    "release_sha256": "226346260dedfa0b7c50dafe2ffd6c66547ee797335932c51db25b611c242b07"
   },
   {
-    "destination": "lib/models/qirtrack/native/native_candidate_inputs_v1.py",
+    "destination": "lib/models/qirtrack/native/candidate_inputs.py",
     "source_sha256": "ac366eda8753e9adc39f680bd0b4451e6ffab2c73e831342e2bec46d897711ee",
-    "release_sha256": "f283b13120645cc6f8297f691ff5a773ac964bd620679bb4d088347fd8efaba6"
+    "release_sha256": "becd89febccc060202b4c9af404af83bea636abc7537426e0cad8675bf2bcef7"
   },
   {
-    "destination": "lib/models/qirtrack/native/native_tracker_transaction_v1.py",
+    "destination": "lib/models/qirtrack/native/transaction.py",
     "source_sha256": "0c1d108cc16bfdbabf111f9ad37b03619c165fc487df8d4cd3c70e2fdfe601ed",
     "release_sha256": "3a695d6a3733cb029ad31def6c6c40be7f7bf8fe3444f83e67ac99516d024e97"
   },
   {
     "destination": "lib/models/qirtrack/native/training_data.py",
     "source_sha256": "13eea3474e838f0d5c412f64e15826bddd36e5f63de8f67303ce7a9d4130ddec",
-    "release_sha256": "b58805ff89b8ad2174cde83fa5f3add203cfa4193a238d4fc1968ce04ac8a407"
+    "release_sha256": "38138d2fc663b7fd97819c1dcca22a76bdcde3456c809ddec498d00ff02e9c9b"
   },
   {
     "destination": "lib/models/qirtrack/native/online_quality.py",
     "source_sha256": "f55312a47015547adbc1ed03861a258f79d0e44523594f60dec1ac66d6660490",
-    "release_sha256": "8cc1ea184c7385a9970a5a4f5110d127958c94bfc3cbe07ff1d3f4b95274f97e"
+    "release_sha256": "fb64decee5372639d09ab041f144529fba1e3a34dde57e1938892115af7404e6"
   },
   {
     "destination": "lib/trackers/ostrack/controller.py",
     "source_sha256": "d0afe16b194eeaa08c3f9da456080dd8e49a0404405b6f3942eb07571f15dba5",
-    "release_sha256": "d2f8154d80810099a4190eeb77c2486895c4d2f9f019ecd03b65808eb9c2d38f"
+    "release_sha256": "804454d63d1e963e743852b9924c91548438d5c3ec3f0cd4977dfe4f1a2cb521"
   },
   {
     "destination": "lib/trackers/sutrack/controller.py",
     "source_sha256": "d0afe16b194eeaa08c3f9da456080dd8e49a0404405b6f3942eb07571f15dba5",
-    "release_sha256": "d2f8154d80810099a4190eeb77c2486895c4d2f9f019ecd03b65808eb9c2d38f"
+    "release_sha256": "804454d63d1e963e743852b9924c91548438d5c3ec3f0cd4977dfe4f1a2cb521"
   }
 ]

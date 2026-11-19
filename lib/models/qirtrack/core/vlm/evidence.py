@@ -16,8 +16,8 @@ from pathlib import Path
 import cv2
 import numpy as np
 from lib.models.qirtrack.core.vlm.mllm_backend import MLLMBackend
-from lib.models.qirtrack.core.vlm.mllm_full_controller import FullMLLMController
-from lib.models.qirtrack.core.vlm.mllm_input_contract import CONTRACT_VERSION, validate_manifest, validate_payload
+from lib.models.qirtrack.core.vlm.controller import FullMLLMController
+from lib.models.qirtrack.core.vlm.input_contract import CONTRACT_VERSION, validate_manifest, validate_payload
 TARGET_CONTRACT = prompt_text('mllm_i1_evidence_e21770bf36')
 
 def crop_geometry(region, marked, factor, side, shape):

@@ -3,8 +3,8 @@ from lib.models.qirtrack.mllm.prompts import prompt_text
 import copy
 import math
 import numpy as np
-from .online_semantic_codebook_v1 import OnlineIdentityCodebook, unit
-from .unified_identity_memory_v1 import digest
+from .online_codebook import OnlineIdentityCodebook, unit
+from .unified_memory import digest
 
 def fused_references(observations, anchor_vector, frame, representative_slots=4, recent_slots=4, max_slots=6):
     """Return at most six *unique* references, with no future/anchor observations.

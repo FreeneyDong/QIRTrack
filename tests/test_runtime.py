@@ -1,7 +1,7 @@
 import unittest
 from types import SimpleNamespace
 from lib.trackers.feedback import apply_accepted_state_writeback
-from lib.models.qirtrack.core.vlm.online_semantic_codebook_v1 import guarded_bbox_writeback
+from lib.models.qirtrack.core.vlm.online_codebook import guarded_bbox_writeback
 
 
 class FeedbackTests(unittest.TestCase):

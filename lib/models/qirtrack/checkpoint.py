@@ -2,7 +2,7 @@ from hashlib import sha256
 
 import torch
 from .base_raw_model import BaseSeqRawU1
-from .core.localisation.searchmap_candidate import PrPoolSearchMapCandidateIoU
+from .core.localisation.roi_quality import PrPoolSearchMapCandidateIoU
 
 def load_legacy_diagnostic(path, device='cpu'):
     # Only load checkpoints from trusted sources (torch pickle format).

@@ -1,5 +1,5 @@
 """R1 varies global-recovery seed/search only, not raw or local search."""
-from lib.models.qirtrack.core.vlm.mllm_history_evidence import HistoryEvidenceController
+from lib.models.qirtrack.core.vlm.history_evidence import HistoryEvidenceController
 
 class RecoverySearchController(HistoryEvidenceController):
 

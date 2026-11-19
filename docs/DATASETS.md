@@ -1,3 +1,0 @@
-# DATASETS
-
-Datasets are external and not redistributed. Configure local GOT-10k, LaSOT and TrackingNet paths explicitly. Never use hidden official test labels. Preserve source-video grouping for TrackingNet train-side selection. Use the legacy ARTrackV2-Base256-seq-GOT S9 for diagnostics, not for reproducing the paper's final benchmark results.

@@ -1,5 +1,5 @@
 """Reuse semantic/ATOM/PIC controller; replace AR-only proposal generation."""
-from lib.models.qirtrack.core.vlm.conflict_fused_controller_v3 import ConflictFusedControllerV3 as AtomMainlineControllerV1
+from lib.models.qirtrack.core.vlm.quadrant_controller import ConflictFusedControllerV3 as AtomMainlineControllerV1
 
 class NativeResponseController(AtomMainlineControllerV1):
 

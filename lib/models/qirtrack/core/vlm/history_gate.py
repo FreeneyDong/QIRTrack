@@ -2,7 +2,7 @@
 from lib.models.qirtrack.mllm.prompts import prompt_text
 import copy
 from dataclasses import asdict
-from .unified_identity_memory_v1 import UnifiedIdentityMemory, digest
+from .unified_memory import UnifiedIdentityMemory, digest
 import numpy as np
 
 class SafeIdentityHistory:

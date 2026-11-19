@@ -3,8 +3,8 @@ from lib.models.qirtrack.mllm.prompts import prompt_text
 import copy, math
 from dataclasses import dataclass, asdict
 import numpy as np
-from .safe_identity_history_v2 import SafeIdentityHistoryV2
-from .unified_identity_memory_v1 import Policy, digest
+from .protected_history import SafeIdentityHistoryV2
+from .unified_memory import Policy, digest
 
 @dataclass(frozen=True)
 class SemanticCodebookPolicy:

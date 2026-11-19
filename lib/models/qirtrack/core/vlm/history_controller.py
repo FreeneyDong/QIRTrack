@@ -1,8 +1,8 @@
 """Default fused history controller; V1 decision/proof logic stays unchanged."""
 from collections import deque
-from .semantic_codebook_controller_v1 import SemanticCodebookController
-from .mllm_recovery_search_r1 import RecoverySearchController
-from .fused_identity_history_v2 import FusedIdentityCodebook
+from .semantic_controller import SemanticCodebookController
+from .recovery import RecoverySearchController
+from .identity_memory import FusedIdentityCodebook
 
 class FusedHistoryController(SemanticCodebookController):
 

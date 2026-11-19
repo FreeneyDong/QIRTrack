@@ -1,1 +1,1 @@
-from .core.vlm.conflict_fused_controller_v3 import ConflictFusedControllerV3
+from .core.vlm.quadrant_controller import ConflictFusedControllerV3

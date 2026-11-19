@@ -11,8 +11,8 @@ import math
 import cv2
 import numpy as np
 from lib.trackers.artrackv2.native.train.data.processing_utils import sample_target
-from lib.models.qirtrack.core.vlm.mllm_full_controller import jpeg
-from lib.models.qirtrack.core.vlm.mllm_i1_evidence import I1Controller, crop_geometry
+from lib.models.qirtrack.core.vlm.controller import jpeg
+from lib.models.qirtrack.core.vlm.evidence import I1Controller, crop_geometry
 
 def tight_target(image, box, max_side=192):
     """Rectangular init-box crop, no context ring; keep aspect ratio.

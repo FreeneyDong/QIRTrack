@@ -6,7 +6,8 @@ The required OpenAI CLIP implementation/tokenizer is included under `external/CL
 
 Run `python tracking/preflight.py --offline`, `python -m unittest discover -s tests -v`, and, when the legacy checkpoint is present, `python tracking/check_checkpoint.py`. The online preflight intentionally fails until every withheld prompt is supplied. Supplying a prompt directory with no files is not sufficient.
 
-These checks do not constitute GPU end-to-end benchmark reproduction. See `INTEGRATION_STATUS.md` for completed short integration checks and remaining limits.
+These checks do not constitute GPU end-to-end benchmark reproduction. See
+[Reproducibility](REPRODUCIBILITY.md) for the completed short integration checks.
 
 ## CUDA extension check
 
@@ -45,9 +46,9 @@ service, not a dependency installed in the tracker process.
 Entries shown as null were not installed as that distribution name; they are
 not a suggested version. This snapshot does not replace a clean-machine test.
 
-The Conda recipe now targets the verified tracker major versions (Python 3.9,
-Torch 1.11 / torchvision 0.12 / CUDA 11.3, timm 0.5.4). NumPy is capped below
-1.24 for legacy upstream aliases. The default transformers range targets this
+The integration checks used Python 3.9, Torch 1.11, torchvision 0.12, CUDA 11.3
+and timm 0.5.4. The pip requirements cap NumPy below 1.24 for legacy upstream
+aliases. The default transformers range targets this
 older tracker environment; alternatively point `--clip-python` at a separate
 modern CPU encoder environment, as in the actual checks. Dependency resolution
 for a fresh installation has not been executed on the shared server.

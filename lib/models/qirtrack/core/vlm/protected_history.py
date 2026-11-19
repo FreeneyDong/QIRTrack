@@ -1,8 +1,8 @@
 """V2 retains scalar proof dependencies across evidence pruning and rollback."""
 from lib.models.qirtrack.mllm.prompts import prompt_text
 import copy
-from .safe_identity_history_v1 import SafeIdentityHistory
-from .unified_identity_memory_v1 import digest
+from .history_gate import SafeIdentityHistory
+from .unified_memory import digest
 
 class SafeIdentityHistoryV2(SafeIdentityHistory):
     schema = 'safe-identity-history-shadow-v2-dependency-ledger'

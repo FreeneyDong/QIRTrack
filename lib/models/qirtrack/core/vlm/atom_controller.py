@@ -5,7 +5,7 @@ existing candidate Q and semantic postcheck decide whether the *trial* box is
 written back.  Frozen V3 experiments continue to use their original class.
 """
 import math
-from .conflict_fused_controller_v3 import ConflictFusedControllerV3
+from .quadrant_controller import ConflictFusedControllerV3
 
 class AtomMainlineControllerV1(ConflictFusedControllerV3):
 

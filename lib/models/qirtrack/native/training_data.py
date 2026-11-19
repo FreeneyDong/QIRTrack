@@ -17,7 +17,7 @@ import sys
 import time
 import numpy as np
 import torch
-from lib.models.qirtrack.native.native_response_bqp_v1 import NativeResponseU1, checked_history_responses
+from lib.models.qirtrack.native.response_quality import NativeResponseU1, checked_history_responses
 from lib.models.qirtrack.base_raw_model import IoUDistributionLoss, absolute_metrics
 DATA = Path(configured_path('QIR_PATH_9C2792C454'))
 SCOPE = DATA / 'native_tracker_got_fast_scope_v1_20261101'

@@ -4,8 +4,8 @@ import os, sys, json, base64, subprocess, selectors, time
 from collections import deque
 from pathlib import Path
 import cv2, numpy as np
-from lib.models.qirtrack.core.vlm.mllm_recovery_search_r1 import RecoverySearchController
-from lib.models.qirtrack.core.vlm.representative_history_v1 import RepresentativeHistory
+from lib.models.qirtrack.core.vlm.recovery import RecoverySearchController
+from lib.models.qirtrack.core.vlm.representatives import RepresentativeHistory
 
 def tight(image, box):
     (x, y, w, h) = map(float, box)
@@ -25,7 +25,7 @@ class ClipWorker:
         self.folder.mkdir(exist_ok=False)
         self.err = (self.folder / 'worker.stderr.log').open('x')
         env = dict(os.environ, CUDA_VISIBLE_DEVICES='', OMP_NUM_THREADS='2', OPENBLAS_NUM_THREADS='2')
-        self.p = subprocess.Popen([os.environ.get('QIRTRACK_CLIP_PYTHON', sys.executable), '-u', str(Path(__file__).with_name('codebook_clip_worker_v1.py'))], stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=self.err, text=True, bufsize=1, env=env)
+        self.p = subprocess.Popen([os.environ.get('QIRTRACK_CLIP_PYTHON', sys.executable), '-u', str(Path(__file__).with_name('clip_worker.py'))], stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=self.err, text=True, bufsize=1, env=env)
         try:
             assert json.loads(self.read(120))['ready']
         except Exception:

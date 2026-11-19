@@ -1,8 +1,8 @@
 """Actual semantic conflicts route independently of uncalibrated codebook cosine."""
 from lib.models.qirtrack.mllm.prompts import prompt_text
 import math
-from .fused_history_controller_v2 import FusedHistoryController
-from .online_semantic_codebook_v1 import semantic_label
+from .history_controller import FusedHistoryController
+from .online_codebook import semantic_label
 
 class ConflictFusedControllerV3(FusedHistoryController):
 

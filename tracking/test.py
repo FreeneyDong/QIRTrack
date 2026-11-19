@@ -48,10 +48,10 @@ def main():
     import numpy as np
     import torch
     from lib.models.qirtrack.core.vlm.mllm_backend import MLLMBackend
-    from lib.models.qirtrack.core.vlm.mllm_i1_evidence import RequestArchive, RecordedBackend
-    from lib.models.qirtrack.core.vlm.mllm_full_controller import FrameworkConfig
-    from lib.models.qirtrack.core.vlm.codebook_history_controller_v1 import ClipWorker
-    from lib.models.qirtrack.core.vlm.online_semantic_codebook_v1 import SemanticCodebookPolicy, guarded_bbox_writeback
+    from lib.models.qirtrack.core.vlm.evidence import RequestArchive, RecordedBackend
+    from lib.models.qirtrack.core.vlm.controller import FrameworkConfig
+    from lib.models.qirtrack.core.vlm.codebook_controller import ClipWorker
+    from lib.models.qirtrack.core.vlm.online_codebook import SemanticCodebookPolicy, guarded_bbox_writeback
     from lib.trackers.feedback import apply_accepted_state_writeback
 
     class CheckedBackend(RecordedBackend):
