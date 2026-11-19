@@ -43,7 +43,7 @@ Tracker adapters are provided separately for [ARTrackV2](lib/trackers/artrackv2/
 
 This is trained with ARTrackV2-Base256-seq-GOT, which is **not the final benchmark checkpoint**. Native tracker weights are provided by their upstream projects.
 
-See [reproducibility](docs/REPRODUCIBILITY.md) and [release scope](docs/RELEASE_SCOPE.md) for the qualified workflows and limitations. Please note that we made some changes to the code and retrained the model after submitting this code repository, thus the repository code is not the final version of the paper.
+See [reproducibility](docs/REPRODUCIBILITY.md) and [release scope](docs/RELEASE_SCOPE.md) for the qualified workflows and limitations. Please note that we made some changes to the code and retrained the model after submitting this repository, thus it is not the final version of the paper.
 
 ## Acknowledgements and licensing
 
