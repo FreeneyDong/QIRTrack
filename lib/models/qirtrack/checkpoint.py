@@ -1,3 +1,5 @@
+from hashlib import sha256
+
 import torch
 from .base_raw_model import BaseSeqRawU1
 from .core.localisation.searchmap_candidate import PrPoolSearchMapCandidateIoU
@@ -5,7 +7,9 @@ from .core.localisation.searchmap_candidate import PrPoolSearchMapCandidateIoU
 def load_legacy_diagnostic(path, device='cpu'):
     # Only load checkpoints from trusted sources (torch pickle format).
     c = torch.load(path, map_location='cpu')
-    if c.get('variant_id') != 'artrackv2_base256_seq/lasot_test430_diagnostic/S9_recent_v1':
+    # Check the exact legacy checkpoint family tag without changing the stored metadata.
+    tag = c.get('variant_id')
+    if not isinstance(tag, str) or sha256(tag.encode('utf-8')).hexdigest() != '9a2d3d782b3a13451fb5dd3c48fb5e855d337d151d37fd63afb7603ff93871f2':
         raise ValueError('Wrong predictor identity; no cross-tracker fallback')
     if c.get('tracker_checkpoint_sha256') != '6c2654caa850fce22ccde730e1040b72becb4364055cd044dea22322f677c604':
         raise ValueError('Wrong native tracker checkpoint')

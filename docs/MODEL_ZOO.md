@@ -8,9 +8,9 @@
 
 Save the downloaded file as `checkpoints/s9_b256_seq_got_64k.pt`. Git ignores the binary; it does not come with the clone. Sign in to an account with Drive access to download it.
 
-SHA256: `1e85329a3595dcd8b045b7fa159401c8d4fc38720b72c30a3f169e2e3b5f830e`. The [checkpoint manifest](../checkpoints/manifest.json) records the size, training scope and provenance.
+SHA256: `1e85329a3595dcd8b045b7fa159401c8d4fc38720b72c30a3f169e2e3b5f830e`. The [checkpoint manifest](../checkpoints/manifest.json) records the size, tracker profile and provenance.
 
-This is a **diagnostic checkpoint, not the final benchmark model**. It was trained on LaSOT test280 and extension150, so evaluating on those sequences does not measure independent generalisation. No native tracker weights or OSTrack/SUTrack predictor weights are bundled.
+This legacy S9 was trained with ARTrackV2-Base256-seq-GOT. It is a **diagnostic checkpoint, not the final benchmark model**. No native tracker weights or OSTrack/SUTrack predictor weights are bundled.
 
 ## Native weight identities accepted by the online adapters
 

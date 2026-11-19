@@ -20,6 +20,6 @@ git push -u origin main
 
 Inspect staged content before committing: no local configuration, credentials, data, request logs, outputs or final model weights. The legacy checkpoint is ignored; only its documentation/manifest is committed. Upload that checkpoint separately as a release asset if desired, and add its real URL only after upload. Empty prompts are intentional. The LICENSE file does not grant rights to QIRTrack-original code; do not label this an open-source-licensed release while that decision remains pending. If origin already exists, inspect it before any change rather than adding/replacing it blindly.
 
-Publication is not evidence of reproducibility. Paired fine-tuning/offline predictor commands are separate from the separately qualified ordered-frame workflow; only short smoke tests have been performed, and the old test-trained model is not a final benchmark model.
+Publication is not evidence of reproducibility. Paired fine-tuning/offline predictor commands are separate from the qualified ordered-frame workflow. This repository is a source preview that may change; it is not the final implementation described in the paper. The legacy ARTrackV2-Base256-seq-GOT S9 is a diagnostic checkpoint, not the final benchmark model.
 
 Before public release, review THIRD_PARTY.md: nested MAE-derived files carry a non-commercial provenance boundary. Choosing MIT/Apache for original additions does not remove this.

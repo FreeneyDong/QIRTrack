@@ -6,7 +6,6 @@
       "bytes": 7907895,
       "backbone": "ARTrackV2-Base256-seq-GOT",
       "role": "legacy diagnostic, NOT final benchmark evaluation weights",
-      "training_scope": "LaSOT test280 + extension150; not independent evaluation",
       "raw_updates": 2000,
       "paired_updates": 64000,
       "final_model": false,

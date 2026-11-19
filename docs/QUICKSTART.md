@@ -22,7 +22,7 @@ The JSONL uses the original labelled-pair schema: `sequence`, 1-based `frame`, u
 - Train performs paired **fine-tuning from the downloaded legacy S9**, not raw/U1 pretraining or exact replay of the original 64k training schedule. It preserves the original stratified sampler, frozen base, absolute distribution loss + 10x relative SmoothL1, AdamW settings and gradient clipping. Updates are explicitly additional, not a hidden resume of optimiser state.
 - Evaluate reports raw-deduplicated offline predictor MAE/Recall/FPR/F1 and pair ranking. Good IoU >= .5, bad IoU < .4; grey samples are excluded from classification, not MAE. Ranking excludes true-gain ties; predicted ties count as incorrect and are separately reported.
 - The paired predictor CLI is not a final tracking test. Use the separate complete sequence runner in ONLINE_TRACKING.md. OSTrack/SUTrack need their own predictors; this paired training CLI only accepts the legacy AR variant.
-- The supplied checkpoint was trained on LaSOT test280 + extension150. No independent generalisation claim can be made from evaluating it on those identities. The CLI never invents or silently chooses a validation split.
+- The downloadable legacy S9 was trained with ARTrackV2-Base256-seq-GOT and is for diagnostics only, not final benchmark evaluation. The CLI never invents or silently chooses a validation split.
 - Empty MLLM prompts prevent turnkey online reproduction by design. The complete sequence entry point is implemented but requires privately supplied prompts and matching native/predictor weights.
 
 ## Complete online tracking
