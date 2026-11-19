@@ -41,9 +41,9 @@ Tracker adapters are provided separately for [ARTrackV2](lib/trackers/artrackv2/
 
 [Download legacy S9 (Google Drive, restricted access)](https://drive.google.com/file/d/1JjT9JF8ryTl1RcfIy_sV0NMC0oBHGSXI/view) · [Placement and checksum](docs/MODEL_ZOO.md)
 
-This is the ARTrackV2-Base256-seq-GOT S9 **diagnostic checkpoint, not the final benchmark checkpoint**. Native tracker weights are provided by their upstream projects.
+This is trained with ARTrackV2-Base256-seq-GOT, which is **not the final benchmark checkpoint**. Native tracker weights are provided by their upstream projects.
 
-See [reproducibility](docs/REPRODUCIBILITY.md) and [release scope](docs/RELEASE_SCOPE.md) for the qualified workflows and limitations.
+See [reproducibility](docs/REPRODUCIBILITY.md) and [release scope](docs/RELEASE_SCOPE.md) for the qualified workflows and limitations. Please note that we made some changes to the code and retrained the model after submitting this code repository, thus the repository code is not the final version of the paper.
 
 ## Acknowledgements and licensing
 
