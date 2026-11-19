@@ -3,7 +3,7 @@
 Run from the repository root with the dependencies installed. Download the legacy diagnostic checkpoint via the [Model Zoo](MODEL_ZOO.md) before using the commands below. Only load trusted PyTorch checkpoints/input files. CUDA is required for S9 forward/backward (PreciseRoIPooling).
 
 ```bash
-python tracking/configure.py --data-root /absolute/path/to/pair_data --output-root /absolute/path/to/new_outputs --checkpoint checkpoints/old_s9_b256_seq_got_diagnostic_64k.pt
+python tracking/configure.py --data-root /absolute/path/to/pair_data --output-root /absolute/path/to/new_outputs --checkpoint checkpoints/s9_b256_seq_got_64k.pt
 python tracking/preflight.py --offline
 python -m unittest discover -s tests -v
 python tracking/predictor.py evaluate --config configs/local.json --manifest /absolute/path/evaluation_pairs.jsonl --run-name input_check --validate-only

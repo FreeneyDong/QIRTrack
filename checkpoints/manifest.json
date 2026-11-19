@@ -1,7 +1,7 @@
 {
   "models": [
     {
-      "file": "old_s9_b256_seq_got_diagnostic_64k.pt",
+      "file": "s9_b256_seq_got_64k.pt",
       "sha256": "1e85329a3595dcd8b045b7fa159401c8d4fc38720b72c30a3f169e2e3b5f830e",
       "bytes": 7907895,
       "backbone": "ARTrackV2-Base256-seq-GOT",

@@ -24,7 +24,7 @@ pickle. The compatibility loader maps old module names, not model tensors.
 python tracking/configure_online.py \
   --tracker artrackv2 --domain lasot \
   --native-checkpoint /ABS/official_base256_got.pth.tar \
-  --predictor /ABS/old_s9_b256_seq_got_diagnostic_64k.pt \
+  --predictor /ABS/s9_b256_seq_got_64k.pt \
   --clip /ABS/clip-vit-base-patch32 \
   --clip-python /ABS/clip-env/bin/python \
   --prompts /ABS/private-prompts \

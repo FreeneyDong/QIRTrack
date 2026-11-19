@@ -6,7 +6,7 @@
 | --- | --- | --- |
 | Legacy S9 (64k paired updates, 7.9 MB) | ARTrackV2-Base256-seq-GOT | [Google Drive (restricted access)](https://drive.google.com/file/d/1JjT9JF8ryTl1RcfIy_sV0NMC0oBHGSXI/view) |
 
-Save the downloaded file as `checkpoints/old_s9_b256_seq_got_diagnostic_64k.pt`. Git ignores the binary; it does not come with the clone. Sign in to an account with Drive access to download it.
+Save the downloaded file as `checkpoints/s9_b256_seq_got_64k.pt`. Git ignores the binary; it does not come with the clone. Sign in to an account with Drive access to download it.
 
 SHA256: `1e85329a3595dcd8b045b7fa159401c8d4fc38720b72c30a3f169e2e3b5f830e`. The [checkpoint manifest](../checkpoints/manifest.json) records the size, training scope and provenance.
 
