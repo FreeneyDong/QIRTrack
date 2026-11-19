@@ -37,6 +37,66 @@ Tracker adapters are provided separately for [ARTrackV2](lib/trackers/artrackv2/
 2. Use the [Quickstart](docs/QUICKSTART.md) for configuration, offline predictor evaluation and legacy S9 fine-tuning. Check the installation with `python tracking/preflight.py --offline`.
 3. To run the full tracker on ordered image frames with a first-frame box, follow the [online tracking guide](docs/ONLINE_TRACKING.md) and run `python tracking/test.py` with the generated configuration. The online path requires a configured MLLM backend and user-supplied prompts.
 
+### Installation
+
+The commands below use Bash on Linux. Install a CUDA-compatible PyTorch and torchvision build first, and have a compatible CUDA toolkit, C++ compiler and Ninja available for PreciseRoIPooling. See the [installation guide](docs/INSTALL.md) for the tested package versions.
+
+```bash
+git clone https://github.com/FreeneyDong/QIRTrack.git
+cd QIRTrack
+python -m pip install -r requirements.txt
+python -m pip install -e .
+python tracking/preflight.py --offline
+```
+
+### Predictor fine-tuning and offline evaluation
+
+Download the legacy S9 checkpoint from the [Model Zoo](docs/MODEL_ZOO.md) and save it as `checkpoints/s9_b256_seq_got_64k.pt`. Set the paths below to your labelled pair manifests and cached tracker observations; these inputs are not bundled. Run the input check first, then run fine-tuning or offline evaluation as needed.
+
+```bash
+python tracking/configure.py \
+  --data-root /path/to/pair_data --output-root /path/to/predictor_outputs \
+  --checkpoint checkpoints/s9_b256_seq_got_64k.pt
+
+python tracking/predictor.py evaluate \
+  --config configs/local.json --manifest /path/to/eval_pairs.jsonl \
+  --run-name input_check --validate-only
+
+CUDA_VISIBLE_DEVICES=0 python tracking/predictor.py train \
+  --config configs/local.json --manifest /path/to/train_pairs.jsonl \
+  --run-name s9_finetune --steps 4000 --batch-size 8
+
+CUDA_VISIBLE_DEVICES=0 python tracking/predictor.py evaluate \
+  --config configs/local.json --manifest /path/to/eval_pairs.jsonl \
+  --run-name legacy_s9_eval --q 0.4
+```
+
+The training command fine-tunes the diagnostic checkpoint; it does not train the native tracker or reproduce the paper's training from scratch. The evaluation command above scores the checkpoint selected in `configs/local.json`. To evaluate the fine-tuned checkpoint, generate a separate config pointing to it. See [Quickstart](docs/QUICKSTART.md) for the pair schema.
+
+### Track an image sequence
+
+This diagnostic example uses ARTrackV2-Base256-seq-GOT. Supply its native checkpoint, the legacy S9 predictor, a local CLIP ViT-B/32 directory, a populated private prompt directory and a multimodal endpoint that supports image input and log probabilities. The original prompts are not supplied.
+
+```bash
+python tracking/configure_online.py \
+  --tracker artrackv2 --domain lasot \
+  --native-checkpoint /path/to/official_base256_got.pth.tar \
+  --predictor checkpoints/s9_b256_seq_got_64k.pt \
+  --clip /path/to/clip-vit-base-patch32 \
+  --clip-python /path/to/clip-env/bin/python \
+  --prompts /path/to/private-prompts \
+  --mllm-url http://127.0.0.1:8001/v1/chat/completions \
+  --mllm-model YOUR_SERVED_MODEL --q 0.4 \
+  --out configs/local_artrackv2.json
+
+CUDA_VISIBLE_DEVICES=0 python tracking/test.py \
+  --config configs/local_artrackv2.json \
+  --sequence /path/to/sequence/img --init-box 367 101 41 16 \
+  --output outputs/demo_artrackv2 --max-frames 12
+```
+
+Replace the example box with your target's first-frame `x y width height` box. Omit `--max-frames 12` to process all ordered JPG/PNG frames; use a new output directory for every run. Results are written to `predictions.txt` in that directory. For OSTrack or SUTrack, change `--tracker` and supply both that tracker's native checkpoint and its matching predictor; the ARTrackV2 S9 is not interchangeable. See [Online Tracking](docs/ONLINE_TRACKING.md) for the remaining options.
+
 ## Weights and release scope
 
 [Download legacy S9 (Google Drive, restricted access)](https://drive.google.com/file/d/1JjT9JF8ryTl1RcfIy_sV0NMC0oBHGSXI/view) · [Placement and checksum](docs/MODEL_ZOO.md)
