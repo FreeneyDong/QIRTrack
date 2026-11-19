@@ -40,7 +40,7 @@ CUDA_VISIBLE_DEVICES=0 python tracking/test.py \
 
 The box above is only an example: replace it with the first frame's target box.
 Add `--max-frames 12` for a smoke test; omit it to process the entire sequence.
-The native Base256-seq-GOT checkpoint identity is checked. The included old S9
+The native Base256-seq-GOT checkpoint identity is checked. The legacy S9 from the [Model Zoo](MODEL_ZOO.md)
 is a test430-trained diagnostic model, **not final benchmark weights**, and is
 not evidence of held-out LaSOT performance.
 

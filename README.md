@@ -1,29 +1,50 @@
 # QIRTrack
 
-Quality–Identity Routing for Single Object Tracking.
+**Quality–Identity Routing for Single Object Tracking**
 
-This is a **release-preparation source tree**, extracted from the implemented research code. It is not a promise of a one-command reproduction of all paper tables. ARTrackV2, OSTrack and SUTrack implementations are stored separately under `lib/trackers/`; BQP, QIC and PIC are shared under `lib/models/qirtrack/`.
+[Installation](docs/INSTALL.md) · [Quickstart](docs/QUICKSTART.md) · [Model Zoo](docs/MODEL_ZOO.md) · [Online Tracking](docs/ONLINE_TRACKING.md)
 
-## Important boundaries
+A tracker can remain confident while persistently mislocalising its target. QIRTrack addresses this failure mode, **confident drift**, by checking localisation quality and target identity separately. It uses a multimodal large language model (MLLM) selectively and verifies proposed corrections before accepting them.
 
-- MLLM prompt files are deliberately empty. No original prompts or responses are distributed. Online inference must supply prompts and pass the prompt preflight; exact semantic reproduction is not possible without them.
-- Only the legacy ARTrackV2-Base256-seq-GOT S9 64k diagnostic checkpoint is locally included. **It is not the final benchmark model.** It was trained on LaSOT test280 + extension150 and must not be presented as independent LaSOT evaluation.
-- Original-code licensing and final citation metadata are pending. Third-party licences are preserved. Do not publish this tree as fully licensed open-source until this is resolved.
-- No videos, annotations, experiment outputs, remote credentials, request caches or service launch scripts are included.
-- Historical code was namespace/path adapted, not retrained. Short GPU integration checks do not certify a full benchmark reproduction. See `docs/REPRODUCIBILITY.md`.
+## Framework
 
-## Layout
+![QIRTrack framework: quality estimation, identity-conditioned routing, and verified recovery](assets/framework.png)
 
-`lib/models/qirtrack/{quality_predictor,trigger,semantic_verifier,evidence_fusion,recovery,state,history}.py` expose the actual core implementations. `core/` retains source-module boundaries for traceability. `lib/trackers/{artrackv2,ostrack,sutrack}/native/` contains each tracker separately, with upstream configs under `experiments/`. `external/` contains required CUDA sources. `prompts/` is empty by design.
+- **Bounding Box Quality Predictor (BQP)** estimates the quality of boxes already supplied by the tracker or recovery trial. It uses target-conditioned visual features, past observations and box geometry to help decide when to query; it does not predict a second tracking trajectory.
+- **Quadrant-based Intervention Controller (QIC)** uses quality and semantic identity evidence to choose whether to retain, refine or recover a box. For recovery, the MLLM provides identity evidence or a coarse proposal; an isolated tracker trial and candidate postcheck validate the correction.
+- **Protected Identity Codebook (PIC)** maintains diverse, screened references for later identity checks. Accepting a corrected output and writing that correction back to the tracker are separate decisions.
 
-## Checks
+## Qualitative examples
 
-From the repository root: `python tracking/preflight.py --offline` and `python -m unittest discover -s tests -v`. Online prompt preflight: `python tracking/preflight.py` (expected to fail until prompts are supplied).
+**Detecting and interrupting drift (`dog-19`, LaSOT).** The native tracker stays confident after switching to a distractor. The timeline aligns the quality estimate, semantic queries and verified recovery with the two tracking trajectories.
 
-See [installation](docs/INSTALL.md), [model zoo](docs/MODEL_ZOO.md), [training](docs/TRAINING.md), [evaluation](docs/EVALUATION.md) and [provenance](docs/SOURCE_PROVENANCE.json).
+<img src="assets/confident-drift-dog19.png" alt="LaSOT dog-19: native trajectory, QIRTrack trajectory, and evidence timeline" width="660">
 
-## Release checklist
+<details>
+<summary>Inspect the tracker after a correction (umbrella-19)</summary>
 
-See [release scope](docs/RELEASE_SCOPE.md) for the six author-requested packaging constraints, retained interfaces and explicit limitations. Original research archives are maintained separately; their private inventories are not part of this repository.
+This case compares output-only correction with bounding-box feedback from the same correction point. The panels show subsequent attention and boundary readout; they illustrate one sequence, not an aggregate performance result.
 
-See [executable commands](docs/QUICKSTART.md) for local path configuration, legacy paired fine-tuning and offline predictor evaluation. For complete ordered-frame inference, use [online tracking](docs/ONLINE_TRACKING.md): configure paths once, then run `python tracking/test.py`. Encoded video decoding and official submission packaging are separate.
+<img src="assets/feedback-umbrella19.png" alt="LaSOT umbrella-19: output-only versus bbox feedback, with layer attention and boundary readout" width="740">
+
+</details>
+
+## Get started
+
+Tracker adapters are provided separately for [ARTrackV2](lib/trackers/artrackv2/), [OSTrack](lib/trackers/ostrack/) and [SUTrack](lib/trackers/sutrack/). The shared QIRTrack components are under [`lib/models/qirtrack/`](lib/models/qirtrack/).
+
+1. Follow the [installation instructions](docs/INSTALL.md). The [Model Zoo](docs/MODEL_ZOO.md) identifies the matching native tracker profiles and lists the available predictor checkpoint.
+2. Use the [Quickstart](docs/QUICKSTART.md) for configuration, offline predictor evaluation and legacy S9 fine-tuning. Check the installation with `python tracking/preflight.py --offline`.
+3. To run the full tracker on ordered image frames with a first-frame box, follow the [online tracking guide](docs/ONLINE_TRACKING.md) and run `python tracking/test.py` with the generated configuration. The online path requires a configured MLLM backend and user-supplied prompts.
+
+## Weights and release scope
+
+[Download legacy S9 (Google Drive, restricted access)](https://drive.google.com/file/d/1JjT9JF8ryTl1RcfIy_sV0NMC0oBHGSXI/view) · [Placement and checksum](docs/MODEL_ZOO.md)
+
+This is the ARTrackV2-Base256-seq-GOT S9 **diagnostic checkpoint, not the final benchmark checkpoint**. It was trained on LaSOT test280 plus extension150. Native tracker weights are provided by their upstream projects; matching OSTrack and SUTrack predictors are not distributed here.
+
+The original MLLM prompts are intentionally withheld. This research source preview does not reproduce every paper table out of the box. See [reproducibility](docs/REPRODUCIBILITY.md) and [release scope](docs/RELEASE_SCOPE.md) for the qualified workflows and limitations.
+
+## Acknowledgements and licensing
+
+The repository builds on [ARTrackV2](https://github.com/MIV-XJTU/ARTrack), [OSTrack](https://github.com/botaoye/OSTrack) and [SUTrack](https://github.com/chenxin-dlut/SUTrack). [Third-party notices](docs/THIRD_PARTY.md) are retained. A licence for the original QIRTrack code has not yet been selected. See [CITATION.cff](CITATION.cff) for citation status.

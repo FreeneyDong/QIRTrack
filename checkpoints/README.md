@@ -1,1 +1,6 @@
-Only checkpoints/old_s9_b256_seq_got_diagnostic_64k.pt is included locally, ignored by Git. SHA256 and training scope are in checkpoints/manifest.json. It is the legacy ARTrackV2-Base256-seq-GOT S9, NOT final model-test weights. No OSTrack/SUTrack predictor or native tracker weights are bundled. No invented public download links. If later distributed, use release assets/model hosting and preserve this qualification.
+# Checkpoints
+
+Download the legacy S9 diagnostic checkpoint from the [Model Zoo](../docs/MODEL_ZOO.md)
+and save it here as `old_s9_b256_seq_got_diagnostic_64k.pt`. The binary is ignored by
+Git. See [manifest.json](manifest.json) for its SHA256 and training provenance.
+This is not a final benchmark checkpoint.

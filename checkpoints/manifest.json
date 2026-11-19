@@ -10,7 +10,8 @@
       "raw_updates": 2000,
       "paired_updates": 64000,
       "final_model": false,
-      "distribution": "local file only; no public download URL yet",
+      "distribution": "Google Drive; restricted access; binary not tracked by Git",
+      "download_url": "https://drive.google.com/file/d/1JjT9JF8ryTl1RcfIy_sV0NMC0oBHGSXI/view",
       "source_checkpoint_sha256": "4fe35eee088a740f30bf2612770ca1e70cce50194571d32f09e3675f2c8a92ee",
       "format": "inference-only; model tensors unchanged; optimiser/RNG/private paths removed"
     }

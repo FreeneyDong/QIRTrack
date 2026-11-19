@@ -1,6 +1,6 @@
 # Executable commands and scope
 
-Run from the repository root with the dependencies installed. Only load trusted PyTorch checkpoints/input files. CUDA is required for S9 forward/backward (PreciseRoIPooling).
+Run from the repository root with the dependencies installed. Download the legacy diagnostic checkpoint via the [Model Zoo](MODEL_ZOO.md) before using the commands below. Only load trusted PyTorch checkpoints/input files. CUDA is required for S9 forward/backward (PreciseRoIPooling).
 
 ```bash
 python tracking/configure.py --data-root /absolute/path/to/pair_data --output-root /absolute/path/to/new_outputs --checkpoint checkpoints/old_s9_b256_seq_got_diagnostic_64k.pt
@@ -19,7 +19,7 @@ The JSONL uses the original labelled-pair schema: `sequence`, 1-based `frame`, u
 
 ## What these commands do, and do not do
 
-- Train performs paired **fine-tuning from the included old S9**, not raw/U1 pretraining or exact replay of the original 64k training schedule. It preserves the original stratified sampler, frozen base, absolute distribution loss + 10x relative SmoothL1, AdamW settings and gradient clipping. Updates are explicitly additional, not a hidden resume of optimiser state.
+- Train performs paired **fine-tuning from the downloaded legacy S9**, not raw/U1 pretraining or exact replay of the original 64k training schedule. It preserves the original stratified sampler, frozen base, absolute distribution loss + 10x relative SmoothL1, AdamW settings and gradient clipping. Updates are explicitly additional, not a hidden resume of optimiser state.
 - Evaluate reports raw-deduplicated offline predictor MAE/Recall/FPR/F1 and pair ranking. Good IoU >= .5, bad IoU < .4; grey samples are excluded from classification, not MAE. Ranking excludes true-gain ties; predicted ties count as incorrect and are separately reported.
 - The paired predictor CLI is not a final tracking test. Use the separate complete sequence runner in ONLINE_TRACKING.md. OSTrack/SUTrack need their own predictors; this paired training CLI only accepts the legacy AR variant.
 - The supplied checkpoint was trained on LaSOT test280 + extension150. No independent generalisation claim can be made from evaluating it on those identities. The CLI never invents or silently chooses a validation split.
