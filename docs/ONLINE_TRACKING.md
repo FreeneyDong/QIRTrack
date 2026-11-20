@@ -26,22 +26,24 @@ pickle. The compatibility loader maps old module names, not model tensors.
 ```bash
 python tracking/configure_online.py \
   --tracker artrackv2 --domain lasot \
-  --native-checkpoint /ABS/official_base256_got.pth.tar \
-  --predictor /ABS/s9_b256_seq_got_64k.pt \
-  --clip /ABS/clip-vit-base-patch32 \
-  --clip-python /ABS/clip-env/bin/python \
-  --prompts /ABS/private-prompts \
+  --native-checkpoint checkpoints/official_base256_got.pth.tar \
+  --predictor checkpoints/s9_b256_seq_got_64k.pt \
+  --clip checkpoints/clip-vit-base-patch32 \
+  --prompts configs/local_prompts \
   --mllm-url http://127.0.0.1:8001/v1/chat/completions \
   --mllm-model YOUR_SERVED_MODEL --q 0.4 \
   --out configs/local_artrackv2.json
 
 CUDA_VISIBLE_DEVICES=0 python tracking/test.py \
   --config configs/local_artrackv2.json \
-  --sequence /ABS/sequence/img --init-box 367 101 41 16 \
+  --sequence data/sequence/img --init-box 367 101 41 16 \
   --output outputs/demo_artrackv2
 ```
 
 The box above is only an example: replace it with the first frame's target box.
+Pass `--clip-python` if CLIP uses a separate Python environment. New configs store
+paths inside the checkout relative to the repository root. Paths to external
+resources supplied by the user retain their absolute locations.
 Add `--max-frames 12` for a smoke test; omit it to process the entire sequence.
 The native Base256-seq-GOT checkpoint identity is checked. The legacy S9 from
 the [Model Zoo](MODEL_ZOO.md) was trained with ARTrackV2-Base256-seq-GOT and is

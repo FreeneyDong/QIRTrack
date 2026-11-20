@@ -38,7 +38,6 @@ class Adapter:
   cfgmod=importlib.import_module('lib.trackers.sutrack.native.config.'+kind+'.config');cfgmod.update_config_from_file(str(config_file));cfg=cfgmod.cfg
   params=types.SimpleNamespace(cfg=cfg,checkpoint=str(checkpoint),debug=0,save_all_boxes=False,template_factor=cfg.TEST.TEMPLATE_FACTOR,template_size=cfg.TEST.TEMPLATE_SIZE,search_factor=cfg.TEST.SEARCH_FACTOR,search_size=cfg.TEST.SEARCH_SIZE)
   mod=importlib.import_module('lib.trackers.sutrack.native.test.tracker.'+kind)
-  # Constructor performs strict=True. Recheck complete key shapes and strict load explicitly.
   self.t=mod.get_tracker_class()(params,domain)
   result=self.t.network.load_state_dict(state,strict=True);assert not result.missing_keys and not result.unexpected_keys
   self.strict=dict(strict=True,keys=len(state),missing=[],unexpected=[],checkpoint=str(checkpoint),sha256=sha(checkpoint))
@@ -80,7 +79,6 @@ class Adapter:
  def initialize(self,image,bbox):
   self.capture=False;self.t.initialize(image,dict(init_bbox=list(map(float,bbox))));self.capture=True;self.template_frames=[None]* (self.t.num_template if self.kind=='sutrack' else 1)
  def snapshot(self):
-  # All tracker-owned instance fields, including cfg/params, dynamic template and annotation lists.
   skip={'network','preprocessor','output_window'}
   return dict(fields=copy.deepcopy({k:v for k,v in vars(self.t).items() if k not in skip}),rng=(random.getstate(),np.random.get_state(),torch.get_rng_state(),torch.cuda.get_rng_state_all()),template_frames=list(self.template_frames))
  def restore(self,s):
@@ -110,7 +108,6 @@ class Adapter:
   if full:
    for name,feat in [('search',search),('template',templates)]:
     original=feat.float().cpu().numpy();qi,sc=quantize(original);arrays[name+'_tokens_qint8']=qi;arrays[name+'_tokens_scale']=sc
-   # Quantisation is storage only; native prediction is always unquantised float32.
    rec=arrays['search_tokens_qint8'].astype(np.float32)*arrays['search_tokens_scale'];org=search.float().cpu().numpy();den=np.linalg.norm(org)*np.linalg.norm(rec)
    obs['quantization_search_cosine']=float((org*rec).sum()/den) if den>0 else 1.
   if self.kind=='sutrack':

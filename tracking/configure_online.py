@@ -1,4 +1,4 @@
-"""Write an ignored, machine-local online configuration without editing source."""
+"""Create a local online config with repository-relative paths where possible."""
 import argparse
 import hashlib
 import json
@@ -6,6 +6,8 @@ from pathlib import Path
 import sys
 
 ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT))
+from lib.config.paths import REPOSITORY, portable_path
 
 
 def main():
@@ -33,16 +35,16 @@ def main():
     }
     c = dict(tracker=a.tracker, domain=a.domain, q=a.q, p_high=a.p_high,
              mllm_url=a.mllm_url, mllm_model=a.mllm_model,
-             native_config=str(ROOT / 'experiments' / configs[a.tracker]),
-             clip_python=str(Path(a.clip_python).expanduser().resolve()),
+             native_config=(Path('experiments') / configs[a.tracker]).as_posix(),
+             clip_python=portable_path(a.clip_python), path_base=REPOSITORY,
              framework={'q_trusted': a.q_trusted})
     for name in ('native_checkpoint', 'predictor', 'clip', 'prompts'):
         value = Path(getattr(a, name)).expanduser().resolve()
         if not value.exists():
             p.error(name + ' does not exist: ' + str(value))
-        c[name] = str(value)
-    # Keep the embedding identity traceable; no downloading behind the user's back.
-    model_files = sorted(list(Path(c['clip']).glob('*.safetensors')) or list(Path(c['clip']).glob('pytorch_model*.bin')))
+        c[name] = portable_path(value)
+    clip = Path(a.clip).expanduser()
+    model_files = sorted(list(clip.glob('*.safetensors')) or list(clip.glob('pytorch_model*.bin')))
     if not model_files:
         p.error('No CLIP model weights found')
     h = hashlib.sha256()
@@ -57,9 +59,9 @@ def main():
             entropy_threshold=.26971155405044556, minimum_age=8, maximum_age=128, trusted=False)
     target = Path(a.out)
     target.parent.mkdir(parents=True, exist_ok=True)
-    with target.open('x') as f:
+    with target.open('x', encoding='utf-8') as f:
         json.dump(c, f, indent=2)
-    print(target.resolve())
+    print(target)
 
 
 if __name__ == '__main__':

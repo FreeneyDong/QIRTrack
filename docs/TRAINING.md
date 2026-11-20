@@ -30,6 +30,8 @@ bundled. Raw videos are not a substitute for the cached inputs.
 - The configuration generator and run outputs refuse to overwrite existing
   paths. Use a new config to evaluate a fine-tuned checkpoint. `path_map` can
   remap cached path prefixes, and the CLI does not choose a validation split.
+- New configs store paths inside the checkout relative to the repository root.
+  Paths to external resources supplied by the user retain their absolute locations.
 - Neither command evaluates online tracking. For that, use
   [Online Tracking](ONLINE_TRACKING.md). OSTrack and SUTrack require their own
   predictors; this paired training CLI accepts only the legacy AR variant.

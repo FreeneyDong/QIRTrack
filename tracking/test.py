@@ -12,6 +12,7 @@ import time
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 sys.path.insert(0, str(ROOT / 'external/CLIP'))
+from lib.config.paths import resolve_config_paths
 
 
 def sha256(path):
@@ -30,7 +31,9 @@ def main():
     parser.add_argument('--output', required=True, help='New directory; existing output is never overwritten')
     parser.add_argument('--max-frames', type=int, help='Smoke-test limit; omit for the full sequence')
     args = parser.parse_args()
-    config = json.loads(Path(args.config).read_text())
+    stored_config = json.loads(Path(args.config).read_text(encoding='utf-8'))
+    config = resolve_config_paths(stored_config, (
+        'native_checkpoint', 'native_config', 'predictor', 'prompts', 'clip', 'clip_python'))
     kind = config['tracker']
     if kind not in ('artrackv2', 'ostrack', 'sutrack'):
         raise ValueError('Unsupported tracker: ' + kind)
@@ -124,7 +127,7 @@ def main():
             worker=worker, memory_log=output / 'memory.jsonl', quality_contract=sha256(config['predictor']),
             encoder_sha256=config['clip_sha256'])
         from dataclasses import asdict
-        protocol = dict(config=config, framework=asdict(framework),
+        protocol = dict(config=stored_config, framework=asdict(framework),
             checkpoint_sha256={k: sha256(config[k]) for k in ('native_checkpoint', 'predictor')},
             frames=[p.name for p in files], init_box=args.init_box, ATOM=False,
             feedback='guarded bbox-only; native recursive prompts/templates not replaced',

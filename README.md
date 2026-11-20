@@ -51,23 +51,23 @@ python tracking/preflight.py --offline
 
 ### Predictor fine-tuning and offline evaluation
 
-Download the legacy S9 checkpoint from the [Model Zoo](docs/MODEL_ZOO.md) and save it as `checkpoints/s9_b256_seq_got_64k.pt`. Set the paths below to your labelled pair manifests and cached tracker observations; these inputs are not bundled. Run the input check first, then run fine-tuning or offline evaluation as needed.
+Download the legacy S9 checkpoint from the [Model Zoo](docs/MODEL_ZOO.md) and save it as `checkpoints/s9_b256_seq_got_64k.pt`. Run these examples from the repository root and adjust the relative paths to your paired data, checkpoints and outputs. Those data are not bundled. Run the input check first, then run fine-tuning or offline evaluation as needed.
 
 ```bash
 python tracking/configure.py \
-  --data-root /path/to/pair_data --output-root /path/to/predictor_outputs \
+  --data-root data/pair_data --output-root outputs/predictor \
   --checkpoint checkpoints/s9_b256_seq_got_64k.pt
 
 python tracking/predictor.py evaluate \
-  --config configs/local.json --manifest /path/to/eval_pairs.jsonl \
+  --config configs/local.json --manifest data/pair_data/eval_pairs.jsonl \
   --run-name input_check --validate-only
 
 CUDA_VISIBLE_DEVICES=0 python tracking/predictor.py train \
-  --config configs/local.json --manifest /path/to/train_pairs.jsonl \
+  --config configs/local.json --manifest data/pair_data/train_pairs.jsonl \
   --run-name s9_finetune --steps 4000 --batch-size 8
 
 CUDA_VISIBLE_DEVICES=0 python tracking/predictor.py evaluate \
-  --config configs/local.json --manifest /path/to/eval_pairs.jsonl \
+  --config configs/local.json --manifest data/pair_data/eval_pairs.jsonl \
   --run-name legacy_s9_eval --q 0.4
 ```
 
@@ -80,22 +80,21 @@ This diagnostic example uses ARTrackV2-Base256-seq-GOT. Supply its native checkp
 ```bash
 python tracking/configure_online.py \
   --tracker artrackv2 --domain lasot \
-  --native-checkpoint /path/to/official_base256_got.pth.tar \
+  --native-checkpoint checkpoints/official_base256_got.pth.tar \
   --predictor checkpoints/s9_b256_seq_got_64k.pt \
-  --clip /path/to/clip-vit-base-patch32 \
-  --clip-python /path/to/clip-env/bin/python \
-  --prompts /path/to/private-prompts \
+  --clip checkpoints/clip-vit-base-patch32 \
+  --prompts configs/local_prompts \
   --mllm-url http://127.0.0.1:8001/v1/chat/completions \
   --mllm-model YOUR_SERVED_MODEL --q 0.4 \
   --out configs/local_artrackv2.json
 
 CUDA_VISIBLE_DEVICES=0 python tracking/test.py \
   --config configs/local_artrackv2.json \
-  --sequence /path/to/sequence/img --init-box 367 101 41 16 \
+  --sequence data/sequence/img --init-box 367 101 41 16 \
   --output outputs/demo_artrackv2 --max-frames 12
 ```
 
-Replace the example box with your target's first-frame `x y width height` box. Omit `--max-frames 12` to process all ordered JPG/PNG frames; use a new output directory for every run. Results are written to `predictions.txt` in that directory. For OSTrack or SUTrack, change `--tracker` and supply both that tracker's native checkpoint and its matching predictor; the ARTrackV2 S9 is not interchangeable. See [Online Tracking](docs/ONLINE_TRACKING.md) for the remaining options.
+Replace the example box with your target's first-frame `x y width height` box. Omit `--max-frames 12` to process all ordered JPG/PNG frames; use a new output directory for every run. Results are written to `predictions.txt` in that directory. If CLIP runs in a separate environment, pass its Python executable with `--clip-python`. For OSTrack or SUTrack, change `--tracker` and supply both that tracker's native checkpoint and its matching predictor; the ARTrackV2 S9 is not interchangeable. See [Online Tracking](docs/ONLINE_TRACKING.md) for the remaining options.
 
 ## Weights and release scope
 
@@ -104,6 +103,11 @@ Replace the example box with your target's first-frame `x y width height` box. O
 This is trained with ARTrackV2-Base256-seq-GOT, which is **not the final benchmark checkpoint**. Native tracker weights are provided by their upstream projects.
 
 See [reproducibility](docs/REPRODUCIBILITY.md) for the qualified workflows, release scope and limitations. Please note that we made some changes to the code and retrained the model after submitting this repository, thus it is not the final version of the paper.
+We will continue to update this repository.
+
+## Version history
+
+- **2026-11-19 — Initial source preview.**
 
 ## Acknowledgements and licensing
 

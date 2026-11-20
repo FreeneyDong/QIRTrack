@@ -19,4 +19,6 @@ dist/
 *.egg-info/
 
 /configs/local*.json
+/configs/local_prompts/
+/checkpoints/clip-vit-base-patch32/
 /outputs/

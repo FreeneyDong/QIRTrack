@@ -4,6 +4,7 @@ import sys,argparse,json,random,copy
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]))
 import numpy as np
 import torch
+from lib.config.paths import resolve_config_paths
 from lib.models.qirtrack.checkpoint import load_legacy_diagnostic
 from lib.models.qirtrack.core.trigger_e2e.losses import IoUDistributionLoss
 from lib.train import legacy_pair_helpers as h
@@ -11,7 +12,7 @@ from lib.train import legacy_pair_helpers as h
 def run():
  p=argparse.ArgumentParser(description=__doc__);p.add_argument('mode',choices=['train','evaluate']);p.add_argument('--config',required=True);p.add_argument('--manifest',required=True);p.add_argument('--run-name',required=True);p.add_argument('--steps',type=int,default=4000);p.add_argument('--batch-size',type=int,default=8);p.add_argument('--seed',type=int,default=20261029);p.add_argument('--q',type=float,default=.4);p.add_argument('--validate-only',action='store_true');a=p.parse_args()
  if a.steps<1 or a.batch_size<1 or not 0<a.q<1:p.error('invalid steps, batch-size or threshold')
- cfg=json.loads(Path(a.config).read_text()); root=Path(cfg['data_root']).resolve(); manifest=Path(a.manifest).resolve()
+ cfg=resolve_config_paths(json.loads(Path(a.config).read_text(encoding='utf-8')), ('data_root','output_root','checkpoint')); root=Path(cfg['data_root']); manifest=Path(a.manifest).resolve()
  groups={};seen=set()
  for line in manifest.read_text().splitlines():
   row=json.loads(line)
