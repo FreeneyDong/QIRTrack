@@ -107,7 +107,7 @@ We will continue to update this repository.
 
 ## Version history
 
-- **2026-11-19 — Initial source preview.**
+- **2026-11-10 — Initial source preview.**
 
 ## Acknowledgements and licensing
 
